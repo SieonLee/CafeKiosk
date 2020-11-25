@@ -12,7 +12,6 @@ namespace EFDemo.Data
     public class DessertDao : SingleKeyDao<Menu, int>
     {
 
-
         internal DessertDao() { }
 
         protected override Expression<Func<Menu, bool>> IsKey(int key)
