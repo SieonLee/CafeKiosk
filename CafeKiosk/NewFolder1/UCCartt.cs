@@ -16,5 +16,7 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
+
+
     }
 }
