@@ -15,8 +15,7 @@ namespace CafeKiosk
         public OrderForm()
         {
             InitializeComponent();
-            UCHome uCHome = new UCHome();
-            addUC(uCHome);
+           
         }
         private void movesidepanel(Button btn)
         {
@@ -35,6 +34,8 @@ namespace CafeKiosk
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            UCHome uCHome = new UCHome();
+            addUC(uCHome);
             movesidepanel(btnStart);
 
         }

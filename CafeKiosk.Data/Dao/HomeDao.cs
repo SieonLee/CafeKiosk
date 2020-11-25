@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CafeKiosk.Dao
 {
-    class HomeDao
+    public class HomeDao
     {
     }
 }

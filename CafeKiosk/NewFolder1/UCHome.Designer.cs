@@ -54,6 +54,7 @@ namespace CafeKiosk
             this.btnNoTakeOut.TabIndex = 4;
             this.btnNoTakeOut.Text = "포장 안함";
             this.btnNoTakeOut.UseVisualStyleBackColor = false;
+            this.btnNoTakeOut.Click += new System.EventHandler(this.btnNoTakeOut_Click);
             // 
             // bntTakeout
             // 
@@ -65,6 +66,7 @@ namespace CafeKiosk
             this.bntTakeout.TabIndex = 3;
             this.bntTakeout.Text = "포장";
             this.bntTakeout.UseVisualStyleBackColor = false;
+            this.bntTakeout.Click += new System.EventHandler(this.bntTakeout_Click);
             // 
             // UCHome
             // 

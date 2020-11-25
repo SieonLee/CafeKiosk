@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B26675CB-7EBC-49B6-83BD-EDFC3EC9A3E7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>CafeKiosk.Data</RootNamespace>
     <AssemblyName>CafeKiosk.Data</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -32,10 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EFLibrary">
-      <HintPath>..\..\..\..\..\..\..\sync\603R\sources\csharp\EFLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -79,6 +79,12 @@
     <Compile Include="Dao\DessertDao.cs" />
     <Compile Include="Dao\HomeDao.cs" />
     <Compile Include="Dao\JuiceDao.cs" />
+    <Compile Include="EFLibrary\BaseDao.cs" />
+    <Compile Include="EFLibrary\DbContextCreator.cs" />
+    <Compile Include="EFLibrary\DualKeyDao.cs" />
+    <Compile Include="EFLibrary\QuadKeyDao.cs" />
+    <Compile Include="EFLibrary\SingleKeyDao.cs" />
+    <Compile Include="EFLibrary\TripleKeyDao.cs" />
     <Compile Include="Menu.cs">
       <DependentUpon>CafeKiosk.tt</DependentUpon>
     </Compile>
@@ -130,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
