@@ -70,5 +70,9 @@ namespace CafeKiosk
         }
         #endregion
 
+        private void btnToCart_Click(object sender, EventArgs e)
+        {
+            OnReturnCoffeeMenu(true);
+        }
     }
 }
