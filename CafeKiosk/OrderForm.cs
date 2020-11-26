@@ -104,6 +104,12 @@ namespace CafeKiosk
         {
             UCDessertOption uCDessertOption = new UCDessertOption();
             addUC(uCDessertOption);
+            uCDessertOption.ReturnDessertMenu += UCDessertOption_ReturnDessertMenu;
+        }
+
+        private void UCDessertOption_ReturnDessertMenu(object sender, UCDessertOption.ReturnDessertMenuEventArgs e)
+        {
+            btnDessert.PerformClick();
         }
 
         private void btnCart_Click(object sender, EventArgs e)
