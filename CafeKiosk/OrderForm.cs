@@ -78,8 +78,9 @@ namespace CafeKiosk
         {
             //UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
             //addUC(uCCoffeeOption);
-            UCCoffee uCCoffee = new UCCoffee();
-            addUC(uCCoffee);
+            //UCCoffee uCCoffee = new UCCoffee();
+            //addUC(uCCoffee);
+            btnCoffee.PerformClick();
         }
        
 

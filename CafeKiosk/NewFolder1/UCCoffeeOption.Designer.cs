@@ -201,13 +201,13 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCCoffeeOption";
-<<<<<<< HEAD
+
             this.Size = new System.Drawing.Size(389, 575);
             this.DpiChangedBeforeParent += new System.EventHandler(this.btnReturn_Click);
             this.DpiChangedAfterParent += new System.EventHandler(this.btnReturn_Click);
-=======
+
             this.Size = new System.Drawing.Size(445, 719);
->>>>>>> 91acea50dc29ec9f3a1ec4c1e59711c289c0588b
+
             this.ResumeLayout(false);
 
         }
