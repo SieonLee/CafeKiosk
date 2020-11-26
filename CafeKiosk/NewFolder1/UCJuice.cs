@@ -16,5 +16,15 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UCJuice_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
