@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace CafeKiosk
 {
-    public partial class UCCoffee : UserControl
+    public partial class UCJuice : UserControl
     {
-        public UCCoffee()
+        public UCJuice()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            //UCCoffeeOption uCCoOption = new UCCoffeeOption();
-            //addUC(uCCoOption);
-            MessageBox.Show("hi");
         }
     }
 }
