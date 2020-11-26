@@ -128,9 +128,13 @@ namespace CafeKiosk
         {
             movesidepanel(btnCart);
             UCCartt uCCart = new UCCartt();
+            uCCart.MovePrevSelected += UCCart_MovePrevSelected;
             addUC(uCCart);
         }
 
-        
+        private void UCCart_MovePrevSelected(object sender, UCCartt.MovePrevSelectedEventArgs e)
+        {
+            btnCoffee.PerformClick();
+        }
     }
 }

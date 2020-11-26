@@ -79,7 +79,6 @@ namespace CafeKiosk
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(361, 445);
             this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -99,6 +98,7 @@ namespace CafeKiosk
             this.btnPrev.TabIndex = 11;
             this.btnPrev.Text = "이전화면";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // btnCheckOut
             // 
