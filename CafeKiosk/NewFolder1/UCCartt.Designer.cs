@@ -34,6 +34,8 @@ namespace CafeKiosk
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPrev = new System.Windows.Forms.Button();
+            this.btnCheckOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,11 +91,31 @@ namespace CafeKiosk
             this.label1.TabIndex = 10;
             this.label1.Text = "총 금액 : ";
             // 
+            // btnPrev
+            // 
+            this.btnPrev.Location = new System.Drawing.Point(220, 637);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(91, 39);
+            this.btnPrev.TabIndex = 11;
+            this.btnPrev.Text = "이전화면";
+            this.btnPrev.UseVisualStyleBackColor = true;
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Location = new System.Drawing.Point(327, 637);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(91, 39);
+            this.btnCheckOut.TabIndex = 12;
+            this.btnCheckOut.Text = "결제";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            // 
             // UCCartt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnCheckOut);
+            this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTotalPrice);
@@ -115,5 +137,7 @@ namespace CafeKiosk
         private System.Windows.Forms.Label lblTotalPrice;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Button btnCheckOut;
     }
 }
