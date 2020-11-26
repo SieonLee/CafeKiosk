@@ -4,7 +4,6 @@ using CafeKiosk.Data;
 using System.Collections.Generic;
 using System.Linq;
 using EFLibrary;
-using EFDemo.Data;
 
 namespace EFDemo.UnitTest
 {
