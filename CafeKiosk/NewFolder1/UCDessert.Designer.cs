@@ -35,18 +35,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnCroffle = new System.Windows.Forms.PictureBox();
+            this.btnWaffle = new System.Windows.Forms.PictureBox();
+            this.btnMacaron = new System.Windows.Forms.PictureBox();
+            this.btnHoney = new System.Windows.Forms.PictureBox();
+            this.btnTiramisu = new System.Windows.Forms.PictureBox();
+            this.btnChoco = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCroffle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnWaffle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMacaron)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTiramisu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChoco)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -107,72 +107,77 @@
             this.label1.Text = "초코케익 5500";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // pictureBox5
+            // btnCroffle
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(243, 481);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 29;
-            this.pictureBox5.TabStop = false;
+            this.btnCroffle.Image = ((System.Drawing.Image)(resources.GetObject("btnCroffle.Image")));
+            this.btnCroffle.Location = new System.Drawing.Point(243, 481);
+            this.btnCroffle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCroffle.Name = "btnCroffle";
+            this.btnCroffle.Size = new System.Drawing.Size(159, 162);
+            this.btnCroffle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCroffle.TabIndex = 29;
+            this.btnCroffle.TabStop = false;
+            this.btnCroffle.Click += new System.EventHandler(this.btnCroffle_Click);
             // 
-            // pictureBox6
+            // btnWaffle
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(41, 481);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 28;
-            this.pictureBox6.TabStop = false;
+            this.btnWaffle.Image = ((System.Drawing.Image)(resources.GetObject("btnWaffle.Image")));
+            this.btnWaffle.Location = new System.Drawing.Point(41, 481);
+            this.btnWaffle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnWaffle.Name = "btnWaffle";
+            this.btnWaffle.Size = new System.Drawing.Size(159, 162);
+            this.btnWaffle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnWaffle.TabIndex = 28;
+            this.btnWaffle.TabStop = false;
+            this.btnWaffle.Click += new System.EventHandler(this.btnWaffle_Click);
             // 
-            // pictureBox3
+            // btnMacaron
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(243, 256);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 27;
-            this.pictureBox3.TabStop = false;
+            this.btnMacaron.Image = ((System.Drawing.Image)(resources.GetObject("btnMacaron.Image")));
+            this.btnMacaron.Location = new System.Drawing.Point(243, 256);
+            this.btnMacaron.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMacaron.Name = "btnMacaron";
+            this.btnMacaron.Size = new System.Drawing.Size(159, 162);
+            this.btnMacaron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMacaron.TabIndex = 27;
+            this.btnMacaron.TabStop = false;
+            this.btnMacaron.Click += new System.EventHandler(this.btnMacaron_Click);
             // 
-            // pictureBox4
+            // btnHoney
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(41, 256);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 26;
-            this.pictureBox4.TabStop = false;
+            this.btnHoney.Image = ((System.Drawing.Image)(resources.GetObject("btnHoney.Image")));
+            this.btnHoney.Location = new System.Drawing.Point(41, 256);
+            this.btnHoney.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHoney.Name = "btnHoney";
+            this.btnHoney.Size = new System.Drawing.Size(159, 162);
+            this.btnHoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHoney.TabIndex = 26;
+            this.btnHoney.TabStop = false;
+            this.btnHoney.Click += new System.EventHandler(this.btnHoney_Click);
             // 
-            // pictureBox2
+            // btnTiramisu
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(243, 41);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            this.btnTiramisu.Image = ((System.Drawing.Image)(resources.GetObject("btnTiramisu.Image")));
+            this.btnTiramisu.Location = new System.Drawing.Point(243, 41);
+            this.btnTiramisu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTiramisu.Name = "btnTiramisu";
+            this.btnTiramisu.Size = new System.Drawing.Size(159, 162);
+            this.btnTiramisu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnTiramisu.TabIndex = 25;
+            this.btnTiramisu.TabStop = false;
+            this.btnTiramisu.Click += new System.EventHandler(this.btnTiramisu_Click);
             // 
-            // pictureBox1
+            // btnChoco
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnChoco.Image = ((System.Drawing.Image)(resources.GetObject("btnChoco.Image")));
+            this.btnChoco.Location = new System.Drawing.Point(41, 41);
+            this.btnChoco.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChoco.Name = "btnChoco";
+            this.btnChoco.Size = new System.Drawing.Size(159, 162);
+            this.btnChoco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnChoco.TabIndex = 24;
+            this.btnChoco.TabStop = false;
+            this.btnChoco.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UCDessert
             // 
@@ -185,21 +190,21 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnCroffle);
+            this.Controls.Add(this.btnWaffle);
+            this.Controls.Add(this.btnMacaron);
+            this.Controls.Add(this.btnHoney);
+            this.Controls.Add(this.btnTiramisu);
+            this.Controls.Add(this.btnChoco);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCDessert";
             this.Size = new System.Drawing.Size(445, 719);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCroffle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnWaffle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMacaron)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTiramisu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnChoco)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -212,11 +217,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnCroffle;
+        private System.Windows.Forms.PictureBox btnWaffle;
+        private System.Windows.Forms.PictureBox btnMacaron;
+        private System.Windows.Forms.PictureBox btnHoney;
+        private System.Windows.Forms.PictureBox btnTiramisu;
+        private System.Windows.Forms.PictureBox btnChoco;
     }
 }

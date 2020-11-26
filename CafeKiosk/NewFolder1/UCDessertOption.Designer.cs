@@ -28,125 +28,159 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnFork = new System.Windows.Forms.Button();
+            this.btnIcecream = new System.Windows.Forms.Button();
+            this.btnWhipMore = new System.Windows.Forms.Button();
+            this.btnWhipLess = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCountUp = new System.Windows.Forms.Button();
+            this.btnCountDwn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnToCart = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button7
+            // btnFork
             // 
-            this.button7.Location = new System.Drawing.Point(245, 363);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 23;
-            this.button7.Text = "포크";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnFork.Location = new System.Drawing.Point(131, 521);
+            this.btnFork.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFork.Name = "btnFork";
+            this.btnFork.Size = new System.Drawing.Size(86, 29);
+            this.btnFork.TabIndex = 23;
+            this.btnFork.Text = "포크";
+            this.btnFork.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnIcecream
             // 
-            this.button8.Location = new System.Drawing.Point(115, 363);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 22;
-            this.button8.Text = "버터";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnIcecream.Location = new System.Drawing.Point(131, 454);
+            this.btnIcecream.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIcecream.Name = "btnIcecream";
+            this.btnIcecream.Size = new System.Drawing.Size(143, 29);
+            this.btnIcecream.TabIndex = 22;
+            this.btnIcecream.Text = "아이스크림 추가";
+            this.btnIcecream.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnWhipMore
             // 
-            this.button6.Location = new System.Drawing.Point(245, 307);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 21;
-            this.button6.Text = "포도잼";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnWhipMore.Location = new System.Drawing.Point(280, 384);
+            this.btnWhipMore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnWhipMore.Name = "btnWhipMore";
+            this.btnWhipMore.Size = new System.Drawing.Size(86, 29);
+            this.btnWhipMore.TabIndex = 21;
+            this.btnWhipMore.Text = "휘핑 많이";
+            this.btnWhipMore.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnWhipLess
             // 
-            this.button5.Location = new System.Drawing.Point(115, 307);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "딸기잼";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnWhipLess.Location = new System.Drawing.Point(131, 384);
+            this.btnWhipLess.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnWhipLess.Name = "btnWhipLess";
+            this.btnWhipLess.Size = new System.Drawing.Size(86, 29);
+            this.btnWhipLess.TabIndex = 20;
+            this.btnWhipLess.Text = "휘핑 적게";
+            this.btnWhipLess.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(196, 227);
+            this.label4.Location = new System.Drawing.Point(223, 276);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 25);
+            this.label4.Size = new System.Drawing.Size(55, 31);
             this.label4.TabIndex = 17;
             this.label4.Text = "1";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // btnCountUp
             // 
-            this.button2.Location = new System.Drawing.Point(245, 222);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCountUp.Location = new System.Drawing.Point(280, 278);
+            this.btnCountUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCountUp.Name = "btnCountUp";
+            this.btnCountUp.Size = new System.Drawing.Size(86, 29);
+            this.btnCountUp.TabIndex = 16;
+            this.btnCountUp.Text = "+";
+            this.btnCountUp.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnCountDwn
             // 
-            this.button1.Location = new System.Drawing.Point(115, 222);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCountDwn.Location = new System.Drawing.Point(131, 278);
+            this.btnCountDwn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCountDwn.Name = "btnCountDwn";
+            this.btnCountDwn.Size = new System.Drawing.Size(86, 29);
+            this.btnCountDwn.TabIndex = 15;
+            this.btnCountDwn.Text = "-";
+            this.btnCountDwn.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(48, 312);
+            this.label3.Location = new System.Drawing.Point(55, 390);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 23);
+            this.label3.Size = new System.Drawing.Size(70, 29);
             this.label3.TabIndex = 14;
             this.label3.Text = "옵션";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(48, 227);
+            this.label1.Location = new System.Drawing.Point(55, 284);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 12;
             this.label1.Text = "수량";
             // 
+            // btnToCart
+            // 
+            this.btnToCart.Location = new System.Drawing.Point(290, 627);
+            this.btnToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnToCart.Name = "btnToCart";
+            this.btnToCart.Size = new System.Drawing.Size(132, 31);
+            this.btnToCart.TabIndex = 25;
+            this.btnToCart.Text = "장바구니 담기";
+            this.btnToCart.UseVisualStyleBackColor = true;
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(161, 627);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(113, 31);
+            this.btnReturn.TabIndex = 24;
+            this.btnReturn.Text = "이전 화면";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            // 
             // UCDessertOption
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnToCart);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.btnFork);
+            this.Controls.Add(this.btnIcecream);
+            this.Controls.Add(this.btnWhipMore);
+            this.Controls.Add(this.btnWhipLess);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCountUp);
+            this.Controls.Add(this.btnCountDwn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCDessertOption";
-            this.Size = new System.Drawing.Size(389, 575);
+            this.Size = new System.Drawing.Size(445, 719);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnFork;
+        private System.Windows.Forms.Button btnIcecream;
+        private System.Windows.Forms.Button btnWhipMore;
+        private System.Windows.Forms.Button btnWhipLess;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCountUp;
+        private System.Windows.Forms.Button btnCountDwn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnToCart;
+        private System.Windows.Forms.Button btnReturn;
     }
 }

@@ -70,7 +70,14 @@ namespace CafeKiosk
         {
             movesidepanel(btnDessert);
             UCDessert uCDessert = new UCDessert();
+            uCDessert.DessertSelected += UCDessert_DessertSelected;
             addUC(uCDessert);
+        }
+
+        private void UCDessert_DessertSelected(object sender, UCDessert.DessertSelectedEventArgs e)
+        {
+            UCDessertOption uCDessertOption = new UCDessertOption();
+            addUC(uCDessertOption);
         }
 
         private void btnCart_Click(object sender, EventArgs e)
