@@ -32,7 +32,7 @@
             this.btnIcecream = new System.Windows.Forms.Button();
             this.btnWhipMore = new System.Windows.Forms.Button();
             this.btnWhipLess = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.btnCountUp = new System.Windows.Forms.Button();
             this.btnCountDwn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -81,14 +81,14 @@
             this.btnWhipLess.Text = "휘핑 적게";
             this.btnWhipLess.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lblQuantity
             // 
-            this.label4.Location = new System.Drawing.Point(223, 276);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 31);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "1";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblQuantity.Location = new System.Drawing.Point(223, 276);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(55, 31);
+            this.lblQuantity.TabIndex = 17;
+            this.lblQuantity.Text = "1";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnCountUp
             // 
@@ -99,6 +99,7 @@
             this.btnCountUp.TabIndex = 16;
             this.btnCountUp.Text = "+";
             this.btnCountUp.UseVisualStyleBackColor = true;
+            this.btnCountUp.Click += new System.EventHandler(this.btnCountUp_Click);
             // 
             // btnCountDwn
             // 
@@ -109,6 +110,7 @@
             this.btnCountDwn.TabIndex = 15;
             this.btnCountDwn.Text = "-";
             this.btnCountDwn.UseVisualStyleBackColor = true;
+            this.btnCountDwn.Click += new System.EventHandler(this.btnCountDwn_Click);
             // 
             // label3
             // 
@@ -157,7 +159,7 @@
             this.Controls.Add(this.btnIcecream);
             this.Controls.Add(this.btnWhipMore);
             this.Controls.Add(this.btnWhipLess);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.btnCountUp);
             this.Controls.Add(this.btnCountDwn);
             this.Controls.Add(this.label3);
@@ -175,7 +177,7 @@
         private System.Windows.Forms.Button btnIcecream;
         private System.Windows.Forms.Button btnWhipMore;
         private System.Windows.Forms.Button btnWhipLess;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Button btnCountUp;
         private System.Windows.Forms.Button btnCountDwn;
         private System.Windows.Forms.Label label3;

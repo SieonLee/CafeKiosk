@@ -46,113 +46,123 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(36, 211);
+            this.label1.Location = new System.Drawing.Point(41, 264);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "수량";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(36, 264);
+            this.label2.Location = new System.Drawing.Point(41, 330);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 23);
+            this.label2.Size = new System.Drawing.Size(80, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "사이즈";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(36, 330);
+            this.label3.Location = new System.Drawing.Point(41, 412);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 23);
+            this.label3.Size = new System.Drawing.Size(70, 29);
             this.label3.TabIndex = 2;
             this.label3.Text = "옵션";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(103, 206);
+            this.button1.Location = new System.Drawing.Point(118, 258);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(86, 29);
             this.button1.TabIndex = 3;
             this.button1.Text = "-";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(233, 206);
+            this.button2.Location = new System.Drawing.Point(266, 258);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(86, 29);
             this.button2.TabIndex = 4;
             this.button2.Text = "+";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(184, 211);
+            this.label4.Location = new System.Drawing.Point(210, 258);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 25);
+            this.label4.Size = new System.Drawing.Size(55, 31);
             this.label4.TabIndex = 5;
             this.label4.Text = "1";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(103, 264);
+            this.button3.Location = new System.Drawing.Point(118, 330);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(86, 29);
             this.button3.TabIndex = 6;
             this.button3.Text = "톨";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(233, 264);
+            this.button4.Location = new System.Drawing.Point(266, 330);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(86, 29);
             this.button4.TabIndex = 7;
             this.button4.Text = "그란데";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(103, 325);
+            this.button5.Location = new System.Drawing.Point(118, 406);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(86, 29);
             this.button5.TabIndex = 8;
             this.button5.Text = "아이스";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(233, 325);
+            this.button6.Location = new System.Drawing.Point(266, 406);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(86, 29);
             this.button6.TabIndex = 9;
             this.button6.Text = "핫";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(233, 381);
+            this.button7.Location = new System.Drawing.Point(266, 476);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(86, 29);
             this.button7.TabIndex = 11;
             this.button7.Text = "시럽추가";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(103, 381);
+            this.button8.Location = new System.Drawing.Point(118, 476);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(86, 29);
             this.button8.TabIndex = 10;
             this.button8.Text = "휘핑추가";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(146, 469);
+            this.btnReturn.Location = new System.Drawing.Point(167, 586);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(75, 23);
+            this.btnReturn.Size = new System.Drawing.Size(86, 29);
             this.btnReturn.TabIndex = 12;
             this.btnReturn.Text = "이전 화면";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -160,16 +170,17 @@
             // 
             // btnToCart
             // 
-            this.btnToCart.Location = new System.Drawing.Point(259, 469);
+            this.btnToCart.Location = new System.Drawing.Point(296, 586);
+            this.btnToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnToCart.Name = "btnToCart";
-            this.btnToCart.Size = new System.Drawing.Size(92, 23);
+            this.btnToCart.Size = new System.Drawing.Size(105, 29);
             this.btnToCart.TabIndex = 13;
             this.btnToCart.Text = "장바구니 담기";
             this.btnToCart.UseVisualStyleBackColor = true;
             // 
             // UCCoffeeOption
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnToCart);
@@ -186,8 +197,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCCoffeeOption";
-            this.Size = new System.Drawing.Size(389, 575);
+            this.Size = new System.Drawing.Size(445, 719);
             this.ResumeLayout(false);
 
         }
