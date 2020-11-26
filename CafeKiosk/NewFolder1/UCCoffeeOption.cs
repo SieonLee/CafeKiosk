@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace CafeKiosk
 {
-    public partial class UCJuice : UserControl
+    public partial class UCCoffeeOption : UserControl
     {
-        public UCJuice()
+        public UCCoffeeOption()
         {
             InitializeComponent();
         }
+
+   
     }
 }

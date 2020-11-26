@@ -120,10 +120,10 @@
     <Compile Include="Order.cs">
       <DependentUpon>CafeData.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form\OrderForm.cs">
+    <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\OrderForm.Designer.cs">
+    <Compile Include="OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderLine.cs">
@@ -134,58 +134,58 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControl\UCCoffee.cs">
+    <Compile Include="NewFolder1\UCCoffee.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCCoffee.Designer.cs">
+    <Compile Include="NewFolder1\UCCoffee.Designer.cs">
       <DependentUpon>UCCoffee.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCCoffeeOption.cs">
+    <Compile Include="NewFolder1\UCCoffeeOption.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCCoffeeOption.Designer.cs">
+    <Compile Include="NewFolder1\UCCoffeeOption.Designer.cs">
       <DependentUpon>UCCoffeeOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCDessert.cs">
+    <Compile Include="NewFolder1\UCDessert.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCDessert.Designer.cs">
+    <Compile Include="NewFolder1\UCDessert.Designer.cs">
       <DependentUpon>UCDessert.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCDessertOption.cs">
+    <Compile Include="NewFolder1\UCDessertOption.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCDessertOption.Designer.cs">
+    <Compile Include="NewFolder1\UCDessertOption.Designer.cs">
       <DependentUpon>UCDessertOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCJuice.cs">
+    <Compile Include="NewFolder1\UCJuice.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCJuice.Designer.cs">
+    <Compile Include="NewFolder1\UCJuice.Designer.cs">
       <DependentUpon>UCJuice.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCJuiceOption.cs">
+    <Compile Include="NewFolder1\UCJuiceOption.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCJuiceOption.Designer.cs">
+    <Compile Include="NewFolder1\UCJuiceOption.Designer.cs">
       <DependentUpon>UCJuiceOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCHome.cs">
+    <Compile Include="NewFolder1\UCHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCHome.Designer.cs">
+    <Compile Include="NewFolder1\UCHome.Designer.cs">
       <DependentUpon>UCHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UCCartt.cs">
+    <Compile Include="NewFolder1\UCCartt.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UCCartt.Designer.cs">
+    <Compile Include="NewFolder1\UCCartt.Designer.cs">
       <DependentUpon>UCCartt.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControl\UCHome.resx">
+    <EmbeddedResource Include="NewFolder1\UCHome.resx">
       <DependentUpon>UCHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\OrderForm.resx">
+    <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -197,25 +197,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControl\UCCoffee.resx">
+    <EmbeddedResource Include="NewFolder1\UCCoffee.resx">
       <DependentUpon>UCCoffee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCCoffeeOption.resx">
+    <EmbeddedResource Include="NewFolder1\UCCoffeeOption.resx">
       <DependentUpon>UCCoffeeOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCDessert.resx">
+    <EmbeddedResource Include="NewFolder1\UCDessert.resx">
       <DependentUpon>UCDessert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCDessertOption.resx">
+    <EmbeddedResource Include="NewFolder1\UCDessertOption.resx">
       <DependentUpon>UCDessertOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCJuice.resx">
+    <EmbeddedResource Include="NewFolder1\UCJuice.resx">
       <DependentUpon>UCJuice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCJuiceOption.resx">
+    <EmbeddedResource Include="NewFolder1\UCJuiceOption.resx">
       <DependentUpon>UCJuiceOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UCCartt.resx">
+    <EmbeddedResource Include="NewFolder1\UCCartt.resx">
       <DependentUpon>UCCartt.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="CafeData.edmx">
