@@ -51,13 +51,38 @@ namespace CafeKiosk
             UCCoffee uCCoffee = new UCCoffee();
             uCCoffee.CoffeeSelected += UCCoffee_CoffeeSelected;
             addUC(uCCoffee);
+           // UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
+           // uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+            
         }
 
         private void UCCoffee_CoffeeSelected(object sender, UCCoffee.CoffeeSelectedEventArgs e)
         {
+            movesidepanel(btnCoffee);
             UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
             addUC(uCCoffeeOption);
+            uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+        } 
+        
+        //private void UCCoffeeOption(object sender, EventArgs e)
+        //{
+        //    // UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
+        //    //uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+        //    //addUC(uCCoffeeOption);
+        //    //UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
+        //   // uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+        //    UCCoffee uCCoffee = new UCCoffee();
+        //    addUC(uCCoffee);
+        //}
+        private void UCCoffeeOption_ReturnCoffeeMenu(object sender, UCCoffeeOption.ReturnCoffeeMenuEventArgs e)
+        {
+            //UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
+            //addUC(uCCoffeeOption);
+            UCCoffee uCCoffee = new UCCoffee();
+            addUC(uCCoffee);
         }
+       
+
 
         private void btnJuice_Click(object sender, EventArgs e)
         {

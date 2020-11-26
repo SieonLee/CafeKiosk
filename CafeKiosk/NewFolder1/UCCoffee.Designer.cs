@@ -69,6 +69,7 @@
             this.btnAme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnAme.TabIndex = 1;
             this.btnAme.TabStop = false;
+            this.btnAme.Click += new System.EventHandler(this.btnAme_Click);
             // 
             // btnMoc
             // 

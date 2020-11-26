@@ -17,30 +17,39 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
+        public void OptionClick() //함수 만들어야함
+        {
+            OnCoffeeSelected(true); //커피를 눌렀을때 옵션 패널 호출
+
+        }
 
 
         private void btnEspresso_Click(object sender, EventArgs e)
         {
             OnCoffeeSelected(true);
         }
+        private void btnAme_Click(object sender, EventArgs e)
+        {
+            OnCoffeeSelected(true);
+        }
         private void btnCara_Click(object sender, EventArgs e)
         {
-            OnCoffeeSelected(false);
+            OnCoffeeSelected(true);
         }
 
         private void btnMoc_Click(object sender, EventArgs e)
         {
-
+            OnCoffeeSelected(true);
         }
 
         private void btnLatte_Click(object sender, EventArgs e)
         {
-
+            OnCoffeeSelected(true);
         }
 
         private void btnDol_Click(object sender, EventArgs e)
         {
-
+            OnCoffeeSelected(true);
         }
 
         #region CoffeeSelected event things for C# 3.0
@@ -81,6 +90,7 @@ namespace CafeKiosk
                 CoffeeOptionSelected = coffeeOptionSelected;
             }
         }
+
         #endregion
 
        

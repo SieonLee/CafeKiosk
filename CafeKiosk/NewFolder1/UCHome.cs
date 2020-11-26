@@ -16,10 +16,6 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
-        string message1 = "포장을 선택하셨습니다";
-        string message2 = "매장이용을 선택하셨습니다";
-        string title = "포장여부";
-
 
         private void bntTakeout_Click(object sender, EventArgs e)
         {
