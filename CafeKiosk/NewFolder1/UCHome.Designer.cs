@@ -29,38 +29,47 @@ namespace CafeKiosk
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCHome));
             this.label1 = new System.Windows.Forms.Label();
             this.btnNoTakeOut = new System.Windows.Forms.Button();
             this.bntTakeout = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Wheat;
             this.label1.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(95, 171);
+            this.label1.Location = new System.Drawing.Point(96, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(186, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = "포장 하시겠습니까?";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnNoTakeOut
             // 
             this.btnNoTakeOut.BackColor = System.Drawing.Color.Wheat;
+            this.btnNoTakeOut.CausesValidation = false;
+            this.btnNoTakeOut.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnNoTakeOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNoTakeOut.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnNoTakeOut.Location = new System.Drawing.Point(217, 240);
+            this.btnNoTakeOut.Location = new System.Drawing.Point(218, 275);
             this.btnNoTakeOut.Name = "btnNoTakeOut";
             this.btnNoTakeOut.Size = new System.Drawing.Size(134, 163);
             this.btnNoTakeOut.TabIndex = 4;
-            this.btnNoTakeOut.Text = "포장 안함";
+            this.btnNoTakeOut.Text = "매장";
             this.btnNoTakeOut.UseVisualStyleBackColor = false;
             this.btnNoTakeOut.Click += new System.EventHandler(this.btnNoTakeOut_Click);
             // 
             // bntTakeout
             // 
             this.bntTakeout.BackColor = System.Drawing.Color.Wheat;
+            this.bntTakeout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.bntTakeout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntTakeout.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.bntTakeout.Location = new System.Drawing.Point(37, 240);
+            this.bntTakeout.Location = new System.Drawing.Point(38, 275);
             this.bntTakeout.Name = "bntTakeout";
             this.bntTakeout.Size = new System.Drawing.Size(134, 163);
             this.bntTakeout.TabIndex = 3;
@@ -68,16 +77,28 @@ namespace CafeKiosk
             this.bntTakeout.UseVisualStyleBackColor = false;
             this.bntTakeout.Click += new System.EventHandler(this.bntTakeout_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(389, 203);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // UCHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNoTakeOut);
             this.Controls.Add(this.bntTakeout);
             this.Name = "UCHome";
             this.Size = new System.Drawing.Size(389, 575);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -87,5 +108,6 @@ namespace CafeKiosk
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnNoTakeOut;
         private System.Windows.Forms.Button bntTakeout;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

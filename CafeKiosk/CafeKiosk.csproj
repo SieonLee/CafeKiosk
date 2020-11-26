@@ -105,6 +105,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CafeData.edmx</DependentUpon>
     </Compile>
+    <Compile Include="CafeSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs">
       <DependentUpon>CafeData.tt</DependentUpon>
     </Compile>
@@ -225,7 +235,32 @@
     <None Include="CafeData.edmx.diagram">
       <DependentUpon>CafeData.edmx</DependentUpon>
     </None>
+    <None Include="CafeSystemDataSet.xsc">
+      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CafeSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeSystemDataSet.xss">
+      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CafeSystemDataSet1.xsc">
+      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CafeSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeSystemDataSet1.xss">
+      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Menu1.datasource" />
+    <None Include="Properties\DataSources\MenuWithOption.datasource" />
+    <None Include="Properties\DataSources\Option.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

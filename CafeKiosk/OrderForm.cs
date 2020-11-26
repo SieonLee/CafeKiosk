@@ -15,6 +15,10 @@ namespace CafeKiosk
         public OrderForm()
         {
             InitializeComponent();
+            movesidepanel(btnStart);
+            UCHome uCHome = new UCHome();
+            uCHome.TakeOutSelected += UCHome_TakeOutSelected;
+            addUC(uCHome);
 
         }
         private void movesidepanel(Button btn)

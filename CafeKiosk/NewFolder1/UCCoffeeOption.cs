@@ -12,17 +12,14 @@ namespace CafeKiosk
 {
     public partial class UCCoffeeOption : UserControl 
     {
+         int quantity = 1;
         public UCCoffeeOption()
         {
             InitializeComponent();
+            lblQuantity.Text = quantity.ToString();
         }
 
-        //private void btnReturn_Click(object sender, EventArgs e)
-        //{
-            
-        //}
       
-
         internal void btnReturn_Click(object sender, EventArgs e)
         {
             OnReturnCoffeeMenu(true);
@@ -73,6 +70,23 @@ namespace CafeKiosk
         private void btnToCart_Click(object sender, EventArgs e)
         {
             OnReturnCoffeeMenu(true);
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            if(quantity == 0)
+            {
+                quantity = 1;
+            }
+            quantity -= 1;
+            lblQuantity.Text = quantity.ToString();
+
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            quantity += 1;
+            lblQuantity.Text = quantity.ToString();
         }
     }
 }
