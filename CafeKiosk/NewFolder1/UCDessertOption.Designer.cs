@@ -80,6 +80,7 @@
             this.btnWhipLess.TabIndex = 20;
             this.btnWhipLess.Text = "휘핑 적게";
             this.btnWhipLess.UseVisualStyleBackColor = true;
+            this.btnWhipLess.Click += new System.EventHandler(this.btnWhipLess_Click);
             // 
             // lblQuantity
             // 
@@ -147,6 +148,7 @@
             this.btnReturn.TabIndex = 24;
             this.btnReturn.Text = "이전 화면";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // UCDessertOption
             // 
