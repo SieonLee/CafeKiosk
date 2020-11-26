@@ -40,6 +40,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.btnToCart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -146,11 +148,32 @@
             this.button8.Text = "휘핑추가";
             this.button8.UseVisualStyleBackColor = true;
             // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(146, 469);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
+            this.btnReturn.TabIndex = 12;
+            this.btnReturn.Text = "이전 화면";
+            this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // btnToCart
+            // 
+            this.btnToCart.Location = new System.Drawing.Point(259, 469);
+            this.btnToCart.Name = "btnToCart";
+            this.btnToCart.Size = new System.Drawing.Size(92, 23);
+            this.btnToCart.TabIndex = 13;
+            this.btnToCart.Text = "장바구니 담기";
+            this.btnToCart.UseVisualStyleBackColor = true;
+            // 
             // UCCoffeeOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnToCart);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button6);
@@ -183,5 +206,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnToCart;
     }
 }

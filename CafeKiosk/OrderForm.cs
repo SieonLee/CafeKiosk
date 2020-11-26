@@ -15,13 +15,13 @@ namespace CafeKiosk
         public OrderForm()
         {
             InitializeComponent();
-           
+
         }
         private void movesidepanel(Button btn)
         {
             panelslide.Top = btn.Top;
             panelslide.Height = btn.Height;
-            
+
         }
 
         private void addUC(UserControl uc) //User Control 생성
@@ -40,16 +40,23 @@ namespace CafeKiosk
             addUC(uCHome);
         }
 
+
         private void UCHome_TakeOutSelected(object sender, UCHome.TakeOutSelectedEventArgs e)
         {
             btnCoffee.PerformClick();
         }
-
         private void btnCoffee_Click(object sender, EventArgs e)
         {
             movesidepanel(btnCoffee);
             UCCoffee uCCoffee = new UCCoffee();
+            uCCoffee.CoffeeSelected += UCCoffee_CoffeeSelected;
             addUC(uCCoffee);
+        }
+
+        private void UCCoffee_CoffeeSelected(object sender, UCCoffee.CoffeeSelectedEventArgs e)
+        {
+            UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
+            addUC(uCCoffeeOption);
         }
 
         private void btnJuice_Click(object sender, EventArgs e)
@@ -72,5 +79,7 @@ namespace CafeKiosk
             UCCartt uCCart = new UCCartt();
             addUC(uCCart);
         }
+
+        
     }
 }

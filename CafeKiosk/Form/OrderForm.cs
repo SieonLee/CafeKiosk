@@ -16,9 +16,9 @@ namespace CafeKiosk
         {
             InitializeComponent();
             movesidepanel(btnStart);
-            UCHome uCHome = new UCHome();
-            addUC(uCHome);
-            //MessageBox.Show(UCHome.Pass.pass.ToString());
+            //UCHome uCHome = new UCHome();
+            //addUC(uCHome);
+            
             
         }
         private void movesidepanel(Button btn)
@@ -36,15 +36,19 @@ namespace CafeKiosk
             panelCenter.Controls.Add(uc);
         }
 
-        public void btnStart_Click(object sender, EventArgs e)
+        internal void btnStart_Click(object sender, EventArgs e)
         {
+            
             //MessageBox.Show(UCHome._passFlag.ToString());
-                movesidepanel(btnCoffee);
-                UCCoffee uCCoffee = new UCCoffee();
-                addUC(uCCoffee);
+            movesidepanel(btnStart);
+            UCHome uCHome = new UCHome();
+            addUC(uCHome);
+          
 
         }
-        private void btnCoffee_Click(object sender, EventArgs e)
+        
+        
+        internal void btnCoffee_Click(object sender, EventArgs e)
         {
             movesidepanel(btnCoffee);
             UCCoffee uCCoffee = new UCCoffee();

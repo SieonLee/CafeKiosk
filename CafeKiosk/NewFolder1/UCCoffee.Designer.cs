@@ -29,86 +29,90 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCoffee));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnEspresso = new System.Windows.Forms.PictureBox();
+            this.btnAme = new System.Windows.Forms.PictureBox();
+            this.btnMoc = new System.Windows.Forms.PictureBox();
+            this.btnCara = new System.Windows.Forms.PictureBox();
+            this.btnDol = new System.Windows.Forms.PictureBox();
+            this.btnLatte = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEspresso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAme)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCara)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLatte)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // btnEspresso
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(35, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(139, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnEspresso.Image = ((System.Drawing.Image)(resources.GetObject("btnEspresso.Image")));
+            this.btnEspresso.Location = new System.Drawing.Point(35, 42);
+            this.btnEspresso.Name = "btnEspresso";
+            this.btnEspresso.Size = new System.Drawing.Size(139, 130);
+            this.btnEspresso.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnEspresso.TabIndex = 0;
+            this.btnEspresso.TabStop = false;
+            this.btnEspresso.Click += new System.EventHandler(this.btnEspresso_Click);
             // 
-            // pictureBox2
+            // btnAme
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(212, 42);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(139, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.btnAme.Image = ((System.Drawing.Image)(resources.GetObject("btnAme.Image")));
+            this.btnAme.Location = new System.Drawing.Point(212, 42);
+            this.btnAme.Name = "btnAme";
+            this.btnAme.Size = new System.Drawing.Size(139, 130);
+            this.btnAme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnAme.TabIndex = 1;
+            this.btnAme.TabStop = false;
             // 
-            // pictureBox3
+            // btnMoc
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(212, 214);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(139, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.btnMoc.Image = ((System.Drawing.Image)(resources.GetObject("btnMoc.Image")));
+            this.btnMoc.Location = new System.Drawing.Point(212, 214);
+            this.btnMoc.Name = "btnMoc";
+            this.btnMoc.Size = new System.Drawing.Size(139, 130);
+            this.btnMoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMoc.TabIndex = 3;
+            this.btnMoc.TabStop = false;
+            this.btnMoc.Click += new System.EventHandler(this.btnMoc_Click);
             // 
-            // pictureBox4
+            // btnCara
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(35, 214);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(139, 130);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
+            this.btnCara.Image = ((System.Drawing.Image)(resources.GetObject("btnCara.Image")));
+            this.btnCara.Location = new System.Drawing.Point(35, 214);
+            this.btnCara.Name = "btnCara";
+            this.btnCara.Size = new System.Drawing.Size(139, 130);
+            this.btnCara.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCara.TabIndex = 2;
+            this.btnCara.TabStop = false;
+            this.btnCara.Click += new System.EventHandler(this.btnCara_Click);
             // 
-            // pictureBox5
+            // btnDol
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(212, 394);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(139, 130);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
+            this.btnDol.Image = ((System.Drawing.Image)(resources.GetObject("btnDol.Image")));
+            this.btnDol.Location = new System.Drawing.Point(212, 394);
+            this.btnDol.Name = "btnDol";
+            this.btnDol.Size = new System.Drawing.Size(139, 130);
+            this.btnDol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnDol.TabIndex = 5;
+            this.btnDol.TabStop = false;
+            this.btnDol.Click += new System.EventHandler(this.btnDol_Click);
             // 
-            // pictureBox6
+            // btnLatte
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(35, 394);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(139, 130);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
+            this.btnLatte.Image = ((System.Drawing.Image)(resources.GetObject("btnLatte.Image")));
+            this.btnLatte.Location = new System.Drawing.Point(35, 394);
+            this.btnLatte.Name = "btnLatte";
+            this.btnLatte.Size = new System.Drawing.Size(139, 130);
+            this.btnLatte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLatte.TabIndex = 4;
+            this.btnLatte.TabStop = false;
+            this.btnLatte.Click += new System.EventHandler(this.btnLatte_Click);
             // 
             // label1
             // 
@@ -122,47 +126,47 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(223, 175);
+            this.label2.Location = new System.Drawing.Point(235, 175);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 23);
+            this.label2.Size = new System.Drawing.Size(95, 23);
             this.label2.TabIndex = 7;
-            this.label2.Text = "에스프레소 2000";
+            this.label2.Text = "아메리카 2000";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(223, 347);
+            this.label3.Location = new System.Drawing.Point(235, 347);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 23);
+            this.label3.Size = new System.Drawing.Size(99, 23);
             this.label3.TabIndex = 9;
-            this.label3.Text = "에스프레소 2000";
+            this.label3.Text = "카페모카 2000";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(46, 347);
+            this.label4.Location = new System.Drawing.Point(32, 347);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 23);
+            this.label4.Size = new System.Drawing.Size(142, 23);
             this.label4.TabIndex = 8;
-            this.label4.Text = "에스프레소 2000";
+            this.label4.Text = "카라멜마끼야또 2000";
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(223, 527);
+            this.label5.Location = new System.Drawing.Point(238, 527);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 23);
+            this.label5.Size = new System.Drawing.Size(96, 23);
             this.label5.TabIndex = 11;
-            this.label5.Text = "에스프레소 2000";
+            this.label5.Text = "돌체라떼 2000";
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(46, 527);
+            this.label6.Location = new System.Drawing.Point(59, 527);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 23);
+            this.label6.Size = new System.Drawing.Size(98, 23);
             this.label6.TabIndex = 10;
-            this.label6.Text = "에스프레소 2000";
+            this.label6.Text = "카페라떼 2000";
             // 
             // UCCoffee
             // 
@@ -175,32 +179,32 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnDol);
+            this.Controls.Add(this.btnLatte);
+            this.Controls.Add(this.btnMoc);
+            this.Controls.Add(this.btnCara);
+            this.Controls.Add(this.btnAme);
+            this.Controls.Add(this.btnEspresso);
             this.Name = "UCCoffee";
             this.Size = new System.Drawing.Size(389, 575);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEspresso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAme)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCara)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLatte)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox btnEspresso;
+        private System.Windows.Forms.PictureBox btnAme;
+        private System.Windows.Forms.PictureBox btnMoc;
+        private System.Windows.Forms.PictureBox btnCara;
+        private System.Windows.Forms.PictureBox btnDol;
+        private System.Windows.Forms.PictureBox btnLatte;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

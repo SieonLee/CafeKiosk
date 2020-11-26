@@ -15,7 +15,6 @@ namespace CafeKiosk
     {
         public class Total
         {
-            
             public static int total = 0;
         }
         public UCCoffee()
