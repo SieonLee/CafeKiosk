@@ -35,18 +35,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnBlueBerry = new System.Windows.Forms.PictureBox();
+            this.btnFlane = new System.Windows.Forms.PictureBox();
+            this.btnMango = new System.Windows.Forms.PictureBox();
+            this.btnLemonTea = new System.Windows.Forms.PictureBox();
+            this.btnLemonAde = new System.Windows.Forms.PictureBox();
+            this.btnJamongAde = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBlueBerry)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFlane)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMango)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLemonTea)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLemonAde)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJamongAde)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -105,71 +105,77 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "자몽에이드 \r\n   4000원";
             // 
-            // pictureBox5
+            // btnBlueBerry
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(243, 481);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 17;
-            this.pictureBox5.TabStop = false;
+            this.btnBlueBerry.Image = ((System.Drawing.Image)(resources.GetObject("btnBlueBerry.Image")));
+            this.btnBlueBerry.Location = new System.Drawing.Point(243, 481);
+            this.btnBlueBerry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBlueBerry.Name = "btnBlueBerry";
+            this.btnBlueBerry.Size = new System.Drawing.Size(159, 162);
+            this.btnBlueBerry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBlueBerry.TabIndex = 17;
+            this.btnBlueBerry.TabStop = false;
+            this.btnBlueBerry.Click += new System.EventHandler(this.btnBlueBerry_Click);
             // 
-            // pictureBox6
+            // btnFlane
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(41, 481);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 16;
-            this.pictureBox6.TabStop = false;
+            this.btnFlane.Image = ((System.Drawing.Image)(resources.GetObject("btnFlane.Image")));
+            this.btnFlane.Location = new System.Drawing.Point(41, 481);
+            this.btnFlane.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFlane.Name = "btnFlane";
+            this.btnFlane.Size = new System.Drawing.Size(159, 162);
+            this.btnFlane.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnFlane.TabIndex = 16;
+            this.btnFlane.TabStop = false;
+            this.btnFlane.Click += new System.EventHandler(this.btnFlane_Click);
             // 
-            // pictureBox3
+            // btnMango
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(243, 256);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
+            this.btnMango.Image = ((System.Drawing.Image)(resources.GetObject("btnMango.Image")));
+            this.btnMango.Location = new System.Drawing.Point(243, 256);
+            this.btnMango.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMango.Name = "btnMango";
+            this.btnMango.Size = new System.Drawing.Size(159, 162);
+            this.btnMango.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMango.TabIndex = 15;
+            this.btnMango.TabStop = false;
+            this.btnMango.Click += new System.EventHandler(this.btnMango_Click);
             // 
-            // pictureBox4
+            // btnLemonTea
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(41, 256);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 14;
-            this.pictureBox4.TabStop = false;
+            this.btnLemonTea.Image = ((System.Drawing.Image)(resources.GetObject("btnLemonTea.Image")));
+            this.btnLemonTea.Location = new System.Drawing.Point(41, 256);
+            this.btnLemonTea.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLemonTea.Name = "btnLemonTea";
+            this.btnLemonTea.Size = new System.Drawing.Size(159, 162);
+            this.btnLemonTea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLemonTea.TabIndex = 14;
+            this.btnLemonTea.TabStop = false;
+            this.btnLemonTea.Click += new System.EventHandler(this.btnLemonTea_Click);
             // 
-            // pictureBox2
+            // btnLemonAde
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(243, 41);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
+            this.btnLemonAde.Image = ((System.Drawing.Image)(resources.GetObject("btnLemonAde.Image")));
+            this.btnLemonAde.Location = new System.Drawing.Point(243, 41);
+            this.btnLemonAde.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLemonAde.Name = "btnLemonAde";
+            this.btnLemonAde.Size = new System.Drawing.Size(159, 162);
+            this.btnLemonAde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnLemonAde.TabIndex = 13;
+            this.btnLemonAde.TabStop = false;
+            this.btnLemonAde.Click += new System.EventHandler(this.btnLemonAde_Click);
             // 
-            // pictureBox1
+            // btnJamongAde
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(41, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 162);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.btnJamongAde.Image = ((System.Drawing.Image)(resources.GetObject("btnJamongAde.Image")));
+            this.btnJamongAde.Location = new System.Drawing.Point(41, 41);
+            this.btnJamongAde.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnJamongAde.Name = "btnJamongAde";
+            this.btnJamongAde.Size = new System.Drawing.Size(159, 162);
+            this.btnJamongAde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnJamongAde.TabIndex = 12;
+            this.btnJamongAde.TabStop = false;
+            this.btnJamongAde.Click += new System.EventHandler(this.btnJamongAde_Click);
             // 
             // UCJuice
             // 
@@ -182,21 +188,21 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnBlueBerry);
+            this.Controls.Add(this.btnFlane);
+            this.Controls.Add(this.btnMango);
+            this.Controls.Add(this.btnLemonTea);
+            this.Controls.Add(this.btnLemonAde);
+            this.Controls.Add(this.btnJamongAde);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCJuice";
             this.Size = new System.Drawing.Size(445, 719);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBlueBerry)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFlane)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMango)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLemonTea)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLemonAde)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnJamongAde)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -209,11 +215,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnBlueBerry;
+        private System.Windows.Forms.PictureBox btnFlane;
+        private System.Windows.Forms.PictureBox btnMango;
+        private System.Windows.Forms.PictureBox btnLemonTea;
+        private System.Windows.Forms.PictureBox btnLemonAde;
+        private System.Windows.Forms.PictureBox btnJamongAde;
     }
 }

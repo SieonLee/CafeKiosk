@@ -89,8 +89,16 @@ namespace CafeKiosk
         {
             movesidepanel(btnJuice);
             UCJuice uCJuice = new UCJuice();
+            uCJuice.JuiceSelected += UCJuice_JuiceSelected;
             addUC(uCJuice);
         }
+
+        private void UCJuice_JuiceSelected(object sender, UCJuice.JuiceSelectedEventArgs e)
+        {
+            UCJuiceOption uCJuiceOption = new UCJuiceOption();
+            addUC(uCJuiceOption);
+        }
+
 
         private void btnDessert_Click(object sender, EventArgs e)
         {
