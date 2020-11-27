@@ -1,6 +1,4 @@
-﻿using CafeKiosk.Data;
-using EFLibrary;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,8 +16,6 @@ namespace CafeKiosk
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            DbContextCreator.Context = () => new CafeKioskEntities()
             Application.Run(new OrderForm());
         }
     }

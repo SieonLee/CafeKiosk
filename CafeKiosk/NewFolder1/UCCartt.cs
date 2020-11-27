@@ -17,58 +17,9 @@ namespace CafeKiosk
             InitializeComponent();
         }
 
-        private void btnPrev_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            OnMovePrevSelected(true);
-        }
 
-        public int OrderId { get; set; }
-
-        #region MovePrevSelected event things for C# 3.0
-        public event EventHandler<MovePrevSelectedEventArgs> MovePrevSelected;
-
-        protected virtual void OnMovePrevSelected(MovePrevSelectedEventArgs e)
-        {
-            if (MovePrevSelected != null)
-                MovePrevSelected(this, e);
-        }
-
-        private MovePrevSelectedEventArgs OnMovePrevSelected(bool movePrev)
-        {
-            MovePrevSelectedEventArgs args = new MovePrevSelectedEventArgs(movePrev);
-            OnMovePrevSelected(args);
-
-            return args;
-        }
-
-        private MovePrevSelectedEventArgs OnMovePrevSelectedForOut()
-        {
-            MovePrevSelectedEventArgs args = new MovePrevSelectedEventArgs();
-            OnMovePrevSelected(args);
-
-            return args;
-        }
-
-        public class MovePrevSelectedEventArgs : EventArgs
-        {
-            public bool MovePrev { get; set; }
-
-            public MovePrevSelectedEventArgs()
-            {
-            }
-
-            public MovePrevSelectedEventArgs(bool movePrev)
-            {
-                MovePrev = movePrev;
-            }
-        }
-
-        #endregion
-
-        private void UCCartt_Load(object sender, EventArgs e)
-        {
-            // cplkimth
-            orderLineOptionBindingSource.DataSource = EFDemo.Data.Dao.OrderLineOption.Search(OrderId);
         }
     }
 }

@@ -79,14 +79,12 @@
     <Compile Include="Dao\DessertDao.cs" />
     <Compile Include="Dao\HomeDao.cs" />
     <Compile Include="Dao\JuiceDao.cs" />
-    <Compile Include="Dao\OrderLineOptionDao.cs" />
     <Compile Include="EFLibrary\BaseDao.cs" />
     <Compile Include="EFLibrary\DbContextCreator.cs" />
     <Compile Include="EFLibrary\DualKeyDao.cs" />
     <Compile Include="EFLibrary\QuadKeyDao.cs" />
     <Compile Include="EFLibrary\SingleKeyDao.cs" />
     <Compile Include="EFLibrary\TripleKeyDao.cs" />
-    <Compile Include="Entities\OrderLineOption.cs" />
     <Compile Include="Menu.cs">
       <DependentUpon>CafeKiosk.tt</DependentUpon>
     </Compile>
@@ -119,6 +117,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CafeKiosk\CafeKiosk.csproj">
+      <Project>{1d7ace07-4cd7-4ce5-a752-3c36217cf440}</Project>
+      <Name>CafeKiosk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="CafeKiosk.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CafeKiosk.Context.cs</LastGenOutput>
@@ -133,7 +137,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Entities\" />
+  </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>

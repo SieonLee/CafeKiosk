@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCCoffeeOption));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,51 +38,52 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnToCart = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.btnHot = new System.Windows.Forms.RadioButton();
             this.btnIce = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnTall = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.btnWhip = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnSyrup = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(24, 265);
+            this.label1.Location = new System.Drawing.Point(21, 212);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 29);
+            this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "수량";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(24, 352);
+            this.label2.Location = new System.Drawing.Point(21, 282);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 29);
+            this.label2.Size = new System.Drawing.Size(70, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "사이즈";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(24, 416);
+            this.label3.Location = new System.Drawing.Point(21, 333);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 29);
+            this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "옵션";
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(120, 258);
-            this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMinus.Location = new System.Drawing.Point(105, 206);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(96, 29);
+            this.btnMinus.Size = new System.Drawing.Size(84, 23);
             this.btnMinus.TabIndex = 3;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -89,10 +91,9 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(296, 258);
-            this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPlus.Location = new System.Drawing.Point(259, 206);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(96, 29);
+            this.btnPlus.Size = new System.Drawing.Size(84, 23);
             this.btnPlus.TabIndex = 4;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -101,18 +102,17 @@
             // lblQuantity
             // 
             this.lblQuantity.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblQuantity.Location = new System.Drawing.Point(229, 256);
+            this.lblQuantity.Location = new System.Drawing.Point(200, 205);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(55, 31);
+            this.lblQuantity.Size = new System.Drawing.Size(48, 25);
             this.lblQuantity.TabIndex = 5;
             this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(167, 586);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnReturn.Location = new System.Drawing.Point(146, 469);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(86, 29);
+            this.btnReturn.Size = new System.Drawing.Size(75, 23);
             this.btnReturn.TabIndex = 12;
             this.btnReturn.Text = "이전 화면";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -122,10 +122,9 @@
             // 
             // btnToCart
             // 
-            this.btnToCart.Location = new System.Drawing.Point(296, 586);
-            this.btnToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnToCart.Location = new System.Drawing.Point(259, 469);
             this.btnToCart.Name = "btnToCart";
-            this.btnToCart.Size = new System.Drawing.Size(105, 29);
+            this.btnToCart.Size = new System.Drawing.Size(92, 23);
             this.btnToCart.TabIndex = 13;
             this.btnToCart.Text = "장바구니 담기";
             this.btnToCart.UseVisualStyleBackColor = true;
@@ -133,35 +132,31 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton3);
+            this.groupBox3.Controls.Add(this.btnHot);
             this.groupBox3.Controls.Add(this.btnIce);
-            this.groupBox3.Location = new System.Drawing.Point(90, 395);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox3.Location = new System.Drawing.Point(79, 316);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Size = new System.Drawing.Size(323, 74);
+            this.groupBox3.Size = new System.Drawing.Size(283, 59);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             // 
-            // radioButton3
+            // btnHot
             // 
-            this.radioButton3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton3.Location = new System.Drawing.Point(206, 25);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(96, 28);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "핫";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.btnHot.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnHot.Location = new System.Drawing.Point(180, 20);
+            this.btnHot.Name = "btnHot";
+            this.btnHot.Size = new System.Drawing.Size(84, 22);
+            this.btnHot.TabIndex = 3;
+            this.btnHot.TabStop = true;
+            this.btnHot.Text = "핫";
+            this.btnHot.UseVisualStyleBackColor = true;
             // 
             // btnIce
             // 
             this.btnIce.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnIce.Location = new System.Drawing.Point(30, 25);
-            this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIce.Location = new System.Drawing.Point(26, 20);
             this.btnIce.Name = "btnIce";
-            this.btnIce.Size = new System.Drawing.Size(96, 28);
+            this.btnIce.Size = new System.Drawing.Size(84, 22);
             this.btnIce.TabIndex = 2;
             this.btnIce.TabStop = true;
             this.btnIce.Text = "아이스";
@@ -171,21 +166,18 @@
             // 
             this.groupBox4.Controls.Add(this.radioButton2);
             this.groupBox4.Controls.Add(this.btnTall);
-            this.groupBox4.Location = new System.Drawing.Point(90, 327);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox4.Location = new System.Drawing.Point(79, 262);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox4.Size = new System.Drawing.Size(323, 60);
+            this.groupBox4.Size = new System.Drawing.Size(283, 48);
             this.groupBox4.TabIndex = 25;
             this.groupBox4.TabStop = false;
             // 
             // radioButton2
             // 
             this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton2.Location = new System.Drawing.Point(206, 19);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton2.Location = new System.Drawing.Point(180, 15);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(96, 28);
+            this.radioButton2.Size = new System.Drawing.Size(84, 22);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "그란데";
@@ -194,10 +186,9 @@
             // btnTall
             // 
             this.btnTall.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnTall.Location = new System.Drawing.Point(30, 19);
-            this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTall.Location = new System.Drawing.Point(26, 15);
             this.btnTall.Name = "btnTall";
-            this.btnTall.Size = new System.Drawing.Size(96, 28);
+            this.btnTall.Size = new System.Drawing.Size(84, 22);
             this.btnTall.TabIndex = 0;
             this.btnTall.TabStop = true;
             this.btnTall.Text = "톨";
@@ -205,55 +196,64 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Location = new System.Drawing.Point(90, 476);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Controls.Add(this.btnWhip);
+            this.groupBox1.Location = new System.Drawing.Point(79, 381);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(162, 71);
+            this.groupBox1.Size = new System.Drawing.Size(142, 57);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             // 
-            // radioButton4
+            // btnWhip
             // 
-            this.radioButton4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton4.Location = new System.Drawing.Point(40, 25);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(96, 28);
-            this.radioButton4.TabIndex = 0;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "휘핑 추가";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.btnWhip.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnWhip.Location = new System.Drawing.Point(26, 20);
+            this.btnWhip.Name = "btnWhip";
+            this.btnWhip.Size = new System.Drawing.Size(84, 22);
+            this.btnWhip.TabIndex = 0;
+            this.btnWhip.TabStop = true;
+            this.btnWhip.Text = "휘핑 추가";
+            this.btnWhip.UseVisualStyleBackColor = true;
+            this.btnWhip.CheckedChanged += new System.EventHandler(this.btnWhip_CheckedChanged);
+            this.btnWhip.Click += new System.EventHandler(this.btnWhip_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Location = new System.Drawing.Point(259, 476);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Controls.Add(this.btnSyrup);
+            this.groupBox2.Location = new System.Drawing.Point(221, 381);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(154, 71);
+            this.groupBox2.Size = new System.Drawing.Size(141, 57);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             // 
-            // radioButton1
+            // btnSyrup
             // 
-            this.radioButton1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton1.Location = new System.Drawing.Point(40, 25);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(96, 28);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "시럽 추가";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.btnSyrup.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnSyrup.Location = new System.Drawing.Point(38, 20);
+            this.btnSyrup.Name = "btnSyrup";
+            this.btnSyrup.Size = new System.Drawing.Size(84, 22);
+            this.btnSyrup.TabIndex = 0;
+            this.btnSyrup.TabStop = true;
+            this.btnSyrup.Text = "시럽 추가";
+            this.btnSyrup.UseVisualStyleBackColor = true;
+            this.btnSyrup.CheckedChanged += new System.EventHandler(this.btnSyrup_CheckedChanged);
+            this.btnSyrup.Click += new System.EventHandler(this.btnSyrup_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(64, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(267, 144);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
             // 
             // UCCoffeeOption
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -266,15 +266,15 @@
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCCoffeeOption";
-            this.Size = new System.Drawing.Size(445, 719);
+            this.Size = new System.Drawing.Size(389, 575);
             this.DpiChangedBeforeParent += new System.EventHandler(this.btnReturn_Click);
             this.DpiChangedAfterParent += new System.EventHandler(this.btnReturn_Click);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,14 +290,15 @@
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnToCart;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton btnHot;
         private System.Windows.Forms.RadioButton btnIce;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton btnTall;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton btnWhip;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton btnSyrup;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

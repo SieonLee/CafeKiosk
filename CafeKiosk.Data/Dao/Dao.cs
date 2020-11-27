@@ -1,5 +1,4 @@
-﻿using CafeKiosk.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +13,6 @@ namespace EFDemo.Data
         public static CoffeeDao Coffee { get; } = new CoffeeDao();
         public static DessertDao Dessert { get; } = new DessertDao();
         public static JuiceDao Juice { get; } = new JuiceDao();
-        public static OrderLineOptionDao OrderLineOption { get; } = new OrderLineOptionDao();
        // public static CartDao Cart { get; } = new CartDao();
     }
     

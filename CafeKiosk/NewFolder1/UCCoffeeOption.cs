@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CafeKiosk
 {
     public partial class UCCoffeeOption : UserControl 
@@ -17,6 +18,7 @@ namespace CafeKiosk
         {
             InitializeComponent();
             lblQuantity.Text = quantity.ToString();
+            
         }
 
       
@@ -25,6 +27,66 @@ namespace CafeKiosk
             OnReturnCoffeeMenu(true);
             
         }
+
+        private void btnToCart_Click(object sender, EventArgs e)
+        {
+            OnReturnCoffeeMenu(true);
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            if (quantity == 0)
+            {
+                quantity = 1; 
+            }
+            quantity -= 1;
+            lblQuantity.Text = quantity.ToString();
+
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            quantity += 1;
+            lblQuantity.Text = quantity.ToString();
+        }
+
+        //휘핑, 시럽
+        bool isChecked = false;
+        private void btnWhip_CheckedChanged(object sender, EventArgs e)
+        {
+            isChecked = btnWhip.Checked;
+        }
+        private void btnWhip_Click(object sender, EventArgs e)
+        {
+            if (btnWhip.Checked && !isChecked)
+            {
+                btnWhip.Checked = false;
+            }
+            else
+            {
+                btnWhip.Checked = true;
+                isChecked = false;
+            }
+        }
+        private void btnSyrup_CheckedChanged(object sender, EventArgs e)
+        {
+            isChecked = btnSyrup.Checked;
+        }
+        private void btnSyrup_Click(object sender, EventArgs e)
+        {
+            if (btnSyrup.Checked && !isChecked)
+            {
+                btnSyrup.Checked = false;
+            }
+            else
+            {
+                btnSyrup.Checked = true;
+                isChecked = false;
+            }
+        }
+
+
+
 
 
         #region ReturnCoffeeMenu event things for C# 3.0
@@ -65,28 +127,9 @@ namespace CafeKiosk
                 ReturnCoffee = returnCoffee;
             }
         }
+
         #endregion
 
-        private void btnToCart_Click(object sender, EventArgs e)
-        {
-            OnReturnCoffeeMenu(true);
-        }
-
-        private void btnMinus_Click(object sender, EventArgs e)
-        {
-            if(quantity == 0)
-            {
-                quantity = 1;
-            }
-            quantity -= 1;
-            lblQuantity.Text = quantity.ToString();
-
-        }
-
-        private void btnPlus_Click(object sender, EventArgs e)
-        {
-            quantity += 1;
-            lblQuantity.Text = quantity.ToString();
-        }
+        
     }
 }
