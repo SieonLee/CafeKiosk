@@ -130,6 +130,7 @@
             this.btnCreamMore.Text = "휘핑 많이";
             this.btnCreamMore.UseVisualStyleBackColor = true;
             this.btnCreamMore.CheckedChanged += new System.EventHandler(this.btnCreamMore_CheckedChanged);
+            this.btnCreamMore.Click += new System.EventHandler(this.btnCreamMore_Click);
             // 
             // btnCreamLess
             // 
@@ -143,6 +144,7 @@
             this.btnCreamLess.Text = "휘핑 적게";
             this.btnCreamLess.UseVisualStyleBackColor = true;
             this.btnCreamLess.CheckedChanged += new System.EventHandler(this.btnCreamLess_CheckedChanged);
+            this.btnCreamLess.Click += new System.EventHandler(this.btnCreamLess_Click);
             // 
             // groupBox2
             // 
@@ -165,6 +167,7 @@
             this.btnAddIceC.Text = "아이스크림 추가";
             this.btnAddIceC.UseVisualStyleBackColor = true;
             this.btnAddIceC.CheckedChanged += new System.EventHandler(this.btnAddIceC_CheckedChanged);
+            this.btnAddIceC.Click += new System.EventHandler(this.btnAddIceC_Click);
             // 
             // groupBox3
             // 
@@ -187,6 +190,7 @@
             this.btnAddFork.Text = "포크 추가";
             this.btnAddFork.UseVisualStyleBackColor = true;
             this.btnAddFork.CheckedChanged += new System.EventHandler(this.btnAddFork_CheckedChanged);
+            this.btnAddFork.Click += new System.EventHandler(this.btnAddFork_Click);
             // 
             // lblQuantity
             // 
