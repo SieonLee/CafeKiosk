@@ -151,6 +151,7 @@
       <DependentUpon>UCCartt.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CafeKiosk.Data.OrderLineOption.datasource" />
     <None Include="Properties\DataSources\Menu1.datasource" />
     <None Include="Properties\DataSources\MenuWithOption.datasource" />
     <None Include="Properties\DataSources\Option.datasource" />
