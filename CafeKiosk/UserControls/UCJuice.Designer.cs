@@ -52,7 +52,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.label5.Location = new System.Drawing.Point(235, 636);
+            this.label5.Location = new System.Drawing.Point(240, 648);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(171, 31);
             this.label5.TabIndex = 23;
@@ -62,7 +62,7 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.label6.Location = new System.Drawing.Point(41, 636);
+            this.label6.Location = new System.Drawing.Point(46, 648);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(159, 36);
             this.label6.TabIndex = 22;
@@ -73,7 +73,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.label3.Location = new System.Drawing.Point(239, 424);
+            this.label3.Location = new System.Drawing.Point(244, 436);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(159, 33);
             this.label3.TabIndex = 21;
@@ -84,7 +84,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.label4.Location = new System.Drawing.Point(41, 424);
+            this.label4.Location = new System.Drawing.Point(46, 436);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(159, 33);
             this.label4.TabIndex = 20;
@@ -94,7 +94,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.label2.Location = new System.Drawing.Point(243, 212);
+            this.label2.Location = new System.Drawing.Point(248, 224);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 31);
             this.label2.TabIndex = 19;
@@ -104,7 +104,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.label1.Location = new System.Drawing.Point(41, 212);
+            this.label1.Location = new System.Drawing.Point(46, 224);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 31);
             this.label1.TabIndex = 18;
@@ -115,7 +115,7 @@
             // btnBlueBerry
             // 
             this.btnBlueBerry.Image = ((System.Drawing.Image)(resources.GetObject("btnBlueBerry.Image")));
-            this.btnBlueBerry.Location = new System.Drawing.Point(239, 468);
+            this.btnBlueBerry.Location = new System.Drawing.Point(244, 480);
             this.btnBlueBerry.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnBlueBerry.Name = "btnBlueBerry";
             this.btnBlueBerry.Size = new System.Drawing.Size(159, 162);
@@ -127,7 +127,7 @@
             // btnFlane
             // 
             this.btnFlane.Image = ((System.Drawing.Image)(resources.GetObject("btnFlane.Image")));
-            this.btnFlane.Location = new System.Drawing.Point(41, 468);
+            this.btnFlane.Location = new System.Drawing.Point(46, 480);
             this.btnFlane.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnFlane.Name = "btnFlane";
             this.btnFlane.Size = new System.Drawing.Size(159, 162);
@@ -139,7 +139,7 @@
             // btnMango
             // 
             this.btnMango.Image = ((System.Drawing.Image)(resources.GetObject("btnMango.Image")));
-            this.btnMango.Location = new System.Drawing.Point(239, 256);
+            this.btnMango.Location = new System.Drawing.Point(244, 268);
             this.btnMango.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMango.Name = "btnMango";
             this.btnMango.Size = new System.Drawing.Size(159, 162);
@@ -151,7 +151,7 @@
             // btnLemonTea
             // 
             this.btnLemonTea.Image = ((System.Drawing.Image)(resources.GetObject("btnLemonTea.Image")));
-            this.btnLemonTea.Location = new System.Drawing.Point(41, 256);
+            this.btnLemonTea.Location = new System.Drawing.Point(46, 268);
             this.btnLemonTea.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnLemonTea.Name = "btnLemonTea";
             this.btnLemonTea.Size = new System.Drawing.Size(159, 162);
@@ -163,7 +163,7 @@
             // btnLemonAde
             // 
             this.btnLemonAde.Image = ((System.Drawing.Image)(resources.GetObject("btnLemonAde.Image")));
-            this.btnLemonAde.Location = new System.Drawing.Point(239, 44);
+            this.btnLemonAde.Location = new System.Drawing.Point(244, 56);
             this.btnLemonAde.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnLemonAde.Name = "btnLemonAde";
             this.btnLemonAde.Size = new System.Drawing.Size(159, 162);
@@ -175,7 +175,7 @@
             // btnJamongAde
             // 
             this.btnJamongAde.Image = ((System.Drawing.Image)(resources.GetObject("btnJamongAde.Image")));
-            this.btnJamongAde.Location = new System.Drawing.Point(41, 44);
+            this.btnJamongAde.Location = new System.Drawing.Point(46, 56);
             this.btnJamongAde.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnJamongAde.Name = "btnJamongAde";
             this.btnJamongAde.Size = new System.Drawing.Size(159, 162);
