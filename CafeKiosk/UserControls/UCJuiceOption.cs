@@ -98,10 +98,24 @@ namespace CafeKiosk
         {
 
         }
-
+        //ice
+        bool isChecked = false;
         private void btnIce_CheckedChanged(object sender, EventArgs e)
         {
-
+            isChecked = btnIce.Checked;
         }
+        private void btnIce_Click(object sender, EventArgs e)
+        {
+            if (btnIce.Checked && !isChecked)
+            {
+                btnIce.Checked = false;
+            }
+            else
+            {
+                btnIce.Checked = true;
+                isChecked = false;
+            }
+        }
+
     }
 }

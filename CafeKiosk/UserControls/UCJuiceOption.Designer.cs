@@ -153,6 +153,7 @@
             this.btnIce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIce.UseVisualStyleBackColor = true;
             this.btnIce.CheckedChanged += new System.EventHandler(this.btnIce_CheckedChanged);
+            this.btnIce.Click += new System.EventHandler(this.btnIce_Click);
             // 
             // groupBox3
             // 
