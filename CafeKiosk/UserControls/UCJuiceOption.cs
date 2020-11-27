@@ -61,5 +61,16 @@ namespace CafeKiosk
             }
         }
         #endregion
+
+        private void btnToCart_Click(object sender, EventArgs e)
+        {
+            OnReturnJuiceMenu(true);
+        }
+
+
+        private void btnTall_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

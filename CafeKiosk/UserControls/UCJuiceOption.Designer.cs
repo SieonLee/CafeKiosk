@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnIce = new System.Windows.Forms.Button();
+            this.btnGrande = new System.Windows.Forms.Button();
+            this.btnTall = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,67 +41,70 @@
             this.btnToCart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button5
+            // btnIce
             // 
-            this.button5.Location = new System.Drawing.Point(141, 432);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(86, 29);
-            this.button5.TabIndex = 20;
-            this.button5.Text = "얼음";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnIce.Location = new System.Drawing.Point(140, 195);
+            this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIce.Name = "btnIce";
+            this.btnIce.Size = new System.Drawing.Size(86, 29);
+            this.btnIce.TabIndex = 20;
+            this.btnIce.Text = "얼음";
+            this.btnIce.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnGrande
             // 
-            this.button4.Location = new System.Drawing.Point(289, 356);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 29);
-            this.button4.TabIndex = 19;
-            this.button4.Text = "그란데";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnGrande.Location = new System.Drawing.Point(288, 139);
+            this.btnGrande.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGrande.Name = "btnGrande";
+            this.btnGrande.Size = new System.Drawing.Size(86, 29);
+            this.btnGrande.TabIndex = 19;
+            this.btnGrande.Text = "그란데";
+            this.btnGrande.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnTall
             // 
-            this.button3.Location = new System.Drawing.Point(141, 356);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 29);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "톨";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnTall.Location = new System.Drawing.Point(141, 140);
+            this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTall.Name = "btnTall";
+            this.btnTall.Size = new System.Drawing.Size(86, 29);
+            this.btnTall.TabIndex = 18;
+            this.btnTall.Text = "톨";
+            this.btnTall.UseVisualStyleBackColor = true;
+            this.btnTall.Click += new System.EventHandler(this.btnTall_Click);
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(233, 290);
+            this.label4.Location = new System.Drawing.Point(249, 91);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 31);
+            this.label4.Size = new System.Drawing.Size(17, 31);
             this.label4.TabIndex = 17;
             this.label4.Text = "1";
             // 
-            // button2
+            // btnPlus
             // 
-            this.button2.Location = new System.Drawing.Point(289, 284);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 29);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPlus.Location = new System.Drawing.Point(288, 85);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(86, 29);
+            this.btnPlus.TabIndex = 16;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
+           
             // 
-            // button1
+            // btnMinus
             // 
-            this.button1.Location = new System.Drawing.Point(141, 284);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 29);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "-";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMinus.Location = new System.Drawing.Point(141, 85);
+            this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(86, 29);
+            this.btnMinus.TabIndex = 15;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+           
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(64, 439);
+            this.label3.Location = new System.Drawing.Point(64, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 29);
             this.label3.TabIndex = 14;
@@ -109,7 +112,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(64, 356);
+            this.label2.Location = new System.Drawing.Point(64, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 29);
             this.label2.TabIndex = 13;
@@ -117,7 +120,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(64, 290);
+            this.label1.Location = new System.Drawing.Point(64, 85);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 12;
@@ -125,7 +128,7 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(152, 511);
+            this.btnReturn.Location = new System.Drawing.Point(152, 307);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(75, 23);
             this.btnReturn.TabIndex = 21;
@@ -135,12 +138,13 @@
             // 
             // btnToCart
             // 
-            this.btnToCart.Location = new System.Drawing.Point(299, 511);
+            this.btnToCart.Location = new System.Drawing.Point(288, 307);
             this.btnToCart.Name = "btnToCart";
             this.btnToCart.Size = new System.Drawing.Size(75, 23);
             this.btnToCart.TabIndex = 22;
             this.btnToCart.Text = "장바구니";
             this.btnToCart.UseVisualStyleBackColor = true;
+            this.btnToCart.Click += new System.EventHandler(this.btnToCart_Click);
             // 
             // UCJuiceOption
             // 
@@ -149,12 +153,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnToCart);
             this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnIce);
+            this.Controls.Add(this.btnGrande);
+            this.Controls.Add(this.btnTall);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPlus);
+            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -167,12 +171,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnIce;
+        private System.Windows.Forms.Button btnGrande;
+        private System.Windows.Forms.Button btnTall;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
