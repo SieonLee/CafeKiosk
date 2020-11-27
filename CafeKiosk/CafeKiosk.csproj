@@ -38,44 +38,11 @@
     <Reference Include="EFLibrary">
       <HintPath>..\..\..\..\..\Sync\603R\sources\csharp\EFLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Buffers.dll</HintPath>
-    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Numerics.Vectors.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
-    <Reference Include="System.Text.Encodings.Web, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Text.Encodings.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Text.Json, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Text.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.Threading.Tasks.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\System.ValueTuple.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -85,62 +52,13 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="UsingEntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Lovanpis.UsingEntityFramework.1.0.1\lib\UsingEntityFramework.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CafeData.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CafeData.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CafeData.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CafeData.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CafeData.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="CafeSystemDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CafeSystemDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Category.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Menu.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MenuWithOption.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Option.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Order.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrderForm.Designer.cs">
       <DependentUpon>OrderForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="OrderLine.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OrderLineOption.cs">
-      <DependentUpon>CafeData.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -228,36 +146,8 @@
     <EmbeddedResource Include="NewFolder1\UCCartt.resx">
       <DependentUpon>UCCartt.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="CafeData.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CafeData.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="CafeData.edmx.diagram">
-      <DependentUpon>CafeData.edmx</DependentUpon>
-    </None>
-    <None Include="CafeSystemDataSet.xsc">
-      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CafeSystemDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CafeSystemDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CafeSystemDataSet.xss">
-      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CafeSystemDataSet1.xsc">
-      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="CafeSystemDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CafeSystemDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CafeSystemDataSet1.xss">
-      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\CafeKiosk.Data.OrderLineOption.datasource" />
     <None Include="Properties\DataSources\Menu1.datasource" />
     <None Include="Properties\DataSources\MenuWithOption.datasource" />
     <None Include="Properties\DataSources\Option.datasource" />
@@ -278,16 +168,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CafeData.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CafeData.edmx</DependentUpon>
-      <LastGenOutput>CafeData.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="CafeData.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CafeData.edmx</DependentUpon>
-      <LastGenOutput>CafeData.cs</LastGenOutput>
-    </Content>
+    <ProjectReference Include="..\CafeKiosk.Data\CafeKiosk.Data.csproj">
+      <Project>{b26675cb-7ebc-49b6-83bd-edfc3ec9a3e7}</Project>
+      <Name>CafeKiosk.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
