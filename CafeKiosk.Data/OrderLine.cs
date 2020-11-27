@@ -20,7 +20,7 @@ namespace CafeKiosk.Data
             this.OrderLineOptions = new HashSet<OrderLineOption>();
         }
     
-        public int OrderMenuLineID { get; set; }
+        public int OrderLineID { get; set; }
         public int OrderID { get; set; }
         public int MenuID { get; set; }
     

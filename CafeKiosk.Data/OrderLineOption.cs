@@ -14,7 +14,7 @@ namespace CafeKiosk.Data
     
     public partial class OrderLineOption
     {
-        public int OrderMenuLineID { get; set; }
+        public int OrderLineID { get; set; }
         public int OptionID { get; set; }
         public Nullable<bool> Dummy { get; set; }
     

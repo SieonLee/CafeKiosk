@@ -1,5 +1,4 @@
 ﻿using CafeKiosk.Data;
-using EFDemo.Data;
 using EFLibrary;
 using System;
 using System.Collections.Generic;
