@@ -8,6 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace CafeKiosk
 {
     public partial class UCHome : UserControl
@@ -25,8 +35,8 @@ namespace CafeKiosk
         private void btnNoTakeOut_Click(object sender, EventArgs e)
         {
             MessageBox.Show("지금은 사회적 거리두기 2단계로 매장을 이용하실수 없습니다", "ms", MessageBoxButtons.OK);
-            OnTakeOutSelected(false);
-            
+            //OnTakeOutSelected(false);
+
         }
 
         #region TakeOutSelected event things for C# 3.0
