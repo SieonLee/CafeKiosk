@@ -29,8 +29,8 @@ namespace CafeKiosk.Data
         public virtual DbSet<Menu> Menus { get; set; }
         public virtual DbSet<MenuWithOption> MenuWithOptions { get; set; }
         public virtual DbSet<Option> Options { get; set; }
+        public virtual DbSet<OrderLineOption> OrderLineOptions { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderLine> OrderLines { get; set; }
-        public virtual DbSet<OrderLineOption> OrderLineOptions { get; set; }
     }
 }

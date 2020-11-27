@@ -15,6 +15,8 @@ namespace CafeKiosk.Data
         public static JuiceDao Juice { get; } = new JuiceDao();
         public static OrderLineOptionDao OrderLineOption { get; } = new OrderLineOptionDao();
 
+        public static OrderDao Order { get;  } = new OrderDao();
+
     }
     
 }
