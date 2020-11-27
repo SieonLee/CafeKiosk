@@ -108,7 +108,7 @@ namespace CafeKiosk
 
         private void UCJuiceOption_ReturnJuiceMenu(object sender, UCJuiceOption.ReturnJuiceMenuEventArgs e)
         {
-            btnCoffee.PerformClick();  
+            btnJuice.PerformClick();  
         }
 
 

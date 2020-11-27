@@ -54,7 +54,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(24, 265);
+            this.label1.Location = new System.Drawing.Point(38, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 0;
@@ -108,10 +108,10 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(167, 586);
+            this.btnReturn.Location = new System.Drawing.Point(161, 627);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(86, 29);
+            this.btnReturn.Size = new System.Drawing.Size(113, 31);
             this.btnReturn.TabIndex = 12;
             this.btnReturn.Text = "이전 화면";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -121,10 +121,10 @@
             // 
             // btnToCart
             // 
-            this.btnToCart.Location = new System.Drawing.Point(296, 586);
+            this.btnToCart.Location = new System.Drawing.Point(290, 627);
             this.btnToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnToCart.Name = "btnToCart";
-            this.btnToCart.Size = new System.Drawing.Size(117, 29);
+            this.btnToCart.Size = new System.Drawing.Size(132, 31);
             this.btnToCart.TabIndex = 13;
             this.btnToCart.Text = "장바구니 담기";
             this.btnToCart.UseVisualStyleBackColor = true;

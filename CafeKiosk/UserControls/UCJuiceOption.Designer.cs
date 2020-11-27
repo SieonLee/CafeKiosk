@@ -31,7 +31,7 @@
             this.btnIce = new System.Windows.Forms.Button();
             this.btnGrande = new System.Windows.Forms.Button();
             this.btnTall = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,11 +39,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnToCart = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnIce
             // 
-            this.btnIce.Location = new System.Drawing.Point(140, 195);
+            this.btnIce.Location = new System.Drawing.Point(31, 20);
             this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIce.Name = "btnIce";
             this.btnIce.Size = new System.Drawing.Size(86, 29);
@@ -53,7 +59,7 @@
             // 
             // btnGrande
             // 
-            this.btnGrande.Location = new System.Drawing.Point(288, 139);
+            this.btnGrande.Location = new System.Drawing.Point(173, 19);
             this.btnGrande.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGrande.Name = "btnGrande";
             this.btnGrande.Size = new System.Drawing.Size(86, 29);
@@ -63,7 +69,7 @@
             // 
             // btnTall
             // 
-            this.btnTall.Location = new System.Drawing.Point(141, 140);
+            this.btnTall.Location = new System.Drawing.Point(31, 19);
             this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTall.Name = "btnTall";
             this.btnTall.Size = new System.Drawing.Size(86, 29);
@@ -72,99 +78,130 @@
             this.btnTall.UseVisualStyleBackColor = true;
             this.btnTall.Click += new System.EventHandler(this.btnTall_Click);
             // 
-            // label4
+            // lblQuantity
             // 
-            this.label4.Location = new System.Drawing.Point(249, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 31);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "1";
+            this.lblQuantity.Location = new System.Drawing.Point(135, 27);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(27, 25);
+            this.lblQuantity.TabIndex = 17;
+            this.lblQuantity.Text = "1";
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(288, 85);
+            this.btnPlus.Location = new System.Drawing.Point(173, 25);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(86, 29);
             this.btnPlus.TabIndex = 16;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
-           
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(141, 85);
+            this.btnMinus.Location = new System.Drawing.Point(31, 25);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(86, 29);
             this.btnMinus.TabIndex = 15;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
-           
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(64, 202);
+            this.label3.Location = new System.Drawing.Point(38, 370);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 29);
+            this.label3.Size = new System.Drawing.Size(42, 29);
             this.label3.TabIndex = 14;
             this.label3.Text = "옵션";
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(64, 146);
+            this.label2.Location = new System.Drawing.Point(38, 279);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 29);
+            this.label2.Size = new System.Drawing.Size(59, 29);
             this.label2.TabIndex = 13;
             this.label2.Text = "사이즈";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(64, 85);
+            this.label1.Location = new System.Drawing.Point(38, 179);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 29);
+            this.label1.Size = new System.Drawing.Size(42, 29);
             this.label1.TabIndex = 12;
             this.label1.Text = "수량";
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(152, 307);
+            this.btnReturn.Location = new System.Drawing.Point(161, 627);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(75, 23);
+            this.btnReturn.Size = new System.Drawing.Size(113, 31);
             this.btnReturn.TabIndex = 21;
-            this.btnReturn.Text = "돌아가기";
+            this.btnReturn.Text = "이전 화면";
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnToCart
             // 
-            this.btnToCart.Location = new System.Drawing.Point(288, 307);
+            this.btnToCart.Location = new System.Drawing.Point(290, 627);
             this.btnToCart.Name = "btnToCart";
-            this.btnToCart.Size = new System.Drawing.Size(75, 23);
+            this.btnToCart.Size = new System.Drawing.Size(131, 32);
             this.btnToCart.TabIndex = 22;
-            this.btnToCart.Text = "장바구니";
+            this.btnToCart.Text = "장바구니 담기";
             this.btnToCart.UseVisualStyleBackColor = true;
             this.btnToCart.Click += new System.EventHandler(this.btnToCart_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnIce);
+            this.groupBox1.Location = new System.Drawing.Point(130, 350);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(290, 68);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnTall);
+            this.groupBox3.Controls.Add(this.btnGrande);
+            this.groupBox3.Location = new System.Drawing.Point(130, 253);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(290, 68);
+            this.groupBox3.TabIndex = 24;
+            this.groupBox3.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnMinus);
+            this.groupBox2.Controls.Add(this.btnPlus);
+            this.groupBox2.Controls.Add(this.lblQuantity);
+            this.groupBox2.Location = new System.Drawing.Point(130, 159);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(290, 68);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
             // 
             // UCJuiceOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnToCart);
             this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.btnIce);
-            this.Controls.Add(this.btnGrande);
-            this.Controls.Add(this.btnTall);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnPlus);
-            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCJuiceOption";
             this.Size = new System.Drawing.Size(445, 719);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -174,7 +211,7 @@
         private System.Windows.Forms.Button btnIce;
         private System.Windows.Forms.Button btnGrande;
         private System.Windows.Forms.Button btnTall;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Label label3;
@@ -182,5 +219,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.Button btnToCart;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

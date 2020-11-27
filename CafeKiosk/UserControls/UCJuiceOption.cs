@@ -12,9 +12,11 @@ namespace CafeKiosk
 {
     public partial class UCJuiceOption : UserControl
     {
+        int quantity = 1;
         public UCJuiceOption()
         {
             InitializeComponent();
+            lblQuantity.Text = quantity.ToString();
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -69,6 +71,38 @@ namespace CafeKiosk
 
 
         private void btnTall_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrande_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIce_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            if (quantity == 0)
+            {
+                quantity = 1;
+            }
+            quantity -= 1;
+            lblQuantity.Text = quantity.ToString();
+
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            quantity += 1;
+            lblQuantity.Text = quantity.ToString();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
