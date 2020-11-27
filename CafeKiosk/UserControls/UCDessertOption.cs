@@ -85,10 +85,35 @@ namespace CafeKiosk
         {
             isChecked = btnCreamLess.Checked;
         }
+        private void btnCreamLess_Click(object sender, EventArgs e)
+        {
+            if (btnCreamLess.Checked && !isChecked)
+            {
+                btnCreamLess.Checked = false;
+            }
+            else
+            {
+                btnCreamLess.Checked = true;
+                isChecked = false;
+            }
+        }
 
         private void btnCreamMore_CheckedChanged(object sender, EventArgs e)
         {
             isChecked = btnCreamLess.Checked;
+        }
+
+        private void btnCreamMore_Click(object sender, EventArgs e)
+        {
+            if (btnCreamMore.Checked && !isChecked)
+            {
+                btnCreamMore.Checked = false;
+            }
+            else
+            {
+                btnCreamMore.Checked = true;
+                isChecked = false;
+            }
         }
 
         private void btnAddIceC_CheckedChanged(object sender, EventArgs e)
@@ -96,9 +121,35 @@ namespace CafeKiosk
             isChecked = btnAddIceC.Checked;
         }
 
+        private void btnAddIceC_Click(object sender, EventArgs e)
+        {
+            if (btnAddIceC.Checked && !isChecked)
+            {
+                btnAddIceC.Checked = false;
+            }
+            else
+            {
+                btnAddIceC.Checked = true;
+                isChecked = false;
+            }
+        }
+
         private void btnAddFork_CheckedChanged(object sender, EventArgs e)
         {
             isChecked = btnAddFork.Checked;
+        }
+
+        private void btnAddFork_Click(object sender, EventArgs e)
+        {
+            if (btnAddFork.Checked && !isChecked)
+            {
+                btnAddFork.Checked = false;
+            }
+            else
+            {
+                btnAddFork.Checked = true;
+                isChecked = false;
+            }
         }
     }
 }

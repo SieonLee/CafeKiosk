@@ -152,6 +152,7 @@
             this.btnHot.TabIndex = 3;
             this.btnHot.TabStop = true;
             this.btnHot.Text = "핫";
+            this.btnHot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnHot.UseVisualStyleBackColor = true;
             // 
             // btnIce
@@ -164,6 +165,7 @@
             this.btnIce.TabIndex = 2;
             this.btnIce.TabStop = true;
             this.btnIce.Text = "아이스";
+            this.btnIce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIce.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -188,6 +190,7 @@
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "그란데";
+            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // btnTall
@@ -200,6 +203,7 @@
             this.btnTall.TabIndex = 0;
             this.btnTall.TabStop = true;
             this.btnTall.Text = "톨";
+            this.btnTall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTall.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -216,13 +220,14 @@
             // btnWhip
             // 
             this.btnWhip.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnWhip.Location = new System.Drawing.Point(40, 25);
+            this.btnWhip.Location = new System.Drawing.Point(30, 26);
             this.btnWhip.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhip.Name = "btnWhip";
             this.btnWhip.Size = new System.Drawing.Size(96, 28);
             this.btnWhip.TabIndex = 0;
             this.btnWhip.TabStop = true;
             this.btnWhip.Text = "휘핑 추가";
+            this.btnWhip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnWhip.UseVisualStyleBackColor = true;
             this.btnWhip.CheckedChanged += new System.EventHandler(this.btnWhip_CheckedChanged);
             this.btnWhip.Click += new System.EventHandler(this.btnWhip_Click);
@@ -248,6 +253,7 @@
             this.btnSyrup.TabIndex = 0;
             this.btnSyrup.TabStop = true;
             this.btnSyrup.Text = "시럽 추가";
+            this.btnSyrup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSyrup.UseVisualStyleBackColor = true;
             this.btnSyrup.CheckedChanged += new System.EventHandler(this.btnSyrup_CheckedChanged);
             this.btnSyrup.Click += new System.EventHandler(this.btnSyrup_Click);
