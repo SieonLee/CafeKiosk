@@ -13,7 +13,6 @@ namespace CafeKiosk
     public partial class UCDessertOption : UserControl
     {
         int quantity = 1;
-
         public UCDessertOption()
         {
             InitializeComponent();
@@ -24,23 +23,6 @@ namespace CafeKiosk
         {
             OnReturnDessertMenu(true);
         }
-
-        private void btnMinus_Click(object sender, EventArgs e)
-        {
-            if (quantity == 0)
-            {
-                quantity = 1;
-            }
-            quantity -= 1;
-            lblQuantity.Text = quantity.ToString();
-        }
-
-        private void btnPlus_Click(object sender, EventArgs e)
-        {
-            quantity += 1;
-            lblQuantity.Text = quantity.ToString();
-        }
-
 
         #region ReturnDessertMenu event things for C# 3.0
         public event EventHandler<ReturnDessertMenuEventArgs> ReturnDessertMenu;
@@ -82,19 +64,41 @@ namespace CafeKiosk
         }
         #endregion
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        private void btnMinus_Click(object sender, EventArgs e)
         {
-
+            if (quantity == 0)
+            {
+                quantity = 1;
+            }
+            quantity -= 1;
+            lblQuantity.Text = quantity.ToString();
         }
 
-        private void UCDessertOption_Load(object sender, EventArgs e)
+        private void btnPlus_Click(object sender, EventArgs e)
         {
-
+            quantity += 1;
+            lblQuantity.Text = quantity.ToString();
         }
 
-        private void btnWhipLess_Click(object sender, EventArgs e)
+        bool isChecked = false;
+        private void btnCreamLess_CheckedChanged(object sender, EventArgs e)
         {
+            isChecked = btnCreamLess.Checked;
+        }
 
+        private void btnCreamMore_CheckedChanged(object sender, EventArgs e)
+        {
+            isChecked = btnCreamLess.Checked;
+        }
+
+        private void btnAddIceC_CheckedChanged(object sender, EventArgs e)
+        {
+            isChecked = btnAddIceC.Checked;
+        }
+
+        private void btnAddFork_CheckedChanged(object sender, EventArgs e)
+        {
+            isChecked = btnAddFork.Checked;
         }
     }
 }

@@ -128,8 +128,8 @@ namespace CafeKiosk
             }
         }
 
-        #endregion
 
+        #endregion
 
     }
 }

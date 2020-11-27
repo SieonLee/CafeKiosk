@@ -16,6 +16,11 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
+        public void OptionClick()
+        {
+            OnDessertSelected(true);
+
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {

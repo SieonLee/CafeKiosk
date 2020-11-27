@@ -105,7 +105,6 @@
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(55, 31);
             this.lblQuantity.TabIndex = 5;
-            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnReturn
             // 
@@ -125,7 +124,7 @@
             this.btnToCart.Location = new System.Drawing.Point(296, 586);
             this.btnToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnToCart.Name = "btnToCart";
-            this.btnToCart.Size = new System.Drawing.Size(105, 29);
+            this.btnToCart.Size = new System.Drawing.Size(117, 29);
             this.btnToCart.TabIndex = 13;
             this.btnToCart.Text = "장바구니 담기";
             this.btnToCart.UseVisualStyleBackColor = true;

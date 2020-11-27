@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblQuantity = new System.Windows.Forms.Label();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,30 +35,22 @@
             this.btnToCart = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.btnCreamLess = new System.Windows.Forms.RadioButton();
             this.btnCreamMore = new System.Windows.Forms.RadioButton();
+            this.btnCreamLess = new System.Windows.Forms.RadioButton();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnAddIce = new System.Windows.Forms.RadioButton();
+            this.btnAddIceC = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnAddFork = new System.Windows.Forms.RadioButton();
+            this.lblQuantity = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblQuantity
-            // 
-            this.lblQuantity.Location = new System.Drawing.Point(225, 169);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(55, 31);
-            this.lblQuantity.TabIndex = 17;
-            this.lblQuantity.Text = "1";
-            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(286, 169);
+            this.btnPlus.Location = new System.Drawing.Point(290, 169);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(86, 29);
@@ -127,9 +118,18 @@
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             // 
-            // backgroundWorker1
+            // btnCreamMore
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.btnCreamMore.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnCreamMore.AutoSize = true;
+            this.btnCreamMore.Location = new System.Drawing.Point(172, 25);
+            this.btnCreamMore.Name = "btnCreamMore";
+            this.btnCreamMore.Size = new System.Drawing.Size(82, 25);
+            this.btnCreamMore.TabIndex = 28;
+            this.btnCreamMore.TabStop = true;
+            this.btnCreamMore.Text = "휘핑 많이";
+            this.btnCreamMore.UseVisualStyleBackColor = true;
+            this.btnCreamMore.CheckedChanged += new System.EventHandler(this.btnCreamMore_CheckedChanged);
             // 
             // btnCreamLess
             // 
@@ -142,39 +142,29 @@
             this.btnCreamLess.TabStop = true;
             this.btnCreamLess.Text = "휘핑 적게";
             this.btnCreamLess.UseVisualStyleBackColor = true;
-            // 
-            // btnCreamMore
-            // 
-            this.btnCreamMore.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnCreamMore.AutoSize = true;
-            this.btnCreamMore.Location = new System.Drawing.Point(172, 25);
-            this.btnCreamMore.Name = "btnCreamMore";
-            this.btnCreamMore.Size = new System.Drawing.Size(82, 25);
-            this.btnCreamMore.TabIndex = 28;
-            this.btnCreamMore.TabStop = true;
-            this.btnCreamMore.Text = "휘핑 많이";
-            this.btnCreamMore.UseVisualStyleBackColor = true;
+            this.btnCreamLess.CheckedChanged += new System.EventHandler(this.btnCreamLess_CheckedChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnAddIce);
+            this.groupBox2.Controls.Add(this.btnAddIceC);
             this.groupBox2.Location = new System.Drawing.Point(114, 323);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(290, 68);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             // 
-            // btnAddIce
+            // btnAddIceC
             // 
-            this.btnAddIce.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnAddIce.AutoSize = true;
-            this.btnAddIce.Location = new System.Drawing.Point(29, 25);
-            this.btnAddIce.Name = "btnAddIce";
-            this.btnAddIce.Size = new System.Drawing.Size(127, 25);
-            this.btnAddIce.TabIndex = 27;
-            this.btnAddIce.TabStop = true;
-            this.btnAddIce.Text = "아이스크림 추가";
-            this.btnAddIce.UseVisualStyleBackColor = true;
+            this.btnAddIceC.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnAddIceC.AutoSize = true;
+            this.btnAddIceC.Location = new System.Drawing.Point(29, 25);
+            this.btnAddIceC.Name = "btnAddIceC";
+            this.btnAddIceC.Size = new System.Drawing.Size(127, 25);
+            this.btnAddIceC.TabIndex = 27;
+            this.btnAddIceC.TabStop = true;
+            this.btnAddIceC.Text = "아이스크림 추가";
+            this.btnAddIceC.UseVisualStyleBackColor = true;
+            this.btnAddIceC.CheckedChanged += new System.EventHandler(this.btnAddIceC_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -196,18 +186,28 @@
             this.btnAddFork.TabStop = true;
             this.btnAddFork.Text = "포크 추가";
             this.btnAddFork.UseVisualStyleBackColor = true;
+            this.btnAddFork.CheckedChanged += new System.EventHandler(this.btnAddFork_CheckedChanged);
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblQuantity.Location = new System.Drawing.Point(229, 167);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(55, 31);
+            this.lblQuantity.TabIndex = 28;
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UCDessertOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnToCart);
             this.Controls.Add(this.btnReturn);
-            this.Controls.Add(this.lblQuantity);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.label3);
@@ -215,7 +215,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCDessertOption";
             this.Size = new System.Drawing.Size(445, 719);
-            this.Load += new System.EventHandler(this.UCDessertOption_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -227,7 +226,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Label label3;
@@ -239,8 +237,9 @@
         private System.Windows.Forms.RadioButton btnCreamMore;
         private System.Windows.Forms.RadioButton btnCreamLess;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton btnAddIce;
+        private System.Windows.Forms.RadioButton btnAddIceC;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton btnAddFork;
+        private System.Windows.Forms.Label lblQuantity;
     }
 }
