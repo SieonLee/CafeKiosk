@@ -33,17 +33,20 @@
             this.btnWhipMore = new System.Windows.Forms.Button();
             this.btnWhipLess = new System.Windows.Forms.Button();
             this.lblQuantity = new System.Windows.Forms.Label();
-            this.btnCountUp = new System.Windows.Forms.Button();
-            this.btnCountDwn = new System.Windows.Forms.Button();
+            this.btnPlus = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnToCart = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnFork
             // 
-            this.btnFork.Location = new System.Drawing.Point(131, 521);
+            this.btnFork.Location = new System.Drawing.Point(155, 409);
             this.btnFork.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnFork.Name = "btnFork";
             this.btnFork.Size = new System.Drawing.Size(86, 29);
@@ -53,7 +56,7 @@
             // 
             // btnIcecream
             // 
-            this.btnIcecream.Location = new System.Drawing.Point(131, 454);
+            this.btnIcecream.Location = new System.Drawing.Point(155, 345);
             this.btnIcecream.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIcecream.Name = "btnIcecream";
             this.btnIcecream.Size = new System.Drawing.Size(143, 29);
@@ -63,7 +66,7 @@
             // 
             // btnWhipMore
             // 
-            this.btnWhipMore.Location = new System.Drawing.Point(280, 384);
+            this.btnWhipMore.Location = new System.Drawing.Point(172, 25);
             this.btnWhipMore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhipMore.Name = "btnWhipMore";
             this.btnWhipMore.Size = new System.Drawing.Size(86, 29);
@@ -73,49 +76,49 @@
             // 
             // btnWhipLess
             // 
-            this.btnWhipLess.Location = new System.Drawing.Point(131, 384);
+            this.btnWhipLess.Location = new System.Drawing.Point(23, 25);
             this.btnWhipLess.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnWhipLess.Name = "btnWhipLess";
             this.btnWhipLess.Size = new System.Drawing.Size(86, 29);
             this.btnWhipLess.TabIndex = 20;
             this.btnWhipLess.Text = "휘핑 적게";
             this.btnWhipLess.UseVisualStyleBackColor = true;
-            this.btnWhipLess.Click += new System.EventHandler(this.btnWhipLess_Click);
             // 
             // lblQuantity
             // 
-            this.lblQuantity.Location = new System.Drawing.Point(223, 276);
+            this.lblQuantity.Location = new System.Drawing.Point(243, 171);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(55, 31);
             this.lblQuantity.TabIndex = 17;
             this.lblQuantity.Text = "1";
             this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnCountUp
+            // btnPlus
             // 
-            this.btnCountUp.Location = new System.Drawing.Point(280, 278);
-            this.btnCountUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCountUp.Name = "btnCountUp";
-            this.btnCountUp.Size = new System.Drawing.Size(86, 29);
-            this.btnCountUp.TabIndex = 16;
-            this.btnCountUp.Text = "+";
-            this.btnCountUp.UseVisualStyleBackColor = true;
-            this.btnCountUp.Click += new System.EventHandler(this.btnCountUp_Click);
+            this.btnPlus.Location = new System.Drawing.Point(304, 171);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPlus.Name = "btnPlus";
+            this.btnPlus.Size = new System.Drawing.Size(86, 29);
+            this.btnPlus.TabIndex = 16;
+            this.btnPlus.Text = "+";
+            this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
-            // btnCountDwn
+            // btnMinus
             // 
-            this.btnCountDwn.Location = new System.Drawing.Point(131, 278);
-            this.btnCountDwn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnCountDwn.Name = "btnCountDwn";
-            this.btnCountDwn.Size = new System.Drawing.Size(86, 29);
-            this.btnCountDwn.TabIndex = 15;
-            this.btnCountDwn.Text = "-";
-            this.btnCountDwn.UseVisualStyleBackColor = true;
-            this.btnCountDwn.Click += new System.EventHandler(this.btnCountDwn_Click);
+            this.btnMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMinus.Location = new System.Drawing.Point(155, 171);
+            this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(86, 29);
+            this.btnMinus.TabIndex = 15;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(55, 390);
+            this.label3.Location = new System.Drawing.Point(56, 272);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 29);
             this.label3.TabIndex = 14;
@@ -123,7 +126,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(55, 284);
+            this.label1.Location = new System.Drawing.Point(56, 181);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 12;
@@ -150,25 +153,40 @@
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnWhipLess);
+            this.groupBox1.Controls.Add(this.btnWhipMore);
+            this.groupBox1.Location = new System.Drawing.Point(132, 251);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(290, 68);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            // 
             // UCDessertOption
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnToCart);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnFork);
             this.Controls.Add(this.btnIcecream);
-            this.Controls.Add(this.btnWhipMore);
-            this.Controls.Add(this.btnWhipLess);
             this.Controls.Add(this.lblQuantity);
-            this.Controls.Add(this.btnCountUp);
-            this.Controls.Add(this.btnCountDwn);
+            this.Controls.Add(this.btnPlus);
+            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCDessertOption";
             this.Size = new System.Drawing.Size(445, 719);
+            this.Load += new System.EventHandler(this.UCDessertOption_Load);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -180,11 +198,13 @@
         private System.Windows.Forms.Button btnWhipMore;
         private System.Windows.Forms.Button btnWhipLess;
         private System.Windows.Forms.Label lblQuantity;
-        private System.Windows.Forms.Button btnCountUp;
-        private System.Windows.Forms.Button btnCountDwn;
+        private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnToCart;
         private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
