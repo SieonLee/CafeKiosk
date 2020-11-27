@@ -95,12 +95,20 @@ namespace CafeKiosk
             UCJuice uCJuice = new UCJuice();
             uCJuice.JuiceSelected += UCJuice_JuiceSelected;
             addUC(uCJuice);
+        
         }
 
         private void UCJuice_JuiceSelected(object sender, UCJuice.JuiceSelectedEventArgs e)
         {
+            movesidepanel(btnJuice);
             UCJuiceOption uCJuiceOption = new UCJuiceOption();
+            uCJuiceOption.ReturnJuiceMenu += UCJuiceOption_ReturnJuiceMenu;
             addUC(uCJuiceOption);
+        }
+
+        private void UCJuiceOption_ReturnJuiceMenu(object sender, UCJuiceOption.ReturnJuiceMenuEventArgs e)
+        {
+            btnCoffee.PerformClick();
         }
 
 
