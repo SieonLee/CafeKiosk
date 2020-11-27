@@ -22,6 +22,8 @@ namespace CafeKiosk
             OnMovePrevSelected(true);
         }
 
+        public int OrderId { get; set; }
+
         #region MovePrevSelected event things for C# 3.0
         public event EventHandler<MovePrevSelectedEventArgs> MovePrevSelected;
 
@@ -60,8 +62,13 @@ namespace CafeKiosk
                 MovePrev = movePrev;
             }
         }
+
         #endregion
 
-        
+        private void UCCartt_Load(object sender, EventArgs e)
+        {
+            // cplkimth
+            orderLineOptionBindingSource.DataSource = EFDemo.Data.Dao.OrderLineOption.Search(OrderId);
+        }
     }
 }

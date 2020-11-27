@@ -5,20 +5,20 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="40cbbc20ccaf4c128b784a8dd10f7ff0" Name="Diagram1">
-        <EntityTypeShape EntityType="CafeKioskModel.Category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="CafeKioskModel.Menu" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CafeKioskModel.MenuWithOption" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CafeKioskModel.Option" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CafeKioskModel.Order" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CafeKioskModel.OrderLine" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CafeKioskModel.OrderLineOption" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
-        <AssociationConnector Association="CafeKioskModel.FK_Menu_Category" ManuallyRouted="false" />
-        <AssociationConnector Association="CafeKioskModel.FK_MenuWithOption_Menu" ManuallyRouted="false" />
-        <AssociationConnector Association="CafeKioskModel.FK_OrderLine_Menu" ManuallyRouted="false" />
-        <AssociationConnector Association="CafeKioskModel.FK_MenuWithOption_Option" ManuallyRouted="false" />
-        <AssociationConnector Association="CafeKioskModel.FK_OrderLineOption_Option" ManuallyRouted="false" />
-        <AssociationConnector Association="CafeKioskModel.FK_OrderLine_Order" ManuallyRouted="false" />
-        <AssociationConnector Association="CafeKioskModel.FK_OrderLineOption_OrderLine" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CafeKioskModel.Category" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="CafeKioskModel.Menu" Width="1.5" PointX="3" PointY="3.5" />
+        <EntityTypeShape EntityType="CafeKioskModel.MenuWithOption" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="CafeKioskModel.Option" Width="1.5" PointX="3" PointY="7.5" />
+        <EntityTypeShape EntityType="CafeKioskModel.Order" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="CafeKioskModel.OrderLine" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="CafeKioskModel.OrderLineOption" Width="1.5" PointX="7.5" PointY="3.75" />
+        <AssociationConnector Association="CafeKioskModel.FK_Menu_Category" />
+        <AssociationConnector Association="CafeKioskModel.FK_MenuWithOption_Menu" />
+        <AssociationConnector Association="CafeKioskModel.FK_OrderLine_Menu" />
+        <AssociationConnector Association="CafeKioskModel.FK_MenuWithOption_Option" />
+        <AssociationConnector Association="CafeKioskModel.FK_OrderLineOption_Option" />
+        <AssociationConnector Association="CafeKioskModel.FK_OrderLine_Order" />
+        <AssociationConnector Association="CafeKioskModel.FK_OrderLineOption_OrderLine" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
