@@ -91,5 +91,10 @@ namespace CafeKiosk
         {
 
         }
+
+        private void btnWhipLess_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
