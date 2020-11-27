@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFDemo.Data
+namespace CafeKiosk.Data
 {
     public class Dao
     {
