@@ -49,7 +49,7 @@
             // 
             // btnIce
             // 
-            this.btnIce.Location = new System.Drawing.Point(31, 20);
+            this.btnIce.Location = new System.Drawing.Point(40, 19);
             this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIce.Name = "btnIce";
             this.btnIce.Size = new System.Drawing.Size(86, 29);
@@ -59,7 +59,7 @@
             // 
             // btnGrande
             // 
-            this.btnGrande.Location = new System.Drawing.Point(173, 19);
+            this.btnGrande.Location = new System.Drawing.Point(164, 17);
             this.btnGrande.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGrande.Name = "btnGrande";
             this.btnGrande.Size = new System.Drawing.Size(86, 29);
@@ -69,7 +69,7 @@
             // 
             // btnTall
             // 
-            this.btnTall.Location = new System.Drawing.Point(31, 19);
+            this.btnTall.Location = new System.Drawing.Point(40, 19);
             this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTall.Name = "btnTall";
             this.btnTall.Size = new System.Drawing.Size(86, 29);
@@ -80,18 +80,19 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.Location = new System.Drawing.Point(135, 27);
+            this.lblQuantity.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblQuantity.Location = new System.Drawing.Point(120, 21);
             this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(27, 25);
+            this.lblQuantity.Size = new System.Drawing.Size(50, 25);
             this.lblQuantity.TabIndex = 17;
-            this.lblQuantity.Text = "1";
+            this.lblQuantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(173, 25);
+            this.btnPlus.Location = new System.Drawing.Point(40, 20);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(86, 29);
+            this.btnPlus.Size = new System.Drawing.Size(50, 25);
             this.btnPlus.TabIndex = 16;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -99,10 +100,10 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(31, 25);
+            this.btnMinus.Location = new System.Drawing.Point(200, 20);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(86, 29);
+            this.btnMinus.Size = new System.Drawing.Size(50, 25);
             this.btnMinus.TabIndex = 15;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -110,7 +111,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(38, 370);
+            this.label3.Location = new System.Drawing.Point(38, 308);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 29);
             this.label3.TabIndex = 14;
@@ -118,7 +119,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(38, 279);
+            this.label2.Location = new System.Drawing.Point(38, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 29);
             this.label2.TabIndex = 13;
@@ -126,7 +127,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(38, 179);
+            this.label1.Location = new System.Drawing.Point(38, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 29);
             this.label1.TabIndex = 12;
@@ -134,7 +135,7 @@
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(161, 627);
+            this.btnReturn.Location = new System.Drawing.Point(114, 510);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(113, 31);
             this.btnReturn.TabIndex = 21;
@@ -144,7 +145,7 @@
             // 
             // btnToCart
             // 
-            this.btnToCart.Location = new System.Drawing.Point(290, 627);
+            this.btnToCart.Location = new System.Drawing.Point(273, 510);
             this.btnToCart.Name = "btnToCart";
             this.btnToCart.Size = new System.Drawing.Size(131, 32);
             this.btnToCart.TabIndex = 22;
@@ -155,9 +156,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnIce);
-            this.groupBox1.Location = new System.Drawing.Point(130, 350);
+            this.groupBox1.Location = new System.Drawing.Point(114, 282);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(290, 68);
+            this.groupBox1.Size = new System.Drawing.Size(290, 55);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -166,9 +167,9 @@
             // 
             this.groupBox3.Controls.Add(this.btnTall);
             this.groupBox3.Controls.Add(this.btnGrande);
-            this.groupBox3.Location = new System.Drawing.Point(130, 253);
+            this.groupBox3.Location = new System.Drawing.Point(114, 216);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(290, 68);
+            this.groupBox3.Size = new System.Drawing.Size(290, 55);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
             // 
@@ -177,9 +178,9 @@
             this.groupBox2.Controls.Add(this.btnMinus);
             this.groupBox2.Controls.Add(this.btnPlus);
             this.groupBox2.Controls.Add(this.lblQuantity);
-            this.groupBox2.Location = new System.Drawing.Point(130, 159);
+            this.groupBox2.Location = new System.Drawing.Point(114, 155);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(290, 68);
+            this.groupBox2.Size = new System.Drawing.Size(290, 55);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             // 
