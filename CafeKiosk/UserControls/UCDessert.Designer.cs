@@ -51,7 +51,8 @@
             // 
             // lblCroffle
             // 
-            this.lblCroffle.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCroffle.BackColor = System.Drawing.Color.OldLace;
+            this.lblCroffle.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblCroffle.Location = new System.Drawing.Point(243, 648);
             this.lblCroffle.Name = "lblCroffle";
             this.lblCroffle.Size = new System.Drawing.Size(159, 29);
@@ -61,7 +62,7 @@
             // 
             // lblWaffle
             // 
-            this.lblWaffle.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblWaffle.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblWaffle.Location = new System.Drawing.Point(44, 648);
             this.lblWaffle.Name = "lblWaffle";
             this.lblWaffle.Size = new System.Drawing.Size(156, 29);
@@ -71,7 +72,7 @@
             // 
             // lblMacaron
             // 
-            this.lblMacaron.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblMacaron.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblMacaron.Location = new System.Drawing.Point(231, 422);
             this.lblMacaron.Name = "lblMacaron";
             this.lblMacaron.Size = new System.Drawing.Size(182, 29);
@@ -80,7 +81,7 @@
             // 
             // lblHoney
             // 
-            this.lblHoney.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblHoney.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblHoney.Location = new System.Drawing.Point(41, 422);
             this.lblHoney.Name = "lblHoney";
             this.lblHoney.Size = new System.Drawing.Size(159, 29);
@@ -90,7 +91,7 @@
             // 
             // lblTiramisu
             // 
-            this.lblTiramisu.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblTiramisu.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblTiramisu.Location = new System.Drawing.Point(246, 207);
             this.lblTiramisu.Name = "lblTiramisu";
             this.lblTiramisu.Size = new System.Drawing.Size(156, 29);
@@ -100,7 +101,7 @@
             // 
             // lblChoco
             // 
-            this.lblChoco.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblChoco.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblChoco.Location = new System.Drawing.Point(41, 208);
             this.lblChoco.Name = "lblChoco";
             this.lblChoco.Size = new System.Drawing.Size(159, 29);
@@ -184,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.lblCroffle);
             this.Controls.Add(this.lblWaffle);
             this.Controls.Add(this.lblMacaron);
@@ -197,6 +198,7 @@
             this.Controls.Add(this.btnHoney);
             this.Controls.Add(this.btnTiramisu);
             this.Controls.Add(this.btnChoco);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCDessert";
             this.Size = new System.Drawing.Size(445, 719);

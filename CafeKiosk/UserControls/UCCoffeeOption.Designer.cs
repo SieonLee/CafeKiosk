@@ -43,8 +43,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.btnTall = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnWhip = new System.Windows.Forms.RadioButton();
             this.btnSyrup = new System.Windows.Forms.RadioButton();
+            this.btnWhip = new System.Windows.Forms.RadioButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -54,6 +54,7 @@
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.label1.Location = new System.Drawing.Point(38, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 29);
@@ -62,6 +63,7 @@
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.label2.Location = new System.Drawing.Point(38, 240);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 29);
@@ -70,6 +72,7 @@
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.label3.Location = new System.Drawing.Point(38, 367);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 29);
@@ -78,10 +81,11 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Location = new System.Drawing.Point(40, 20);
+            this.btnMinus.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnMinus.Location = new System.Drawing.Point(40, 13);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(50, 25);
+            this.btnMinus.Size = new System.Drawing.Size(50, 36);
             this.btnMinus.TabIndex = 3;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -89,10 +93,11 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(200, 20);
+            this.btnPlus.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnPlus.Location = new System.Drawing.Point(200, 13);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(50, 25);
+            this.btnPlus.Size = new System.Drawing.Size(50, 36);
             this.btnPlus.TabIndex = 4;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -101,6 +106,7 @@
             // lblQuantity
             // 
             this.lblQuantity.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblQuantity.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.lblQuantity.Location = new System.Drawing.Point(120, 21);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(50, 25);
@@ -109,10 +115,11 @@
             // 
             // btnReturn
             // 
+            this.btnReturn.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.btnReturn.Location = new System.Drawing.Point(114, 510);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Size = new System.Drawing.Size(113, 31);
+            this.btnReturn.Size = new System.Drawing.Size(113, 36);
             this.btnReturn.TabIndex = 12;
             this.btnReturn.Text = "이전 화면";
             this.btnReturn.UseVisualStyleBackColor = true;
@@ -122,10 +129,11 @@
             // 
             // btnToCart
             // 
+            this.btnToCart.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
             this.btnToCart.Location = new System.Drawing.Point(272, 510);
             this.btnToCart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnToCart.Name = "btnToCart";
-            this.btnToCart.Size = new System.Drawing.Size(132, 31);
+            this.btnToCart.Size = new System.Drawing.Size(132, 36);
             this.btnToCart.TabIndex = 13;
             this.btnToCart.Text = "장바구니 담기";
             this.btnToCart.UseVisualStyleBackColor = true;
@@ -146,10 +154,11 @@
             // btnHot
             // 
             this.btnHot.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnHot.Location = new System.Drawing.Point(168, 19);
+            this.btnHot.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnHot.Location = new System.Drawing.Point(169, 15);
             this.btnHot.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHot.Name = "btnHot";
-            this.btnHot.Size = new System.Drawing.Size(82, 25);
+            this.btnHot.Size = new System.Drawing.Size(82, 36);
             this.btnHot.TabIndex = 3;
             this.btnHot.TabStop = true;
             this.btnHot.Text = "핫";
@@ -159,10 +168,11 @@
             // btnIce
             // 
             this.btnIce.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnIce.Location = new System.Drawing.Point(40, 19);
+            this.btnIce.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnIce.Location = new System.Drawing.Point(41, 15);
             this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIce.Name = "btnIce";
-            this.btnIce.Size = new System.Drawing.Size(82, 25);
+            this.btnIce.Size = new System.Drawing.Size(82, 36);
             this.btnIce.TabIndex = 2;
             this.btnIce.TabStop = true;
             this.btnIce.Text = "아이스";
@@ -184,10 +194,11 @@
             // radioButton2
             // 
             this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.radioButton2.Location = new System.Drawing.Point(168, 19);
+            this.radioButton2.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.radioButton2.Location = new System.Drawing.Point(170, 13);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(82, 25);
+            this.radioButton2.Size = new System.Drawing.Size(82, 36);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "그란데";
@@ -197,10 +208,11 @@
             // btnTall
             // 
             this.btnTall.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnTall.Location = new System.Drawing.Point(40, 19);
+            this.btnTall.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnTall.Location = new System.Drawing.Point(39, 13);
             this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTall.Name = "btnTall";
-            this.btnTall.Size = new System.Drawing.Size(82, 25);
+            this.btnTall.Size = new System.Drawing.Size(82, 36);
             this.btnTall.TabIndex = 0;
             this.btnTall.TabStop = true;
             this.btnTall.Text = "톨";
@@ -220,28 +232,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnWhip
-            // 
-            this.btnWhip.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnWhip.Location = new System.Drawing.Point(40, 19);
-            this.btnWhip.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnWhip.Name = "btnWhip";
-            this.btnWhip.Size = new System.Drawing.Size(82, 25);
-            this.btnWhip.TabIndex = 0;
-            this.btnWhip.TabStop = true;
-            this.btnWhip.Text = "휘핑 추가";
-            this.btnWhip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnWhip.UseVisualStyleBackColor = true;
-            this.btnWhip.CheckedChanged += new System.EventHandler(this.btnWhip_CheckedChanged);
-            this.btnWhip.Click += new System.EventHandler(this.btnWhip_Click);
-            // 
             // btnSyrup
             // 
             this.btnSyrup.Appearance = System.Windows.Forms.Appearance.Button;
-            this.btnSyrup.Location = new System.Drawing.Point(168, 19);
+            this.btnSyrup.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnSyrup.Location = new System.Drawing.Point(170, 15);
             this.btnSyrup.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSyrup.Name = "btnSyrup";
-            this.btnSyrup.Size = new System.Drawing.Size(82, 25);
+            this.btnSyrup.Size = new System.Drawing.Size(82, 36);
             this.btnSyrup.TabIndex = 0;
             this.btnSyrup.TabStop = true;
             this.btnSyrup.Text = "시럽 추가";
@@ -249,6 +247,22 @@
             this.btnSyrup.UseVisualStyleBackColor = true;
             this.btnSyrup.CheckedChanged += new System.EventHandler(this.btnSyrup_CheckedChanged);
             this.btnSyrup.Click += new System.EventHandler(this.btnSyrup_Click);
+            // 
+            // btnWhip
+            // 
+            this.btnWhip.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnWhip.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnWhip.Location = new System.Drawing.Point(42, 15);
+            this.btnWhip.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnWhip.Name = "btnWhip";
+            this.btnWhip.Size = new System.Drawing.Size(82, 36);
+            this.btnWhip.TabIndex = 0;
+            this.btnWhip.TabStop = true;
+            this.btnWhip.Text = "휘핑 추가";
+            this.btnWhip.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnWhip.UseVisualStyleBackColor = true;
+            this.btnWhip.CheckedChanged += new System.EventHandler(this.btnWhip_CheckedChanged);
+            this.btnWhip.Click += new System.EventHandler(this.btnWhip_Click);
             // 
             // groupBox5
             // 
@@ -265,7 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
@@ -275,9 +289,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox5);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCCoffeeOption";
             this.Size = new System.Drawing.Size(445, 719);
+            this.Load += new System.EventHandler(this.UCCoffeeOption_Load);
             this.DpiChangedBeforeParent += new System.EventHandler(this.btnReturn_Click);
             this.DpiChangedAfterParent += new System.EventHandler(this.btnReturn_Click);
             this.groupBox3.ResumeLayout(false);

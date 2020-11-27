@@ -51,65 +51,72 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(256, 647);
+            this.label5.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label5.Location = new System.Drawing.Point(235, 636);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 43);
+            this.label5.Size = new System.Drawing.Size(171, 31);
             this.label5.TabIndex = 23;
-            this.label5.Text = "블루베리 요거트 \r\n         5000원";
+            this.label5.Text = "블루베리 요거트 5000원";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(54, 648);
+            this.label6.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label6.Location = new System.Drawing.Point(41, 636);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 42);
+            this.label6.Size = new System.Drawing.Size(159, 36);
             this.label6.TabIndex = 22;
-            this.label6.Text = "플레인 요거트 \r\n       4000원";
+            this.label6.Text = "플레인 요거트 4000원";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(274, 422);
+            this.label3.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label3.Location = new System.Drawing.Point(239, 424);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 41);
+            this.label3.Size = new System.Drawing.Size(159, 33);
             this.label3.TabIndex = 21;
-            this.label3.Text = "망고 스무디 \r\n    5000원";
+            this.label3.Text = "망고 스무디 5000원";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(83, 422);
+            this.label4.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label4.Location = new System.Drawing.Point(41, 424);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 41);
+            this.label4.Size = new System.Drawing.Size(159, 33);
             this.label4.TabIndex = 20;
-            this.label4.Text = "레몬티 \r\n3000원";
+            this.label4.Text = "레몬티 3000원";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(286, 207);
+            this.label2.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label2.Location = new System.Drawing.Point(243, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 45);
+            this.label2.Size = new System.Drawing.Size(155, 31);
             this.label2.TabIndex = 19;
-            this.label2.Text = "레몬에이드 \r\n   4000원";
+            this.label2.Text = "레몬에이드 4000원";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(73, 207);
+            this.label1.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label1.Location = new System.Drawing.Point(41, 212);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 45);
+            this.label1.Size = new System.Drawing.Size(159, 31);
             this.label1.TabIndex = 18;
-            this.label1.Text = "자몽에이드 \r\n   4000원";
+            this.label1.Text = "자몽에이드 4000원";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnBlueBerry
             // 
             this.btnBlueBerry.Image = ((System.Drawing.Image)(resources.GetObject("btnBlueBerry.Image")));
-            this.btnBlueBerry.Location = new System.Drawing.Point(243, 481);
-            this.btnBlueBerry.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBlueBerry.Location = new System.Drawing.Point(239, 468);
+            this.btnBlueBerry.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnBlueBerry.Name = "btnBlueBerry";
             this.btnBlueBerry.Size = new System.Drawing.Size(159, 162);
             this.btnBlueBerry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,8 +127,8 @@
             // btnFlane
             // 
             this.btnFlane.Image = ((System.Drawing.Image)(resources.GetObject("btnFlane.Image")));
-            this.btnFlane.Location = new System.Drawing.Point(41, 481);
-            this.btnFlane.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnFlane.Location = new System.Drawing.Point(41, 468);
+            this.btnFlane.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnFlane.Name = "btnFlane";
             this.btnFlane.Size = new System.Drawing.Size(159, 162);
             this.btnFlane.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -132,8 +139,8 @@
             // btnMango
             // 
             this.btnMango.Image = ((System.Drawing.Image)(resources.GetObject("btnMango.Image")));
-            this.btnMango.Location = new System.Drawing.Point(243, 256);
-            this.btnMango.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMango.Location = new System.Drawing.Point(239, 256);
+            this.btnMango.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnMango.Name = "btnMango";
             this.btnMango.Size = new System.Drawing.Size(159, 162);
             this.btnMango.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,7 +152,7 @@
             // 
             this.btnLemonTea.Image = ((System.Drawing.Image)(resources.GetObject("btnLemonTea.Image")));
             this.btnLemonTea.Location = new System.Drawing.Point(41, 256);
-            this.btnLemonTea.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLemonTea.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnLemonTea.Name = "btnLemonTea";
             this.btnLemonTea.Size = new System.Drawing.Size(159, 162);
             this.btnLemonTea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -156,8 +163,8 @@
             // btnLemonAde
             // 
             this.btnLemonAde.Image = ((System.Drawing.Image)(resources.GetObject("btnLemonAde.Image")));
-            this.btnLemonAde.Location = new System.Drawing.Point(243, 41);
-            this.btnLemonAde.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLemonAde.Location = new System.Drawing.Point(239, 44);
+            this.btnLemonAde.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnLemonAde.Name = "btnLemonAde";
             this.btnLemonAde.Size = new System.Drawing.Size(159, 162);
             this.btnLemonAde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,8 +175,8 @@
             // btnJamongAde
             // 
             this.btnJamongAde.Image = ((System.Drawing.Image)(resources.GetObject("btnJamongAde.Image")));
-            this.btnJamongAde.Location = new System.Drawing.Point(41, 41);
-            this.btnJamongAde.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnJamongAde.Location = new System.Drawing.Point(41, 44);
+            this.btnJamongAde.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.btnJamongAde.Name = "btnJamongAde";
             this.btnJamongAde.Size = new System.Drawing.Size(159, 162);
             this.btnJamongAde.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,9 +186,9 @@
             // 
             // UCJuice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -194,6 +201,8 @@
             this.Controls.Add(this.btnLemonTea);
             this.Controls.Add(this.btnLemonAde);
             this.Controls.Add(this.btnJamongAde);
+            this.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.ForeColor = System.Drawing.Color.SaddleBrown;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCJuice";
             this.Size = new System.Drawing.Size(445, 719);

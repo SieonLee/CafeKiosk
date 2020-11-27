@@ -123,7 +123,8 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Location = new System.Drawing.Point(37, 219);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(162, 29);
@@ -133,17 +134,19 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label2.Location = new System.Drawing.Point(243, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(158, 29);
             this.label2.TabIndex = 7;
-            this.label2.Text = "아메리카 2000원";
+            this.label2.Text = "아메리카노 2000원";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label3.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label3.Location = new System.Drawing.Point(243, 434);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 29);
@@ -153,7 +156,8 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label4.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label4.Location = new System.Drawing.Point(26, 434);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(183, 29);
@@ -163,7 +167,8 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label5.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label5.Location = new System.Drawing.Point(242, 659);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(159, 29);
@@ -173,7 +178,8 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label6.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.label6.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label6.Location = new System.Drawing.Point(37, 659);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(162, 29);
@@ -185,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);

@@ -50,9 +50,9 @@ namespace CafeKiosk
             this.label.BackColor = System.Drawing.Color.Wheat;
             this.label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label.Location = new System.Drawing.Point(69, 35);
+            this.label.Location = new System.Drawing.Point(79, 44);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(103, 26);
+            this.label.Size = new System.Drawing.Size(117, 32);
             this.label.TabIndex = 6;
             this.label.Text = "포장 여부";
             // 
@@ -61,9 +61,9 @@ namespace CafeKiosk
             this.lblIsPack.BackColor = System.Drawing.Color.Wheat;
             this.lblIsPack.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblIsPack.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblIsPack.Location = new System.Drawing.Point(192, 35);
+            this.lblIsPack.Location = new System.Drawing.Point(219, 44);
             this.lblIsPack.Name = "lblIsPack";
-            this.lblIsPack.Size = new System.Drawing.Size(103, 26);
+            this.lblIsPack.Size = new System.Drawing.Size(117, 32);
             this.lblIsPack.TabIndex = 7;
             // 
             // lblTotalPrice
@@ -71,9 +71,9 @@ namespace CafeKiosk
             this.lblTotalPrice.BackColor = System.Drawing.Color.Wheat;
             this.lblTotalPrice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblTotalPrice.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblTotalPrice.Location = new System.Drawing.Point(263, 458);
+            this.lblTotalPrice.Location = new System.Drawing.Point(301, 572);
             this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(103, 26);
+            this.lblTotalPrice.Size = new System.Drawing.Size(117, 32);
             this.lblTotalPrice.TabIndex = 8;
             // 
             // dataGridView1
@@ -85,31 +85,37 @@ namespace CafeKiosk
             this.menuNameDataGridViewTextBoxColumn,
             this.menuPriceDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.orderLineOptionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 86);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 108);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(357, 356);
+            this.dataGridView1.Size = new System.Drawing.Size(408, 445);
             this.dataGridView1.TabIndex = 9;
             // 
             // optionNameDataGridViewTextBoxColumn
             // 
             this.optionNameDataGridViewTextBoxColumn.DataPropertyName = "OptionName";
             this.optionNameDataGridViewTextBoxColumn.HeaderText = "OptionName";
+            this.optionNameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.optionNameDataGridViewTextBoxColumn.Name = "optionNameDataGridViewTextBoxColumn";
+            this.optionNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // menuNameDataGridViewTextBoxColumn
             // 
             this.menuNameDataGridViewTextBoxColumn.DataPropertyName = "MenuName";
             this.menuNameDataGridViewTextBoxColumn.HeaderText = "MenuName";
+            this.menuNameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.menuNameDataGridViewTextBoxColumn.Name = "menuNameDataGridViewTextBoxColumn";
+            this.menuNameDataGridViewTextBoxColumn.Width = 125;
             // 
             // menuPriceDataGridViewTextBoxColumn
             // 
             this.menuPriceDataGridViewTextBoxColumn.DataPropertyName = "MenuPrice";
             this.menuPriceDataGridViewTextBoxColumn.HeaderText = "MenuPrice";
+            this.menuPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.menuPriceDataGridViewTextBoxColumn.Name = "menuPriceDataGridViewTextBoxColumn";
+            this.menuPriceDataGridViewTextBoxColumn.Width = 125;
             // 
             // orderLineOptionBindingSource
             // 
@@ -119,18 +125,18 @@ namespace CafeKiosk
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(154, 459);
+            this.label1.Location = new System.Drawing.Point(176, 574);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 10;
             this.label1.Text = "총 금액 : ";
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(192, 510);
+            this.btnPrev.Location = new System.Drawing.Point(219, 638);
             this.btnPrev.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPrev.Name = "btnPrev";
-            this.btnPrev.Size = new System.Drawing.Size(80, 31);
+            this.btnPrev.Size = new System.Drawing.Size(91, 39);
             this.btnPrev.TabIndex = 11;
             this.btnPrev.Text = "이전화면";
             this.btnPrev.UseVisualStyleBackColor = true;
@@ -138,19 +144,19 @@ namespace CafeKiosk
             // 
             // btnCheckOut
             // 
-            this.btnCheckOut.Location = new System.Drawing.Point(286, 510);
+            this.btnCheckOut.Location = new System.Drawing.Point(327, 638);
             this.btnCheckOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(80, 31);
+            this.btnCheckOut.Size = new System.Drawing.Size(91, 39);
             this.btnCheckOut.TabIndex = 12;
             this.btnCheckOut.Text = "결제";
             this.btnCheckOut.UseVisualStyleBackColor = true;
             // 
             // UCCartt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.btnCheckOut);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.label1);
@@ -158,8 +164,9 @@ namespace CafeKiosk
             this.Controls.Add(this.lblTotalPrice);
             this.Controls.Add(this.lblIsPack);
             this.Controls.Add(this.label);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCCartt";
-            this.Size = new System.Drawing.Size(389, 575);
+            this.Size = new System.Drawing.Size(445, 719);
             this.Load += new System.EventHandler(this.UCCartt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderLineOptionBindingSource)).EndInit();

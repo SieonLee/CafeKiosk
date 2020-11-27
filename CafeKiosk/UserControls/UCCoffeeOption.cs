@@ -135,5 +135,10 @@ namespace CafeKiosk
         {
 
         }
+
+        private void UCCoffeeOption_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
