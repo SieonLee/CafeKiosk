@@ -140,7 +140,7 @@
             // 
             this.btnMango.Image = ((System.Drawing.Image)(resources.GetObject("btnMango.Image")));
             this.btnMango.Location = new System.Drawing.Point(239, 256);
-            this.btnMango.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.btnMango.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMango.Name = "btnMango";
             this.btnMango.Size = new System.Drawing.Size(159, 162);
             this.btnMango.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,8 +186,8 @@
             // 
             // UCJuice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
