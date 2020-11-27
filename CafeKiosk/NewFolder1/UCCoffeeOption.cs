@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CafeKiosk
 {
     public partial class UCCoffeeOption : UserControl 
@@ -36,7 +37,7 @@ namespace CafeKiosk
         {
             if (quantity == 0)
             {
-                quantity = 1;
+                quantity = 1; 
             }
             quantity -= 1;
             lblQuantity.Text = quantity.ToString();
