@@ -225,7 +225,16 @@
     <None Include="CafeData.edmx.diagram">
       <DependentUpon>CafeData.edmx</DependentUpon>
     </None>
+    <None Include="Category.datasource" />
+    <None Include="Menu.datasource" />
+    <None Include="MenuWithOption.datasource" />
+    <None Include="Option.datasource" />
+    <None Include="Order.datasource" />
+    <None Include="OrderForm.datasource" />
+    <None Include="OrderLine.datasource" />
+    <None Include="OrderLineOption.datasource" />
     <None Include="packages.config" />
+    <None Include="Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -235,6 +244,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UCCartt.datasource" />
+    <None Include="UCCoffee.CoffeeSelectedEventArgs.datasource" />
+    <None Include="UCCoffee.datasource" />
+    <None Include="UCCoffeeOption.datasource" />
+    <None Include="UCDessert.datasource" />
+    <None Include="UCDessertOption.datasource" />
+    <None Include="UCHome.datasource" />
+    <None Include="UCHome.TakeOutSelectedEventArgs.datasource" />
+    <None Include="UCJuice.datasource" />
+    <None Include="UCJuiceOption.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

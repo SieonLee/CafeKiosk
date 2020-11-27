@@ -32,10 +32,11 @@ namespace CafeKiosk
             this.label = new System.Windows.Forms.Label();
             this.lblIsPack = new System.Windows.Forms.Label();
             this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnCheckOut = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MenuName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,17 +71,6 @@ namespace CafeKiosk
             this.lblTotalPrice.Size = new System.Drawing.Size(117, 32);
             this.lblTotalPrice.TabIndex = 8;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 107);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(361, 445);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -109,6 +99,27 @@ namespace CafeKiosk
             this.btnCheckOut.Text = "결제";
             this.btnCheckOut.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MenuName});
+            this.dataGridView1.Location = new System.Drawing.Point(41, 107);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(361, 445);
+            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // MenuName
+            // 
+            this.MenuName.DataPropertyName = "MenuName";
+            this.MenuName.HeaderText = "MenuName";
+            this.MenuName.MinimumWidth = 6;
+            this.MenuName.Name = "MenuName";
+            this.MenuName.Width = 125;
+            // 
             // UCCartt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -135,9 +146,10 @@ namespace CafeKiosk
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label lblIsPack;
         private System.Windows.Forms.Label lblTotalPrice;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MenuName;
     }
 }
