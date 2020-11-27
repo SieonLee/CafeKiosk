@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCDessert));
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCroffle = new System.Windows.Forms.Label();
+            this.lblWaffle = new System.Windows.Forms.Label();
+            this.lblMacaron = new System.Windows.Forms.Label();
+            this.lblHoney = new System.Windows.Forms.Label();
+            this.lblTiramisu = new System.Windows.Forms.Label();
+            this.lblChoco = new System.Windows.Forms.Label();
             this.btnCroffle = new System.Windows.Forms.PictureBox();
             this.btnWaffle = new System.Windows.Forms.PictureBox();
             this.btnMacaron = new System.Windows.Forms.PictureBox();
@@ -49,63 +49,64 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnChoco)).BeginInit();
             this.SuspendLayout();
             // 
-            // label5
+            // lblCroffle
             // 
-            this.label5.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(256, 648);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 29);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "크로플 8000";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblCroffle.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCroffle.Location = new System.Drawing.Point(243, 648);
+            this.lblCroffle.Name = "lblCroffle";
+            this.lblCroffle.Size = new System.Drawing.Size(159, 29);
+            this.lblCroffle.TabIndex = 35;
+            this.lblCroffle.Text = "크로플 8000원";
+            this.lblCroffle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label6
+            // lblWaffle
             // 
-            this.label6.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(54, 648);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 29);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "와플 7000";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblWaffle.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblWaffle.Location = new System.Drawing.Point(44, 648);
+            this.lblWaffle.Name = "lblWaffle";
+            this.lblWaffle.Size = new System.Drawing.Size(156, 29);
+            this.lblWaffle.TabIndex = 34;
+            this.lblWaffle.Text = "와플 7000원";
+            this.lblWaffle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // lblMacaron
             // 
-            this.label3.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(243, 422);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 29);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "얼그레이마카롱 3500";
+            this.lblMacaron.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblMacaron.Location = new System.Drawing.Point(231, 422);
+            this.lblMacaron.Name = "lblMacaron";
+            this.lblMacaron.Size = new System.Drawing.Size(182, 29);
+            this.lblMacaron.TabIndex = 33;
+            this.lblMacaron.Text = "얼그레이마카롱 3500원";
             // 
-            // label4
+            // lblHoney
             // 
-            this.label4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(54, 422);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(146, 29);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "허니브레드 5000";
+            this.lblHoney.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblHoney.Location = new System.Drawing.Point(41, 422);
+            this.lblHoney.Name = "lblHoney";
+            this.lblHoney.Size = new System.Drawing.Size(159, 29);
+            this.lblHoney.TabIndex = 32;
+            this.lblHoney.Text = "허니브레드 5000원";
+            this.lblHoney.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // lblTiramisu
             // 
-            this.label2.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(256, 208);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 29);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "티라미수 4500";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTiramisu.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblTiramisu.Location = new System.Drawing.Point(246, 207);
+            this.lblTiramisu.Name = "lblTiramisu";
+            this.lblTiramisu.Size = new System.Drawing.Size(156, 29);
+            this.lblTiramisu.TabIndex = 31;
+            this.lblTiramisu.Text = "티라미수 4500원";
+            this.lblTiramisu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label1
+            // lblChoco
             // 
-            this.label1.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(54, 208);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 29);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "초코케익 5500";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblChoco.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblChoco.Location = new System.Drawing.Point(41, 208);
+            this.lblChoco.Name = "lblChoco";
+            this.lblChoco.Size = new System.Drawing.Size(159, 29);
+            this.lblChoco.TabIndex = 30;
+            this.lblChoco.Text = "초코케익 5500원";
+            this.lblChoco.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnCroffle
             // 
@@ -184,12 +185,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCroffle);
+            this.Controls.Add(this.lblWaffle);
+            this.Controls.Add(this.lblMacaron);
+            this.Controls.Add(this.lblHoney);
+            this.Controls.Add(this.lblTiramisu);
+            this.Controls.Add(this.lblChoco);
             this.Controls.Add(this.btnCroffle);
             this.Controls.Add(this.btnWaffle);
             this.Controls.Add(this.btnMacaron);
@@ -211,12 +212,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCroffle;
+        private System.Windows.Forms.Label lblWaffle;
+        private System.Windows.Forms.Label lblMacaron;
+        private System.Windows.Forms.Label lblHoney;
+        private System.Windows.Forms.Label lblTiramisu;
+        private System.Windows.Forms.Label lblChoco;
         private System.Windows.Forms.PictureBox btnCroffle;
         private System.Windows.Forms.PictureBox btnWaffle;
         private System.Windows.Forms.PictureBox btnMacaron;

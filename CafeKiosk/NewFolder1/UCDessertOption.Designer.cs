@@ -50,7 +50,7 @@
             // 
             // lblQuantity
             // 
-            this.lblQuantity.Location = new System.Drawing.Point(243, 171);
+            this.lblQuantity.Location = new System.Drawing.Point(225, 169);
             this.lblQuantity.Name = "lblQuantity";
             this.lblQuantity.Size = new System.Drawing.Size(55, 31);
             this.lblQuantity.TabIndex = 17;
@@ -59,7 +59,7 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.Location = new System.Drawing.Point(304, 171);
+            this.btnPlus.Location = new System.Drawing.Point(286, 169);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(86, 29);
@@ -71,7 +71,7 @@
             // btnMinus
             // 
             this.btnMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnMinus.Location = new System.Drawing.Point(155, 171);
+            this.btnMinus.Location = new System.Drawing.Point(137, 169);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(86, 29);
@@ -82,7 +82,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(56, 272);
+            this.label3.Location = new System.Drawing.Point(38, 270);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 29);
             this.label3.TabIndex = 14;
@@ -90,7 +90,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(56, 181);
+            this.label1.Location = new System.Drawing.Point(38, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 12;
@@ -121,7 +121,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnCreamMore);
             this.groupBox1.Controls.Add(this.btnCreamLess);
-            this.groupBox1.Location = new System.Drawing.Point(132, 251);
+            this.groupBox1.Location = new System.Drawing.Point(114, 249);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(290, 68);
             this.groupBox1.TabIndex = 26;
@@ -158,7 +158,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnAddIce);
-            this.groupBox2.Location = new System.Drawing.Point(132, 325);
+            this.groupBox2.Location = new System.Drawing.Point(114, 323);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(290, 68);
             this.groupBox2.TabIndex = 27;
@@ -179,7 +179,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnAddFork);
-            this.groupBox3.Location = new System.Drawing.Point(132, 399);
+            this.groupBox3.Location = new System.Drawing.Point(114, 397);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(290, 68);
             this.groupBox3.TabIndex = 28;
