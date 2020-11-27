@@ -15,6 +15,10 @@ namespace CafeKiosk
         public OrderForm()
         {
             InitializeComponent();
+            movesidepanel(btnStart);
+            UCHome uCHome = new UCHome();
+            uCHome.TakeOutSelected += UCHome_TakeOutSelected;
+            addUC(uCHome);
 
         }
         private void movesidepanel(Button btn)
@@ -124,9 +128,13 @@ namespace CafeKiosk
         {
             movesidepanel(btnCart);
             UCCartt uCCart = new UCCartt();
+            uCCart.MovePrevSelected += UCCart_MovePrevSelected;
             addUC(uCCart);
         }
 
-        
+        private void UCCart_MovePrevSelected(object sender, UCCartt.MovePrevSelectedEventArgs e)
+        {
+            btnCoffee.PerformClick();
+        }
     }
 }

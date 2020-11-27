@@ -26,7 +26,8 @@ namespace CafeKiosk.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=kimpro;Initial Catalog=CafeSystem;User ID=sa;Password=3512")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=kimpro;Initial Catalog=CafeSystem;Persist Security Info=True;User ID=" +
+            "sa;Password=3512")]
         public string CafeSystemConnectionString {
             get {
                 return ((string)(this["CafeSystemConnectionString"]));

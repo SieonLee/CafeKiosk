@@ -105,6 +105,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CafeData.edmx</DependentUpon>
     </Compile>
+    <Compile Include="CafeSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CafeSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Category.cs">
       <DependentUpon>CafeData.tt</DependentUpon>
     </Compile>
@@ -225,16 +235,32 @@
     <None Include="CafeData.edmx.diagram">
       <DependentUpon>CafeData.edmx</DependentUpon>
     </None>
-    <None Include="Category.datasource" />
-    <None Include="Menu.datasource" />
-    <None Include="MenuWithOption.datasource" />
-    <None Include="Option.datasource" />
-    <None Include="Order.datasource" />
-    <None Include="OrderForm.datasource" />
-    <None Include="OrderLine.datasource" />
-    <None Include="OrderLineOption.datasource" />
+    <None Include="CafeSystemDataSet.xsc">
+      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CafeSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeSystemDataSet.xss">
+      <DependentUpon>CafeSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CafeSystemDataSet1.xsc">
+      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CafeSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CafeSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CafeSystemDataSet1.xss">
+      <DependentUpon>CafeSystemDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
-    <None Include="Program.datasource" />
+    <None Include="Properties\DataSources\Menu1.datasource" />
+    <None Include="Properties\DataSources\MenuWithOption.datasource" />
+    <None Include="Properties\DataSources\Option.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -244,16 +270,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="UCCartt.datasource" />
-    <None Include="UCCoffee.CoffeeSelectedEventArgs.datasource" />
-    <None Include="UCCoffee.datasource" />
-    <None Include="UCCoffeeOption.datasource" />
-    <None Include="UCDessert.datasource" />
-    <None Include="UCDessertOption.datasource" />
-    <None Include="UCHome.datasource" />
-    <None Include="UCHome.TakeOutSelectedEventArgs.datasource" />
-    <None Include="UCJuice.datasource" />
-    <None Include="UCJuiceOption.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
