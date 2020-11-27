@@ -82,6 +82,7 @@
     <Compile Include="Dao\DessertDao.cs" />
     <Compile Include="Dao\HomeDao.cs" />
     <Compile Include="Dao\JuiceDao.cs" />
+    <Compile Include="Dao\OrderDao.cs" />
     <Compile Include="EFLibrary\BaseDao.cs" />
     <Compile Include="EFLibrary\DbContextCreator.cs" />
     <Compile Include="EFLibrary\DualKeyDao.cs" />
