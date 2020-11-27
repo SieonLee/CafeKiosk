@@ -21,7 +21,7 @@ namespace CafeKiosk.Data
         }
     
         public int OrderID { get; set; }
-        public int TakeOut { get; set; }
+        public bool TakeOut { get; set; }
         public System.DateTime OrderedAt { get; set; }
         public int Total { get; set; }
     

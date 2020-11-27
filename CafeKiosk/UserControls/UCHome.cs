@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeKiosk.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,11 @@ namespace CafeKiosk
 
         private void bntTakeout_Click(object sender, EventArgs e)
         {
+             Order entity = new Order();
+            int count = Dao.Order.GetCount();
+           
+            entity.OrderID = count + 1;
+            entity.TakeOut = true;
             OnTakeOutSelected(true);
         }
 

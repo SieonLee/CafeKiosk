@@ -42,8 +42,8 @@
           <Key>
             <PropertyRef Name="OrderID" />
           </Key>
-          <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TakeOut" Type="int" Nullable="false" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="TakeOut" Type="bit" Nullable="false" />
           <Property Name="OrderedAt" Type="datetime" Nullable="false" />
           <Property Name="Total" Type="int" Nullable="false" />
         </EntityType>
@@ -51,7 +51,7 @@
           <Key>
             <PropertyRef Name="OrderLineID" />
           </Key>
-          <Property Name="OrderLineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderLineID" Type="int" Nullable="false" />
           <Property Name="OrderID" Type="int" Nullable="false" />
           <Property Name="MenuID" Type="int" Nullable="false" />
         </EntityType>
@@ -208,8 +208,6 @@
           <EntitySet Name="Menus" EntityType="CafeKioskModel.Menu" />
           <EntitySet Name="MenuWithOptions" EntityType="CafeKioskModel.MenuWithOption" />
           <EntitySet Name="Options" EntityType="CafeKioskModel.Option" />
-          <EntitySet Name="Orders" EntityType="CafeKioskModel.Order" />
-          <EntitySet Name="OrderLines" EntityType="CafeKioskModel.OrderLine" />
           <EntitySet Name="OrderLineOptions" EntityType="CafeKioskModel.OrderLineOption" />
           <AssociationSet Name="FK_Menu_Category" Association="CafeKioskModel.FK_Menu_Category">
             <End Role="Category" EntitySet="Categories" />
@@ -219,10 +217,6 @@
             <End Role="Menu" EntitySet="Menus" />
             <End Role="MenuWithOption" EntitySet="MenuWithOptions" />
           </AssociationSet>
-          <AssociationSet Name="FK_OrderLine_Menu" Association="CafeKioskModel.FK_OrderLine_Menu">
-            <End Role="Menu" EntitySet="Menus" />
-            <End Role="OrderLine" EntitySet="OrderLines" />
-          </AssociationSet>
           <AssociationSet Name="FK_MenuWithOption_Option" Association="CafeKioskModel.FK_MenuWithOption_Option">
             <End Role="Option" EntitySet="Options" />
             <End Role="MenuWithOption" EntitySet="MenuWithOptions" />
@@ -230,6 +224,12 @@
           <AssociationSet Name="FK_OrderLineOption_Option" Association="CafeKioskModel.FK_OrderLineOption_Option">
             <End Role="Option" EntitySet="Options" />
             <End Role="OrderLineOption" EntitySet="OrderLineOptions" />
+          </AssociationSet>
+          <EntitySet Name="Orders" EntityType="CafeKioskModel.Order" />
+          <EntitySet Name="OrderLines" EntityType="CafeKioskModel.OrderLine" />
+          <AssociationSet Name="FK_OrderLine_Menu" Association="CafeKioskModel.FK_OrderLine_Menu">
+            <End Role="Menu" EntitySet="Menus" />
+            <End Role="OrderLine" EntitySet="OrderLines" />
           </AssociationSet>
           <AssociationSet Name="FK_OrderLine_Order" Association="CafeKioskModel.FK_OrderLine_Order">
             <End Role="Order" EntitySet="Orders" />
@@ -281,27 +281,6 @@
           <NavigationProperty Name="MenuWithOptions" Relationship="CafeKioskModel.FK_MenuWithOption_Option" FromRole="Option" ToRole="MenuWithOption" />
           <NavigationProperty Name="OrderLineOptions" Relationship="CafeKioskModel.FK_OrderLineOption_Option" FromRole="Option" ToRole="OrderLineOption" />
         </EntityType>
-        <EntityType Name="Order">
-          <Key>
-            <PropertyRef Name="OrderID" />
-          </Key>
-          <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TakeOut" Type="Int32" Nullable="false" />
-          <Property Name="OrderedAt" Type="DateTime" Nullable="false" Precision="3" />
-          <Property Name="Total" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="OrderLines" Relationship="CafeKioskModel.FK_OrderLine_Order" FromRole="Order" ToRole="OrderLine" />
-        </EntityType>
-        <EntityType Name="OrderLine">
-          <Key>
-            <PropertyRef Name="OrderLineID" />
-          </Key>
-          <Property Name="OrderLineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="OrderID" Type="Int32" Nullable="false" />
-          <Property Name="MenuID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Menu" Relationship="CafeKioskModel.FK_OrderLine_Menu" FromRole="OrderLine" ToRole="Menu" />
-          <NavigationProperty Name="Order" Relationship="CafeKioskModel.FK_OrderLine_Order" FromRole="OrderLine" ToRole="Order" />
-          <NavigationProperty Name="OrderLineOptions" Relationship="CafeKioskModel.FK_OrderLineOption_OrderLine" FromRole="OrderLine" ToRole="OrderLineOption" />
-        </EntityType>
         <EntityType Name="OrderLineOption">
           <Key>
             <PropertyRef Name="OrderLineID" />
@@ -341,20 +320,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_OrderLine_Menu">
-          <End Type="CafeKioskModel.Menu" Role="Menu" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Type="CafeKioskModel.OrderLine" Role="OrderLine" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Menu">
-              <PropertyRef Name="MenuID" />
-            </Principal>
-            <Dependent Role="OrderLine">
-              <PropertyRef Name="MenuID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_MenuWithOption_Option">
           <End Type="CafeKioskModel.Option" Role="Option" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -380,6 +345,41 @@
             </Principal>
             <Dependent Role="OrderLineOption">
               <PropertyRef Name="OptionID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+          </Key>
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="TakeOut" Type="Boolean" Nullable="false" />
+          <Property Name="OrderedAt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Total" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="OrderLines" Relationship="CafeKioskModel.FK_OrderLine_Order" FromRole="Order" ToRole="OrderLine" />
+        </EntityType>
+        <EntityType Name="OrderLine">
+          <Key>
+            <PropertyRef Name="OrderLineID" />
+          </Key>
+          <Property Name="OrderLineID" Type="Int32" Nullable="false" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="MenuID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Menu" Relationship="CafeKioskModel.FK_OrderLine_Menu" FromRole="OrderLine" ToRole="Menu" />
+          <NavigationProperty Name="Order" Relationship="CafeKioskModel.FK_OrderLine_Order" FromRole="OrderLine" ToRole="Order" />
+          <NavigationProperty Name="OrderLineOptions" Relationship="CafeKioskModel.FK_OrderLineOption_OrderLine" FromRole="OrderLine" ToRole="OrderLineOption" />
+        </EntityType>
+        <Association Name="FK_OrderLine_Menu">
+          <End Type="CafeKioskModel.Menu" Role="Menu" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="CafeKioskModel.OrderLine" Role="OrderLine" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Menu">
+              <PropertyRef Name="MenuID" />
+            </Principal>
+            <Dependent Role="OrderLine">
+              <PropertyRef Name="MenuID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -453,6 +453,15 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="OrderLineOptions">
+            <EntityTypeMapping TypeName="CafeKioskModel.OrderLineOption">
+              <MappingFragment StoreEntitySet="OrderLineOption">
+                <ScalarProperty Name="Dummy" ColumnName="Dummy" />
+                <ScalarProperty Name="OptionID" ColumnName="OptionID" />
+                <ScalarProperty Name="OrderLineID" ColumnName="OrderLineID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Orders">
             <EntityTypeMapping TypeName="CafeKioskModel.Order">
               <MappingFragment StoreEntitySet="Order">
@@ -468,15 +477,6 @@
               <MappingFragment StoreEntitySet="OrderLine">
                 <ScalarProperty Name="MenuID" ColumnName="MenuID" />
                 <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-                <ScalarProperty Name="OrderLineID" ColumnName="OrderLineID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="OrderLineOptions">
-            <EntityTypeMapping TypeName="CafeKioskModel.OrderLineOption">
-              <MappingFragment StoreEntitySet="OrderLineOption">
-                <ScalarProperty Name="Dummy" ColumnName="Dummy" />
-                <ScalarProperty Name="OptionID" ColumnName="OptionID" />
                 <ScalarProperty Name="OrderLineID" ColumnName="OrderLineID" />
               </MappingFragment>
             </EntityTypeMapping>
