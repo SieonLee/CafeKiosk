@@ -70,21 +70,6 @@ namespace CafeKiosk
         }
 
 
-        private void btnTall_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnGrande_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnIce_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMinus_Click(object sender, EventArgs e)
         {
             if (quantity == 0)
@@ -102,7 +87,19 @@ namespace CafeKiosk
             lblQuantity.Text = quantity.ToString();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        
+
+        private void btnTall_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIce_CheckedChanged(object sender, EventArgs e)
         {
 
         }

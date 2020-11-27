@@ -178,6 +178,7 @@
             this.btnIce.Text = "아이스";
             this.btnIce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnIce.UseVisualStyleBackColor = true;
+            this.btnIce.CheckedChanged += new System.EventHandler(this.btnIce_CheckedChanged);
             // 
             // groupBox4
             // 
@@ -218,6 +219,7 @@
             this.btnTall.Text = "톨";
             this.btnTall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnTall.UseVisualStyleBackColor = true;
+            this.btnTall.CheckedChanged += new System.EventHandler(this.btnTall_CheckedChanged);
             // 
             // groupBox1
             // 

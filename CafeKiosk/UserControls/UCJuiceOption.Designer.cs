@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnIce = new System.Windows.Forms.Button();
-            this.btnGrande = new System.Windows.Forms.Button();
-            this.btnTall = new System.Windows.Forms.Button();
             this.lblQuantity = new System.Windows.Forms.Label();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
@@ -40,46 +37,15 @@
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnToCart = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnIce = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.btnTall = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnIce
-            // 
-            this.btnIce.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.btnIce.Location = new System.Drawing.Point(40, 14);
-            this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnIce.Name = "btnIce";
-            this.btnIce.Size = new System.Drawing.Size(86, 36);
-            this.btnIce.TabIndex = 20;
-            this.btnIce.Text = "얼음";
-            this.btnIce.UseVisualStyleBackColor = true;
-            // 
-            // btnGrande
-            // 
-            this.btnGrande.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.btnGrande.Location = new System.Drawing.Point(164, 12);
-            this.btnGrande.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnGrande.Name = "btnGrande";
-            this.btnGrande.Size = new System.Drawing.Size(86, 36);
-            this.btnGrande.TabIndex = 19;
-            this.btnGrande.Text = "그란데";
-            this.btnGrande.UseVisualStyleBackColor = true;
-            // 
-            // btnTall
-            // 
-            this.btnTall.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.btnTall.Location = new System.Drawing.Point(40, 13);
-            this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnTall.Name = "btnTall";
-            this.btnTall.Size = new System.Drawing.Size(86, 36);
-            this.btnTall.TabIndex = 18;
-            this.btnTall.Text = "톨";
-            this.btnTall.UseVisualStyleBackColor = true;
-            this.btnTall.Click += new System.EventHandler(this.btnTall_Click);
             // 
             // lblQuantity
             // 
@@ -94,7 +60,7 @@
             // btnPlus
             // 
             this.btnPlus.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.btnPlus.Location = new System.Drawing.Point(40, 14);
+            this.btnPlus.Location = new System.Drawing.Point(200, 14);
             this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(50, 36);
@@ -106,7 +72,7 @@
             // btnMinus
             // 
             this.btnMinus.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.btnMinus.Location = new System.Drawing.Point(200, 14);
+            this.btnMinus.Location = new System.Drawing.Point(40, 14);
             this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(50, 36);
@@ -172,17 +138,61 @@
             this.groupBox1.Size = new System.Drawing.Size(290, 55);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnIce
+            // 
+            this.btnIce.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnIce.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnIce.Location = new System.Drawing.Point(40, 12);
+            this.btnIce.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIce.Name = "btnIce";
+            this.btnIce.Size = new System.Drawing.Size(82, 36);
+            this.btnIce.TabIndex = 26;
+            this.btnIce.TabStop = true;
+            this.btnIce.Text = "아이스";
+            this.btnIce.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnIce.UseVisualStyleBackColor = true;
+            this.btnIce.CheckedChanged += new System.EventHandler(this.btnIce_CheckedChanged);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.radioButton2);
             this.groupBox3.Controls.Add(this.btnTall);
-            this.groupBox3.Controls.Add(this.btnGrande);
             this.groupBox3.Location = new System.Drawing.Point(114, 216);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(290, 55);
             this.groupBox3.TabIndex = 24;
             this.groupBox3.TabStop = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.radioButton2.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.radioButton2.Location = new System.Drawing.Point(168, 13);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(82, 36);
+            this.radioButton2.TabIndex = 21;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "그란데";
+            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // btnTall
+            // 
+            this.btnTall.Appearance = System.Windows.Forms.Appearance.Button;
+            this.btnTall.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
+            this.btnTall.Location = new System.Drawing.Point(40, 13);
+            this.btnTall.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTall.Name = "btnTall";
+            this.btnTall.Size = new System.Drawing.Size(82, 36);
+            this.btnTall.TabIndex = 20;
+            this.btnTall.TabStop = true;
+            this.btnTall.Text = "톨";
+            this.btnTall.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnTall.UseVisualStyleBackColor = true;
+            this.btnTall.CheckedChanged += new System.EventHandler(this.btnTall_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -220,10 +230,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnIce;
-        private System.Windows.Forms.Button btnGrande;
-        private System.Windows.Forms.Button btnTall;
         private System.Windows.Forms.Label lblQuantity;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
@@ -235,5 +241,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton btnTall;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton btnIce;
     }
 }

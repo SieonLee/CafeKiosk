@@ -140,5 +140,15 @@ namespace CafeKiosk
         {
 
         }
+
+        private void btnTall_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIce_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
