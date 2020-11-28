@@ -12,7 +12,7 @@ namespace CafeKiosk.UnitTest
     {
         
         [TestMethod]
-        public void TestMethod1()
+        public void GetCountTest()
         {
             int count = Dao.Order.GetCount();
             Assert.IsTrue(count > 0);

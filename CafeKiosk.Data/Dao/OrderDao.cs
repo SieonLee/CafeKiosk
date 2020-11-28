@@ -10,13 +10,16 @@ namespace CafeKiosk.Data
 {
     public class OrderDao : SingleKeyDao<Order, int>
     {
-        protected override Expression<Func<Order, int>> KeySelector => x => x.OrderID;
+        #region override
+        internal OrderDao() { }
 
         protected override Expression<Func<Order, bool>> IsKey(int key)
         {
             return x => x.OrderID == key;
         }
-
+        protected override Expression<Func<Order, int>> KeySelector =>
+            x => x.OrderID;
+        #endregion
 
     }
 }
