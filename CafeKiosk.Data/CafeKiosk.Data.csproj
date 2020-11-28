@@ -76,13 +76,10 @@
     <Compile Include="Category.cs">
       <DependentUpon>CafeKiosk.tt</DependentUpon>
     </Compile>
-    <Compile Include="Dao\CartDao.cs" />
-    <Compile Include="Dao\CoffeeDao.cs" />
     <Compile Include="Dao\Dao.cs" />
-    <Compile Include="Dao\DessertDao.cs" />
-    <Compile Include="Dao\HomeDao.cs" />
-    <Compile Include="Dao\JuiceDao.cs" />
+    <Compile Include="Dao\MenuDao.cs" />
     <Compile Include="Dao\OrderDao.cs" />
+    <Compile Include="Dao\OrderLineDao.cs" />
     <Compile Include="Dao\OrderLineOptionDao.cs" />
     <Compile Include="EFLibrary\BaseDao.cs" />
     <Compile Include="EFLibrary\DbContextCreator.cs" />
@@ -90,6 +87,7 @@
     <Compile Include="EFLibrary\QuadKeyDao.cs" />
     <Compile Include="EFLibrary\SingleKeyDao.cs" />
     <Compile Include="EFLibrary\TripleKeyDao.cs" />
+    <Compile Include="Entities\OrderLine.cs" />
     <Compile Include="Entities\OrderLineOption.cs" />
     <Compile Include="Menu.cs">
       <DependentUpon>CafeKiosk.tt</DependentUpon>

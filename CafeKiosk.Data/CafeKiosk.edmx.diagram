@@ -9,7 +9,7 @@
         <EntityTypeShape EntityType="CafeKioskModel.Menu" Width="1.5" PointX="3" PointY="3.375" />
         <EntityTypeShape EntityType="CafeKioskModel.MenuWithOption" Width="2" PointX="5.375" PointY="3.375" />
         <EntityTypeShape EntityType="CafeKioskModel.Option" Width="1.5" PointX="8.375" PointY="3.375" />
-        <EntityTypeShape EntityType="CafeKioskModel.OrderLineOption" Width="1.5" PointX="7.125" PointY="7.125" />
+        <EntityTypeShape EntityType="CafeKioskModel.OrderLineOption" Width="1.875" PointX="7.125" PointY="7.125" />
         <AssociationConnector Association="CafeKioskModel.FK_Menu_Category" />
         <AssociationConnector Association="CafeKioskModel.FK_MenuWithOption_Menu" />
         <AssociationConnector Association="CafeKioskModel.FK_MenuWithOption_Option" />

@@ -35,7 +35,6 @@ namespace CafeKiosk
             panelCenter.Controls.Clear();
             panelCenter.Controls.Add(uc);
         }
-
         private void btnStart_Click(object sender, EventArgs e)
         {
             movesidepanel(btnStart);
@@ -43,7 +42,6 @@ namespace CafeKiosk
             uCHome.TakeOutSelected += UCHome_TakeOutSelected;
             addUC(uCHome);
         }
-
 
         private void UCHome_TakeOutSelected(object sender, UCHome.TakeOutSelectedEventArgs e)
         {
@@ -59,7 +57,6 @@ namespace CafeKiosk
            // uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
             
         }
-
         private void UCCoffee_CoffeeSelected(object sender, UCCoffee.CoffeeSelectedEventArgs e)
         {
             movesidepanel(btnCoffee);
@@ -67,7 +64,6 @@ namespace CafeKiosk
             addUC(uCCoffeeOption);
             uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
         } 
-        
         //private void UCCoffeeOption(object sender, EventArgs e)
         //{
         //    // UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
@@ -86,8 +82,6 @@ namespace CafeKiosk
             //addUC(uCCoffee);
             btnCoffee.PerformClick();
         }
-       
-
 
         private void btnJuice_Click(object sender, EventArgs e)
         {
@@ -97,7 +91,6 @@ namespace CafeKiosk
             addUC(uCJuice);
         
         }
-
         private void UCJuice_JuiceSelected(object sender, UCJuice.JuiceSelectedEventArgs e)
         {
             movesidepanel(btnJuice);
@@ -105,12 +98,10 @@ namespace CafeKiosk
             uCJuiceOption.ReturnJuiceMenu += UCJuiceOption_ReturnJuiceMenu;
             addUC(uCJuiceOption);
         }
-
         private void UCJuiceOption_ReturnJuiceMenu(object sender, UCJuiceOption.ReturnJuiceMenuEventArgs e)
         {
             btnJuice.PerformClick();  
         }
-
 
         private void btnDessert_Click(object sender, EventArgs e)
         {
@@ -119,14 +110,12 @@ namespace CafeKiosk
             uCDessert.DessertSelected += UCDessert_DessertSelected;
             addUC(uCDessert);
         }
-
         private void UCDessert_DessertSelected(object sender, UCDessert.DessertSelectedEventArgs e)
         {
             UCDessertOption uCDessertOption = new UCDessertOption();
             addUC(uCDessertOption);
             uCDessertOption.ReturnDessertMenu += UCDessertOption_ReturnDessertMenu;
         }
-
         private void UCDessertOption_ReturnDessertMenu(object sender, UCDessertOption.ReturnDessertMenuEventArgs e)
         {
             btnDessert.PerformClick();
@@ -139,7 +128,6 @@ namespace CafeKiosk
             uCCart.MovePrevSelected += UCCart_MovePrevSelected;
             addUC(uCCart);
         }
-
         private void UCCart_MovePrevSelected(object sender, UCCartt.MovePrevSelectedEventArgs e)
         {
             btnCoffee.PerformClick();

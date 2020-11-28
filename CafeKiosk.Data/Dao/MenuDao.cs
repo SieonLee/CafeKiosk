@@ -8,22 +8,18 @@ using System.Threading.Tasks;
 
 namespace CafeKiosk.Data
 {
-    public class CoffeeDao : SingleKeyDao<Menu, int>
+    public class MenuDao : SingleKeyDao<Menu, int>
     {
-
-       
-        internal CoffeeDao() { }
+        #region override
+        internal MenuDao() { }
 
         protected override Expression<Func<Menu, bool>> IsKey(int key)
         {
             return x => x.MenuID == key;
         }
-      
-
         protected override Expression<Func<Menu, int>> KeySelector =>
             x => x.MenuID;
-
-       
+        #endregion
 
     }
 }
