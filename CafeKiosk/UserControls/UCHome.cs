@@ -20,11 +20,9 @@ namespace CafeKiosk
 
         private void bntTakeout_Click(object sender, EventArgs e)
         {
-             Order entity = new Order();
             int count = Dao.Order.GetCount();
-           
-            entity.OrderID = count + 1;
-            entity.TakeOut = true;
+            MessageBox.Show(count.ToString());
+            
             OnTakeOutSelected(true);
         }
 
