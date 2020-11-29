@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OrderDaoTest.cs" />
+    <Compile Include="OrderLineOptionTest.cs" />
     <Compile Include="OrderLineTest.cs" />
     <Compile Include="TestInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -37,12 +37,12 @@ namespace CafeKiosk
             this.optionNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.orderLineOptionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bdsOrderLineOption = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.btnPrev = new System.Windows.Forms.Button();
             this.btnCheckOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orderLineOptionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsOrderLineOption)).BeginInit();
             this.SuspendLayout();
             // 
             // label
@@ -84,7 +84,7 @@ namespace CafeKiosk
             this.optionNameDataGridViewTextBoxColumn,
             this.menuNameDataGridViewTextBoxColumn,
             this.menuPriceDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.orderLineOptionBindingSource;
+            this.dataGridView1.DataSource = this.bdsOrderLineOption;
             this.dataGridView1.Location = new System.Drawing.Point(18, 108);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -117,9 +117,9 @@ namespace CafeKiosk
             this.menuPriceDataGridViewTextBoxColumn.Name = "menuPriceDataGridViewTextBoxColumn";
             this.menuPriceDataGridViewTextBoxColumn.Width = 125;
             // 
-            // orderLineOptionBindingSource
+            // bdsOrderLineOption
             // 
-            this.orderLineOptionBindingSource.DataSource = typeof(CafeKiosk.Data.OrderLineOption);
+            this.bdsOrderLineOption.DataSource = typeof(CafeKiosk.Data.OrderLineOption);
             // 
             // label1
             // 
@@ -151,6 +151,7 @@ namespace CafeKiosk
             this.btnCheckOut.TabIndex = 12;
             this.btnCheckOut.Text = "결제";
             this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // UCCartt
             // 
@@ -169,7 +170,7 @@ namespace CafeKiosk
             this.Size = new System.Drawing.Size(445, 719);
             this.Load += new System.EventHandler(this.UCCartt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orderLineOptionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsOrderLineOption)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,7 +185,7 @@ namespace CafeKiosk
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPrev;
         private System.Windows.Forms.Button btnCheckOut;
-        private System.Windows.Forms.BindingSource orderLineOptionBindingSource;
+        private System.Windows.Forms.BindingSource bdsOrderLineOption;
         private System.Windows.Forms.DataGridViewTextBoxColumn optionNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn menuNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn menuPriceDataGridViewTextBoxColumn;
