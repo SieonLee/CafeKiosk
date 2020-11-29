@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CafeKiosk.Data;
 
 namespace CafeKiosk
 {
     public partial class UCCoffeeOption : UserControl
     {
         int quantity = 1;
+
         public UCCoffeeOption()
         {
             InitializeComponent();
@@ -22,14 +23,39 @@ namespace CafeKiosk
         }
 
 
-        internal void btnReturn_Click(object sender, EventArgs e)
+
+        // OrderLine _orderLine = new OrderLine();
+        OrderLineOption _orderLineOption = new OrderLineOption();
+
+        internal void btnReturn_Click(object sender, EventArgs e) //이전화면
         {
             OnReturnCoffeeMenu(true);
 
         }
 
-        private void btnToCart_Click(object sender, EventArgs e)
+        List<int> optionNum = new List<int>();
+
+        //장바구니로
+        public void Cart()
         {
+            //  _orderLine.Quantity = int.Parse(lblQuantity.Text);  //db안에 orderLineOption quantity (수량)넣어주기
+
+            foreach (int number in optionNum)
+            {
+                _orderLineOption.OptionID = number;
+            }
+            Dao.OrderLineOption.Insert(_orderLineOption); //옵션 여러개 들어가도록
+                                                          //   foreach(int number in optionNum)
+                                                          //    {
+                                                          //     _orderLineOption.OptionID = number;
+                                                          //       Dao.OrderLineOption.Insert(_orderLineOption);
+                                                          //    }
+        }
+
+
+        internal void btnToCart_Click(object sender, EventArgs e) //장바구니
+        {
+            Cart();
             OnReturnCoffeeMenu(true);
         }
 
@@ -41,7 +67,6 @@ namespace CafeKiosk
             }
             quantity -= 1;
             lblQuantity.Text = quantity.ToString();
-
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
@@ -50,43 +75,81 @@ namespace CafeKiosk
             lblQuantity.Text = quantity.ToString();
         }
 
+        //옵션 : 사이즈
+        private void btnTall_CheckedChanged(object sender, EventArgs e)
+        {
+            if (btnTall.Checked == true)
+            {
+                optionNum.Add(2);
+
+            }
+        }
+
+        private void btnGrande_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        //옵션 아이스 핫
+
+        private void btnIce_CheckedChanged(object sender, EventArgs e)
+        {
+            if (btnIce.Checked == true)
+            {
+                optionNum.Add(4);
+            }
+        }
+
+        private void btnHot_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
         //휘핑, 시럽
-        bool isChecked = false;
+        bool isCheckedW = false;
         private void btnWhip_CheckedChanged(object sender, EventArgs e)
         {
-            isChecked = btnWhip.Checked;
+            isCheckedW = btnWhip.Checked;
+            if (btnWhip.Checked == true)
+            {
+                optionNum.Add(6);
+            }
         }
         private void btnWhip_Click(object sender, EventArgs e)
         {
-            if (btnWhip.Checked && !isChecked)
+            if (btnWhip.Checked && !isCheckedW)
             {
                 btnWhip.Checked = false;
             }
             else
             {
                 btnWhip.Checked = true;
-                isChecked = false;
+                isCheckedW = false;
             }
         }
+
+
+        bool isCheckedS = false;
         private void btnSyrup_CheckedChanged(object sender, EventArgs e)
         {
-            isChecked = btnSyrup.Checked;
+            isCheckedS = btnSyrup.Checked;
+            if (btnSyrup.Checked == true)
+            {
+                optionNum.Add(7);
+            }
         }
         private void btnSyrup_Click(object sender, EventArgs e)
         {
-            if (btnSyrup.Checked && !isChecked)
+            if (btnSyrup.Checked && !isCheckedS)
             {
                 btnSyrup.Checked = false;
             }
             else
             {
                 btnSyrup.Checked = true;
-                isChecked = false;
+                isCheckedS = false;
             }
         }
-
-
-
 
 
         #region ReturnCoffeeMenu event things for C# 3.0
@@ -129,26 +192,8 @@ namespace CafeKiosk
         }
 
 
+
+
         #endregion
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UCCoffeeOption_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnTall_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnIce_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
