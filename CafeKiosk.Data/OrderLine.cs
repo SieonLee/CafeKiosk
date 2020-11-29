@@ -23,6 +23,7 @@ namespace CafeKiosk.Data
         public int OrderLineID { get; set; }
         public int OrderID { get; set; }
         public int MenuID { get; set; }
+        public int Quantity { get; set; }
     
         public virtual Menu Menu { get; set; }
         public virtual Order Order { get; set; }

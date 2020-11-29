@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeKiosk.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,8 +23,25 @@ namespace CafeKiosk
         {
             OnMovePrevSelected(true);
         }
-        
-       
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            var gridViewInformation = Dao.OrderLineOption.Search(Dao.Order.GetByPK(1).OrderID);
+
+            List<OrderLineOption> wantedList = new List<OrderLineOption>();
+
+            foreach (var item in gridViewInformation)
+            {
+                OrderLineOption information = new OrderLineOption();
+                information.OptionName = item.Option.Name;
+                information.MenuName = item.OrderLine.Menu.Name;
+                information.MenuPrice = item.OrderLine.Menu.Price;
+
+                wantedList.Add(information);
+            }
+            bdsOrderLineOption.DataSource = wantedList;
+        }
+
 
         #region MovePrevSelected event things for C# 3.0
         public event EventHandler<MovePrevSelectedEventArgs> MovePrevSelected;
@@ -68,7 +86,9 @@ namespace CafeKiosk
 
         private void UCCartt_Load(object sender, EventArgs e)
         {
-            orderLineOptionBindingSource.DataSource = CafeKiosk.Data.Dao.OrderLineOption.Search(OrderId);
+            bdsOrderLineOption.DataSource = CafeKiosk.Data.Dao.OrderLineOption.Search(OrderId);
         }
+
+        
     }
 }

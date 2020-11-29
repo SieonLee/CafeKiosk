@@ -47,6 +47,7 @@ namespace CafeKiosk.UnitTest
             OrderLine entity = new OrderLine();
             entity.OrderID = Dao.Order.GetMaxKey();
             entity.MenuID = Dao.Menu.GetByPK(1).MenuID;
+            entity.Quantity = 3;
 
             Dao.OrderLine.Insert(entity);
 
@@ -61,11 +62,13 @@ namespace CafeKiosk.UnitTest
             OrderLine entity = new OrderLine();
             entity.OrderID = Dao.Order.GetMaxKey();
             entity.MenuID = Dao.Menu.GetByPK(1).MenuID;
+            entity.Quantity = 3;
 
             Dao.OrderLine.Insert(entity);
 
             int orderLineId = Dao.OrderLine.GetMaxKey();
             int oldCount = Dao.OrderLine.GetCount();
+            
 
             Dao.OrderLine.DeleteByPK(orderLineId);
 
@@ -90,8 +93,6 @@ namespace CafeKiosk.UnitTest
 
             Assert.IsTrue(orderLines.Count > 0);
             Assert.IsTrue(orderLines.TrueForAll(x => x.OrderID == 1));
-        }
-
-        
+        }   
     }
 }

@@ -14,6 +14,7 @@ namespace CafeKiosk.Data
         {
             return x => x.OrderLineID == key1 && x.OptionID == key2;
         }
+
         public List<OrderLineOption>Search(int orderId)
         {
             using (CafeKioskEntities context = (CafeKioskEntities)DbContextCreator.Context())
