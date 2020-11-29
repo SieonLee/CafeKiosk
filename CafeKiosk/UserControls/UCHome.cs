@@ -18,11 +18,10 @@ namespace CafeKiosk
             InitializeComponent();
         }
 
+
         private void bntTakeout_Click(object sender, EventArgs e)
         {
-            int count = Dao.Order.GetCount();
-            MessageBox.Show(count.ToString());
-            
+
             OnTakeOutSelected(true);
         }
 
