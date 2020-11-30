@@ -15,6 +15,7 @@ namespace CafeKiosk
 {
     public partial class OrderForm : Form
     {
+     //  private int orderLineId_ = 1;
         public OrderForm()
         {
             InitializeComponent();
@@ -84,8 +85,11 @@ namespace CafeKiosk
 
             movesidepanel(btnCoffee);
 
+
+
+          
             //orderID 넘겨주기, orderLineID생성해서 넘겨주기
-            UCCoffee uCCoffee = new UCCoffee(Dao.Order.GetCount());
+            UCCoffee uCCoffee = new UCCoffee((count+1)); //orderId넘겨줌orderLineId_
             uCCoffee.CoffeeSelected += UCCoffee_CoffeeSelected;
             addUC(uCCoffee);
             // UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
@@ -95,15 +99,16 @@ namespace CafeKiosk
 
         private void UCCoffee_CoffeeSelected(object sender, UCCoffee.CoffeeSelectedEventArgs e)
         {
+            int _orderidid = Dao.OrderLine.GetCount() + 1;
             movesidepanel(btnCoffee);
-            UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
+            UCCoffeeOption uCCoffeeOption = new UCCoffeeOption(_orderidid); //orderlineid넘겨줌
             addUC(uCCoffeeOption);
-            uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+           uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+
         }
 
         private void UCCoffeeOption_ReturnCoffeeMenu(object sender, UCCoffeeOption.ReturnCoffeeMenuEventArgs e)
         {
-
             btnCoffee.PerformClick();
         }
 

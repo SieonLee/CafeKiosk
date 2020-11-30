@@ -19,9 +19,21 @@ namespace CafeKiosk
         {
             InitializeComponent();
             lblQuantity.Text = quantity.ToString();
+           
 
         }
+        
+        public UCCoffeeOption(int orderLineId) : this()
+        {
+            _orderLineId = orderLineId;
+        }
+        int _orderLineId;
 
+
+        //public UCCoffeeOption(int orderLineId) : this()
+        //{
+        //    orderLineId = Dao.OrderLine.GetCount();
+        //}
 
 
         // OrderLine _orderLine = new OrderLine();
@@ -32,9 +44,10 @@ namespace CafeKiosk
             OnReturnCoffeeMenu(true);
 
         }
-
+ 
+       // int orderLineid = Dao.OrderLineOption.GetCount();
         List<int> optionNum = new List<int>();
-
+       // int orderLineId = Dao.OrderLine.GetCount();
         //장바구니로
         public void Cart()
         {
@@ -42,20 +55,24 @@ namespace CafeKiosk
 
             foreach (int number in optionNum)
             {
+                _orderLineOption.OrderLineID = _orderLineId;
                 _orderLineOption.OptionID = number;
+                Dao.OrderLineOption.Insert(_orderLineOption);
             }
-            Dao.OrderLineOption.Insert(_orderLineOption); //옵션 여러개 들어가도록
-                                                          //   foreach(int number in optionNum)
-                                                          //    {
-                                                          //     _orderLineOption.OptionID = number;
-                                                          //       Dao.OrderLineOption.Insert(_orderLineOption);
-                                                          //    }
+            //옵션 여러개 들어가도록
+            //   foreach(int number in optionNum)
+            //    {
+            //     _orderLineOption.OptionID = number;
+            //       Dao.OrderLineOption.Insert(_orderLineOption);
+            //    }
+            
         }
 
 
         internal void btnToCart_Click(object sender, EventArgs e) //장바구니
         {
             Cart();
+            
             OnReturnCoffeeMenu(true);
         }
 
@@ -102,7 +119,10 @@ namespace CafeKiosk
 
         private void btnHot_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (btnHot.Checked == true)
+            {
+                optionNum.Add(5);
+            }
         }
 
         //휘핑, 시럽
