@@ -118,7 +118,7 @@
     <None Include="CafeKiosk.edmx.diagram">
       <DependentUpon>CafeKiosk.edmx</DependentUpon>
     </None>
-    <None Include="Dao\ClassDiagram1.cd" />
+    <None Include="Dao\ClassDiagram_Dao.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
