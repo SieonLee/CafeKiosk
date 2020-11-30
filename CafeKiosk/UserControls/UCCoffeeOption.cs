@@ -104,7 +104,11 @@ namespace CafeKiosk
 
         private void btnGrande_CheckedChanged(object sender, EventArgs e)
         {
+            if (btnTall.Checked == true)
+            {
+                optionNum.Add(3);
 
+            }
         }
 
         //옵션 아이스 핫
