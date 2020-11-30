@@ -78,7 +78,7 @@ namespace CafeKiosk
             Order _order = new Order();
             _order.OrderID = count + 1;
             _order.TakeOut = true;
-            _order.OrderedAt = DateTime.Today;
+            _order.OrderedAt = DateTime.Now;
             _order.Total = 0;
             Dao.Order.Insert(_order);
             Dao.Order.Update(_order);
