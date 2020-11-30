@@ -19,17 +19,20 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
-        public UCCoffee(int order) : this()
+        public UCCoffee(int orderId) : this()
         {
-            _orderLine.OrderID = order;
+            _OrderID = orderId;
         }
+        int _OrderID;  //orderId넘겨받음
 
-
-        //private OrderLine _orderLine;
         OrderLine _orderLine = new OrderLine();
+        int orderLineId = 1;
+
         public void OptionClick() //함수 만들어야함
         {
-            _orderLine.OrderLineID = 1;
+            _orderLine.OrderID = _OrderID;
+            _orderLine.OrderLineID = orderLineId;
+            _orderLine.Quantity = 1;
             Dao.OrderLine.Insert(_orderLine);
             OnCoffeeSelected(true);//커피를 눌렀을때 옵션 패널 호출
         }
@@ -101,9 +104,11 @@ namespace CafeKiosk
             public CoffeeSelectedEventArgs()
             {
             }
-
+            ///
+            
+            ///////////////////////////////////////////////////////
             public CoffeeSelectedEventArgs(bool coffeeOptionSelected)
-            {
+           {
                 CoffeeOptionSelected = coffeeOptionSelected;
             }
         }
