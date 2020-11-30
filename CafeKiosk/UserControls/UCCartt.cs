@@ -24,23 +24,23 @@ namespace CafeKiosk
             OnMovePrevSelected(true);
         }
 
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            var gridViewInformation = Dao.OrderLineOption.Search(Dao.Order.GetByPK(1).OrderID);
+        //private void btnCheckOut_Click(object sender, EventArgs e)
+        //{
+        //    var gridViewInformation = Dao.OrderLineOption.Search(Dao.Order.GetByPK(1).OrderID);
 
-            List<OrderLineOption> wantedList = new List<OrderLineOption>();
+        //    List<OrderLineOption> wantedList = new List<OrderLineOption>();
 
-            foreach (var item in gridViewInformation)
-            {
-                OrderLineOption information = new OrderLineOption();
-                information.OptionName = item.Option.Name;
-                information.MenuName = item.OrderLine.Menu.Name;
-                information.MenuPrice = item.OrderLine.Menu.Price;
+        //    foreach (var item in gridViewInformation)
+        //    {
+        //        OrderLineOption information = new OrderLineOption();
+        //        information.OptionName = item.Option.Name;
+        //        information.MenuName = item.OrderLine.Menu.Name;
+        //        information.MenuPrice = item.OrderLine.Menu.Price;
 
-                wantedList.Add(information);
-            }
-            bdsOrderLineOption.DataSource = wantedList;
-        }
+        //        wantedList.Add(information);
+        //    }
+        //    bdsOrderLineOption.DataSource = wantedList;
+        //}
 
 
         #region MovePrevSelected event things for C# 3.0
@@ -84,11 +84,11 @@ namespace CafeKiosk
 
         #endregion
 
-        private void UCCartt_Load(object sender, EventArgs e)
-        {
-            bdsOrderLineOption.DataSource = CafeKiosk.Data.Dao.OrderLineOption.Search(OrderId);
-        }
+        //private void UCCartt_Load(object sender, EventArgs e)
+        //{
+        //    bdsOrderLineOption.DataSource = CafeKiosk.Data.Dao.OrderLineOption.Search(OrderId);
+        //}
 
-        
+
     }
 }

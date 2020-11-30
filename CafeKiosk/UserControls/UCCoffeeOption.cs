@@ -19,15 +19,18 @@ namespace CafeKiosk
         {
             InitializeComponent();
             lblQuantity.Text = quantity.ToString();
-           
+
 
         }
-        
+
+        private int _orderLineId;
+
         public UCCoffeeOption(int orderLineId) : this()
         {
             _orderLineId = orderLineId;
+
         }
-        int _orderLineId;
+
 
 
         //public UCCoffeeOption(int orderLineId) : this()
@@ -44,34 +47,24 @@ namespace CafeKiosk
             OnReturnCoffeeMenu(true);
 
         }
- 
-       // int orderLineid = Dao.OrderLineOption.GetCount();
+
         List<int> optionNum = new List<int>();
-       // int orderLineId = Dao.OrderLine.GetCount();
+
         //장바구니로
         public void Cart()
         {
-            //  _orderLine.Quantity = int.Parse(lblQuantity.Text);  //db안에 orderLineOption quantity (수량)넣어주기
 
+
+            //  _orderLine.Quantity = int.Parse(lblQuantity.Text);  //db안에 orderLineOption quantity (수량)넣어주기
+            MessageBox.Show(_orderLineId.ToString());
             foreach (int number in optionNum)
             {
+
                 _orderLineOption.OrderLineID = _orderLineId;
                 _orderLineOption.OptionID = number;
                 Dao.OrderLineOption.Insert(_orderLineOption);
+
             }
-
-
-
-            //Dao.OrderLineOption.Insert(_orderLineOption);
-
-
-
-            //옵션 여러개 들어가도록
-            //   foreach(int number in optionNum)
-            //    {
-            //     _orderLineOption.OptionID = number;
-            //       Dao.OrderLineOption.Insert(_orderLineOption);
-            //    }
 
         }
 
@@ -79,7 +72,7 @@ namespace CafeKiosk
         internal void btnToCart_Click(object sender, EventArgs e) //장바구니
         {
             Cart();
-            
+
             OnReturnCoffeeMenu(true);
         }
 
