@@ -26,12 +26,12 @@ namespace CafeKiosk
         int _OrderID;  //orderId넘겨받음
 
         OrderLine _orderLine = new OrderLine();
-        int orderLineId = 1;
+        int orderLineId = 0;
 
         public void OptionClick() //함수 만들어야함
         {
             _orderLine.OrderID = _OrderID;
-            _orderLine.OrderLineID = orderLineId;
+            _orderLine.OrderLineID = orderLineId+1;
             _orderLine.Quantity = 1;
             Dao.OrderLine.Insert(_orderLine);
             OnCoffeeSelected(true);//커피를 눌렀을때 옵션 패널 호출
