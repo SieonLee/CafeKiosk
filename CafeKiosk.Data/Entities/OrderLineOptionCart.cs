@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CafeKiosk.Data
 {
-    public partial class OrderLineOption
+    public partial class OrderLineOptionCart
     {
         public string OptionName { get; set; }
 

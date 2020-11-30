@@ -15,7 +15,7 @@ namespace CafeKiosk
 {
     public partial class OrderForm : Form
     {
-     //  private int orderLineId_ = 1;
+        //  private int orderLineId_ = 1;
         public OrderForm()
         {
             InitializeComponent();
@@ -75,21 +75,35 @@ namespace CafeKiosk
         {
 
             int count = Dao.Order.GetCount();
-            Order _order = new Order();
-            _order.OrderID = count + 1;
-            _order.TakeOut = true;
-            _order.OrderedAt = DateTime.Now;
-            _order.Total = 0;
-            Dao.Order.Insert(_order);
-            Dao.Order.Update(_order);
+            if (count == 0)
+            {
+                Order _order = new Order();
+                _order.OrderID = 1;
+                _order.TakeOut = true;
+                _order.OrderedAt = DateTime.Today;
+                _order.Total = 0;
+                Dao.Order.Insert(_order);
+                Dao.Order.Update(_order);
+            }
+            else
+            {
+                Order _order = new Order();
+                _order.OrderID = count + 1;
+                _order.TakeOut = true;
+                _order.OrderedAt = DateTime.Today;
+                _order.Total = 0;
+                Dao.Order.Insert(_order);
+                Dao.Order.Update(_order);
+            }
+
 
             movesidepanel(btnCoffee);
 
 
 
-          
+
             //orderID 넘겨주기, orderLineID생성해서 넘겨주기
-            UCCoffee uCCoffee = new UCCoffee((count+1)); //orderId넘겨줌orderLineId_
+            UCCoffee uCCoffee = new UCCoffee((count + 1)); //orderId넘겨줌orderLineId_
             uCCoffee.CoffeeSelected += UCCoffee_CoffeeSelected;
             addUC(uCCoffee);
             // UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
@@ -99,11 +113,13 @@ namespace CafeKiosk
 
         private void UCCoffee_CoffeeSelected(object sender, UCCoffee.CoffeeSelectedEventArgs e)
         {
-            int _orderidid = Dao.OrderLine.GetCount() + 1;
+
+            int _orderidid = Dao.OrderLine.GetMaxKey(); //orderlineID
+            MessageBox.Show(_orderidid.ToString());
             movesidepanel(btnCoffee);
             UCCoffeeOption uCCoffeeOption = new UCCoffeeOption(_orderidid); //orderlineid넘겨줌
             addUC(uCCoffeeOption);
-           uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
+            uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
 
         }
 
