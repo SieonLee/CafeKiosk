@@ -68,35 +68,35 @@
 
 ## 데이터베이스 스키마
 
-![](./img\database.jpg)
+![](.\img\database.jpg)
 
 
 
 ## 유저 케이스 다이어그램
 
-![](./img\user_case_diagram.jpg)
+![](.\img\user_case_diagram.jpg)
 
 
 
 ## 플로우차트
 
-![](./img\flowchart.jpg)
+![](.\img\flowchart.jpg)
 
 ## 클래스 다이어그램
 
 1. DAO(Data Access Object)
 
-![](./img\class_diagram_Dao.jpg)
+![](.\img\class_diagram_Dao.jpg)
 
 2. User Controls
 
-   ![](./img\class_diagram_UC.jpg)
+   ![](.\img\class_diagram_UC.jpg)
 
 
 
 ## 시퀀스 다이어그램
 
-![](./img\sequance_diagram.jpg)
+![](.\img\sequance_diagram.jpg)
 
 # Point of Interest
 
