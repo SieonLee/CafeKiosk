@@ -150,6 +150,7 @@
     <EmbeddedResource Include="UserControls\UCCartt.resx">
       <DependentUpon>UCCartt.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Document\readme.md" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CafeKiosk.Data.OrderLineOption.datasource" />
     <None Include="Properties\DataSources\Menu1.datasource" />
@@ -178,6 +179,7 @@
       <Name>CafeKiosk.Data</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
