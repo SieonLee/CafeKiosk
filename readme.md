@@ -68,35 +68,35 @@
 
 ## 데이터베이스 스키마
 
-![](.\img\데이터베이스스키마.jpg)
+![](C:\git\CafeKiosk\img\database.jpg)
 
 
 
 ## 유저 케이스 다이어그램
 
-<img src="./img/유저케이스다이어그램.jpg" width="45%">
+![](C:\git\CafeKiosk\img\user_case_diagram.jpg)
 
 
 
 ## 플로우차트
 
-![](C:\gits\CafeKiosk.git\img\플로우차트다이어그램.jpg)
+![](C:\git\CafeKiosk\img\flowchart.jpg)
 
 ## 클래스 다이어그램
 
 1. DAO(Data Access Object)
 
-![](C:\gits\CafeKiosk.git\img\클래스다이어그램_Dao.jpg)
+![](C:\git\CafeKiosk\img\class_diagram_Dao.jpg)
 
 2. User Controls
 
-   ![](C:\gits\CafeKiosk.git\img\클래스다이어그램_UC.jpg)
+   ![](C:\git\CafeKiosk\img\class_diagram_UC.jpg)
 
 
 
 ## 시퀀스 다이어그램
 
-![](C:\gits\CafeKiosk.git\img\sequance diagram.jpg)
+![](C:\git\CafeKiosk\img\sequance_diagram.jpg)
 
 # Point of Interest
 
