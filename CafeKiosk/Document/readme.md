@@ -67,36 +67,31 @@
   
 
 ## 데이터베이스 스키마
-
-![](.\img\데이터베이스스키마.jpg)
+<img src="./img/데이터베이스스키마.jpg">
 
 
 
 ## 유저 케이스 다이어그램
 
-<img src="./img/유저케이스다이어그램.jpg" width="45%">
+<img src="./img/유저케이스다이어그램.jpg">
 
 
 
 ## 플로우차트
-
-![](C:\gits\CafeKiosk.git\img\플로우차트다이어그램.jpg)
+<img src="./img/플로우차트다이어그램.jpg">
 
 ## 클래스 다이어그램
 
 1. DAO(Data Access Object)
-
-![](C:\gits\CafeKiosk.git\img\클래스다이어그램_Dao.jpg)
+<img src="./img/클래스다이어그램_Dao.jpg">
 
 2. User Controls
-
-   ![](C:\gits\CafeKiosk.git\img\클래스다이어그램_UC.jpg)
+<img src="./img/클래스다이어그램_UC.jpg">
 
 
 
 ## 시퀀스 다이어그램
-
-![](C:\gits\CafeKiosk.git\img\sequance diagram.jpg)
+<img src="./img/sequance diagram.jpg">
 
 # Point of Interest
 
