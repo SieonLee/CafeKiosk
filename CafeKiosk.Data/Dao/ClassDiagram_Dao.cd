@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CafeKiosk.Data.Dao">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAACAAAACAIAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Dao\Dao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CafeKiosk.Data.MenuDao">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dao\MenuDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CafeKiosk.Data.OptionDao">
+    <Position X="6.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dao\OptionDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CafeKiosk.Data.OrderDao">
+    <Position X="2.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dao\OrderDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CafeKiosk.Data.OrderLineDao">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Dao\OrderLineDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CafeKiosk.Data.OrderLineOptionDao">
+    <Position X="8" Y="3.25" Width="2.25" />
+    <InheritanceLine Type="EFLibrary.DualKeyDao&lt;T, K1, K2&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="8.875" Y="2.617" />
+        <Point X="8.875" Y="2.875" />
+        <Point X="8.281" Y="2.875" />
+        <Point X="8.281" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Dao\OrderLineOptionDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="EFLibrary.SingleKeyDao&lt;T, K&gt;">
+    <Position X="1" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAABAAAAAEAAAAAAAAAAABAAAAAQAAAAA=</HashCode>
+      <FileName>EFLibrary\SingleKeyDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EFLibrary.DualKeyDao&lt;T, K1, K2&gt;">
+    <Position X="8" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAEAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>EFLibrary\DualKeyDao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
