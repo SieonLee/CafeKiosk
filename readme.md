@@ -52,7 +52,7 @@
 
 ## 프레임워크
 
-- .Net FrameWork 4.8
+- .Net FrameWork 4.8 
 - EntityFrameWork 6.2
 - Winform
 

@@ -54,25 +54,21 @@ namespace CafeKiosk
         public void Cart()
         {
 
-
             //  _orderLine.Quantity = int.Parse(lblQuantity.Text);  //db안에 orderLineOption quantity (수량)넣어주기
             MessageBox.Show(_orderLineId.ToString());
             foreach (int number in optionNum)
             {
-
                 _orderLineOption.OrderLineID = _orderLineId;
                 _orderLineOption.OptionID = number;
                 Dao.OrderLineOption.Insert(_orderLineOption);
 
             }
-
         }
 
 
         internal void btnToCart_Click(object sender, EventArgs e) //장바구니
         {
             Cart();
-
             OnReturnCoffeeMenu(true);
         }
 

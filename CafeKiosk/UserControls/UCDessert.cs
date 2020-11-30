@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CafeKiosk.Data;
 
 namespace CafeKiosk
 {
@@ -16,40 +17,56 @@ namespace CafeKiosk
         {
             InitializeComponent();
         }
+        public UCDessert(int orderId) : this()
+        {
+            _OrderID = orderId;
+        }
+        int _OrderID;  //orderId넘겨받음
+
+        OrderLine _orderLine = new OrderLine();
+        int orderLineId = 0;
         public void OptionClick()
         {
-            OnDessertSelected(true);
-
+            _orderLine.OrderID = _OrderID;
+            _orderLine.OrderLineID = orderLineId + 1;
+            _orderLine.Quantity = 1;
+            Dao.OrderLine.Insert(_orderLine);
+            OnDessertSelected(true); //디저트 눌렀을때 옵션패널 호출
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnChoco_Click(object sender, EventArgs e)
         {
-            OnDessertSelected(true);
+            _orderLine.MenuID = 13;
+            OptionClick();
         }
-
         private void btnTiramisu_Click(object sender, EventArgs e)
         {
-            OnDessertSelected(true);
+            _orderLine.MenuID = 14;
+            OptionClick();
         }
 
         private void btnHoney_Click(object sender, EventArgs e)
         {
-            OnDessertSelected(true);
+            _orderLine.MenuID = 15;
+            OptionClick();
         }
 
         private void btnMacaron_Click(object sender, EventArgs e)
         {
-            OnDessertSelected(true);
+            _orderLine.MenuID = 16;
+            OptionClick();
         }
 
         private void btnWaffle_Click(object sender, EventArgs e)
         {
-            OnDessertSelected(true);
+            _orderLine.MenuID = 17;
+            OptionClick();
         }
 
         private void btnCroffle_Click(object sender, EventArgs e)
         {
-            OnDessertSelected(true);
+            _orderLine.MenuID = 18;
+            OptionClick();
         }
 
         #region DessertSelected event things for C# 3.0
@@ -91,5 +108,7 @@ namespace CafeKiosk
             }
         }
         #endregion
+
+
     }
 }

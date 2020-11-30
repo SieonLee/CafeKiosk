@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CafeKiosk.Data;
 
 namespace CafeKiosk
 {
@@ -18,12 +19,87 @@ namespace CafeKiosk
             InitializeComponent();
             lblQuantity.Text = quantity.ToString();
         }
+        private int _orderLineId;
+        public UCJuiceOption(int orderLineId) : this()
+        {
+            _orderLineId = orderLineId;
+        }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
             OnReturnJuiceMenu(true);
         }
+        OrderLineOption _orderLineOption = new OrderLineOption();
 
+        List<int> optionNum = new List<int>();
+ 
+        public void Cart()
+        {
+            MessageBox.Show(_orderLineId.ToString());
+            foreach (int number in optionNum)
+            {
+                _orderLineOption.OrderLineID = _orderLineId;
+                _orderLineOption.OptionID = number;
+                Dao.OrderLineOption.Insert(_orderLineOption);
+            }
+        }
+        internal void btnToCart_Click(object sender, EventArgs e)
+        {
+            Cart();
+            OnReturnJuiceMenu(true);
+        }
+
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            if (quantity == 0)
+            {
+                quantity = 1;
+            }
+            quantity -= 1;
+            lblQuantity.Text = quantity.ToString();
+
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            quantity += 1;
+            lblQuantity.Text = quantity.ToString();
+        }
+
+        
+
+        private void btnTall_CheckedChanged(object sender, EventArgs e)
+        {
+            optionNum.Add(8);
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            optionNum.Add(9);
+        }
+        //ice
+        bool isChecked = false;
+        private void btnIce_CheckedChanged(object sender, EventArgs e)
+        {
+            isChecked = btnIce.Checked;
+            if(btnIce.Checked == true)
+            {
+                optionNum.Add(10);
+            }
+        }
+        private void btnIce_Click(object sender, EventArgs e)
+        {
+            if (btnIce.Checked && !isChecked)
+            {
+                btnIce.Checked = false;
+            }
+            else
+            {
+                btnIce.Checked = true;
+                isChecked = false;
+            }
+        }
         #region ReturnJuiceMenu event things for C# 3.0
         public event EventHandler<ReturnJuiceMenuEventArgs> ReturnJuiceMenu;
 
@@ -63,59 +139,5 @@ namespace CafeKiosk
             }
         }
         #endregion
-
-        private void btnToCart_Click(object sender, EventArgs e)
-        {
-            OnReturnJuiceMenu(true);
-        }
-
-
-        private void btnMinus_Click(object sender, EventArgs e)
-        {
-            if (quantity == 0)
-            {
-                quantity = 1;
-            }
-            quantity -= 1;
-            lblQuantity.Text = quantity.ToString();
-
-        }
-
-        private void btnPlus_Click(object sender, EventArgs e)
-        {
-            quantity += 1;
-            lblQuantity.Text = quantity.ToString();
-        }
-
-        
-
-        private void btnTall_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-        //ice
-        bool isChecked = false;
-        private void btnIce_CheckedChanged(object sender, EventArgs e)
-        {
-            isChecked = btnIce.Checked;
-        }
-        private void btnIce_Click(object sender, EventArgs e)
-        {
-            if (btnIce.Checked && !isChecked)
-            {
-                btnIce.Checked = false;
-            }
-            else
-            {
-                btnIce.Checked = true;
-                isChecked = false;
-            }
-        }
-
     }
 }

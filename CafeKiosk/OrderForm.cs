@@ -15,6 +15,7 @@ namespace CafeKiosk
 {
     public partial class OrderForm : Form
     {
+        private Order _order;
         //  private int orderLineId_ = 1;
         public OrderForm()
         {
@@ -23,19 +24,30 @@ namespace CafeKiosk
             movesidepanel(btnStart);
             UCHome uCHome = new UCHome();
             uCHome.TakeOutSelected += UCHome_TakeOutSelected;
-
             addUC(uCHome);
         }
 
-        Order _order = new Order();
-        //public OrderForm(Order order) : this()
-        //{
-        //  _order = order;
-        //}
-        //     private Order _order;
+        private void start()
+        {
+            
+            if (_order == null)
+            {
+                _order = new Order();
+                _order.TakeOut = true;
+                _order.OrderedAt = DateTime.Today;
+                _order.Total = 0;
+                Dao.Order.Insert(_order);
 
-
-
+                _order = Dao.Order.GetByPK(Dao.Order.GetMaxKey());
+                
+            }
+            else
+            {
+                //_order.Total++;
+                //Dao.Order.Update(_order);
+            }
+        }
+        int count = Dao.Order.GetMaxKey();
         private void movesidepanel(Button btn)
         {
             panelslide.Top = btn.Top;
@@ -63,51 +75,21 @@ namespace CafeKiosk
 
         private void UCHome_TakeOutSelected(object sender, UCHome.TakeOutSelectedEventArgs e)
         {
-            //MessageBox.Show(_order.OrderID.ToString());
-
-            //    MessageBox.Show(_order.OrderID.ToString()); //오더 순번 보여줌
-
-
             btnCoffee.PerformClick();
-            //  }
         }
         private void btnCoffee_Click(object sender, EventArgs e)
         {
-
-            int count = Dao.Order.GetCount();
-            if (count == 0)
-            {
-                Order _order = new Order();
-                _order.OrderID = 1;
-                _order.TakeOut = true;
-                _order.OrderedAt = DateTime.Today;
-                _order.Total = 0;
-                Dao.Order.Insert(_order);
-                Dao.Order.Update(_order);
-            }
-            else
-            {
-                Order _order = new Order();
-                _order.OrderID = count + 1;
-                _order.TakeOut = true;
-                _order.OrderedAt = DateTime.Today;
-                _order.Total = 0;
-                Dao.Order.Insert(_order);
-                Dao.Order.Update(_order);
-            }
-
+            start();
+           
+            //Dao.Order.Update(_order);
 
             movesidepanel(btnCoffee);
-
-
 
 
             //orderID 넘겨주기, orderLineID생성해서 넘겨주기
             UCCoffee uCCoffee = new UCCoffee((count + 1)); //orderId넘겨줌orderLineId_
             uCCoffee.CoffeeSelected += UCCoffee_CoffeeSelected;
             addUC(uCCoffee);
-            // UCCoffeeOption uCCoffeeOption = new UCCoffeeOption();
-            // uCCoffeeOption.ReturnCoffeeMenu += UCCoffeeOption_ReturnCoffeeMenu;
 
         }
 
@@ -132,8 +114,14 @@ namespace CafeKiosk
 
         private void btnJuice_Click(object sender, EventArgs e)
         {
+
+            start();
+            movesidepanel(btnCoffee);
+
+
+            //orderID 넘겨주기, orderLineID생성해서 넘겨주기
             movesidepanel(btnJuice);
-            UCJuice uCJuice = new UCJuice();
+            UCJuice uCJuice = new UCJuice((count+1));
             uCJuice.JuiceSelected += UCJuice_JuiceSelected;
             addUC(uCJuice);
 
@@ -141,8 +129,11 @@ namespace CafeKiosk
 
         private void UCJuice_JuiceSelected(object sender, UCJuice.JuiceSelectedEventArgs e)
         {
+
+            int _orderidid = Dao.OrderLine.GetMaxKey(); //orderlineID
+            MessageBox.Show(_orderidid.ToString());
             movesidepanel(btnJuice);
-            UCJuiceOption uCJuiceOption = new UCJuiceOption();
+            UCJuiceOption uCJuiceOption = new UCJuiceOption(_orderidid);
             uCJuiceOption.ReturnJuiceMenu += UCJuiceOption_ReturnJuiceMenu;
             addUC(uCJuiceOption);
         }
@@ -155,15 +146,25 @@ namespace CafeKiosk
 
         private void btnDessert_Click(object sender, EventArgs e)
         {
+            start();
             movesidepanel(btnDessert);
-            UCDessert uCDessert = new UCDessert();
+
+
+            //orderID 넘겨주기, orderLineID생성해서 넘겨주기
+            UCDessert uCDessert = new UCDessert((count + 1)); //orderId넘겨줌orderLineId_
             uCDessert.DessertSelected += UCDessert_DessertSelected;
             addUC(uCDessert);
+
+
+
         }
 
         private void UCDessert_DessertSelected(object sender, UCDessert.DessertSelectedEventArgs e)
         {
-            UCDessertOption uCDessertOption = new UCDessertOption();
+            int _orderidid = Dao.OrderLine.GetMaxKey(); //orderlineID
+            MessageBox.Show(_orderidid.ToString());
+            movesidepanel(btnDessert);
+            UCDessertOption uCDessertOption = new UCDessertOption(_orderidid); //orderlineid넘겨줌
             addUC(uCDessertOption);
             uCDessertOption.ReturnDessertMenu += UCDessertOption_ReturnDessertMenu;
         }
