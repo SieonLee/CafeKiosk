@@ -68,14 +68,13 @@
 
 ## 데이터베이스 스키마
 
-![](.\img\database.jpg)
+![](./img/database.jpg)
 
 
 
 ## 유저 케이스 다이어그램
 
 ![](.\img\user_case_diagram.jpg)
-
 
 
 ## 플로우차트
