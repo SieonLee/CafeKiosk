@@ -72,9 +72,7 @@
 
 
 ## 유저 케이스 다이어그램
-
 <img src="./img/user_case_diagram.jpg">
-
 
 
 ## 플로우차트
@@ -87,6 +85,7 @@
 
 2. User Controls
 <img src="./img/class_diagram_UC.jpg">
+
 
 
 
