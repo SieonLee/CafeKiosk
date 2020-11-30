@@ -53,9 +53,9 @@
             // 
             this.lblCroffle.BackColor = System.Drawing.Color.OldLace;
             this.lblCroffle.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.lblCroffle.Location = new System.Drawing.Point(243, 648);
+            this.lblCroffle.Location = new System.Drawing.Point(213, 518);
             this.lblCroffle.Name = "lblCroffle";
-            this.lblCroffle.Size = new System.Drawing.Size(159, 29);
+            this.lblCroffle.Size = new System.Drawing.Size(139, 23);
             this.lblCroffle.TabIndex = 35;
             this.lblCroffle.Text = "크로플 8000원";
             this.lblCroffle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -63,9 +63,9 @@
             // lblWaffle
             // 
             this.lblWaffle.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.lblWaffle.Location = new System.Drawing.Point(44, 648);
+            this.lblWaffle.Location = new System.Drawing.Point(38, 518);
             this.lblWaffle.Name = "lblWaffle";
-            this.lblWaffle.Size = new System.Drawing.Size(156, 29);
+            this.lblWaffle.Size = new System.Drawing.Size(136, 23);
             this.lblWaffle.TabIndex = 34;
             this.lblWaffle.Text = "와플 7000원";
             this.lblWaffle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -73,18 +73,18 @@
             // lblMacaron
             // 
             this.lblMacaron.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.lblMacaron.Location = new System.Drawing.Point(231, 422);
+            this.lblMacaron.Location = new System.Drawing.Point(202, 338);
             this.lblMacaron.Name = "lblMacaron";
-            this.lblMacaron.Size = new System.Drawing.Size(182, 29);
+            this.lblMacaron.Size = new System.Drawing.Size(159, 23);
             this.lblMacaron.TabIndex = 33;
             this.lblMacaron.Text = "얼그레이마카롱 3500원";
             // 
             // lblHoney
             // 
             this.lblHoney.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.lblHoney.Location = new System.Drawing.Point(41, 422);
+            this.lblHoney.Location = new System.Drawing.Point(36, 338);
             this.lblHoney.Name = "lblHoney";
-            this.lblHoney.Size = new System.Drawing.Size(159, 29);
+            this.lblHoney.Size = new System.Drawing.Size(139, 23);
             this.lblHoney.TabIndex = 32;
             this.lblHoney.Text = "허니브레드 5000원";
             this.lblHoney.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -92,9 +92,9 @@
             // lblTiramisu
             // 
             this.lblTiramisu.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.lblTiramisu.Location = new System.Drawing.Point(246, 207);
+            this.lblTiramisu.Location = new System.Drawing.Point(215, 166);
             this.lblTiramisu.Name = "lblTiramisu";
-            this.lblTiramisu.Size = new System.Drawing.Size(156, 29);
+            this.lblTiramisu.Size = new System.Drawing.Size(136, 23);
             this.lblTiramisu.TabIndex = 31;
             this.lblTiramisu.Text = "티라미수 4500원";
             this.lblTiramisu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -102,9 +102,9 @@
             // lblChoco
             // 
             this.lblChoco.Font = new System.Drawing.Font("한컴 윤체 L", 9F);
-            this.lblChoco.Location = new System.Drawing.Point(41, 208);
+            this.lblChoco.Location = new System.Drawing.Point(36, 166);
             this.lblChoco.Name = "lblChoco";
-            this.lblChoco.Size = new System.Drawing.Size(159, 29);
+            this.lblChoco.Size = new System.Drawing.Size(139, 23);
             this.lblChoco.TabIndex = 30;
             this.lblChoco.Text = "초코케익 5500원";
             this.lblChoco.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -112,10 +112,9 @@
             // btnCroffle
             // 
             this.btnCroffle.Image = ((System.Drawing.Image)(resources.GetObject("btnCroffle.Image")));
-            this.btnCroffle.Location = new System.Drawing.Point(243, 481);
-            this.btnCroffle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnCroffle.Location = new System.Drawing.Point(213, 385);
             this.btnCroffle.Name = "btnCroffle";
-            this.btnCroffle.Size = new System.Drawing.Size(159, 162);
+            this.btnCroffle.Size = new System.Drawing.Size(139, 130);
             this.btnCroffle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCroffle.TabIndex = 29;
             this.btnCroffle.TabStop = false;
@@ -124,10 +123,9 @@
             // btnWaffle
             // 
             this.btnWaffle.Image = ((System.Drawing.Image)(resources.GetObject("btnWaffle.Image")));
-            this.btnWaffle.Location = new System.Drawing.Point(41, 481);
-            this.btnWaffle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnWaffle.Location = new System.Drawing.Point(36, 385);
             this.btnWaffle.Name = "btnWaffle";
-            this.btnWaffle.Size = new System.Drawing.Size(159, 162);
+            this.btnWaffle.Size = new System.Drawing.Size(139, 130);
             this.btnWaffle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnWaffle.TabIndex = 28;
             this.btnWaffle.TabStop = false;
@@ -136,10 +134,9 @@
             // btnMacaron
             // 
             this.btnMacaron.Image = ((System.Drawing.Image)(resources.GetObject("btnMacaron.Image")));
-            this.btnMacaron.Location = new System.Drawing.Point(243, 256);
-            this.btnMacaron.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnMacaron.Location = new System.Drawing.Point(213, 205);
             this.btnMacaron.Name = "btnMacaron";
-            this.btnMacaron.Size = new System.Drawing.Size(159, 162);
+            this.btnMacaron.Size = new System.Drawing.Size(139, 130);
             this.btnMacaron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMacaron.TabIndex = 27;
             this.btnMacaron.TabStop = false;
@@ -148,10 +145,9 @@
             // btnHoney
             // 
             this.btnHoney.Image = ((System.Drawing.Image)(resources.GetObject("btnHoney.Image")));
-            this.btnHoney.Location = new System.Drawing.Point(41, 256);
-            this.btnHoney.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHoney.Location = new System.Drawing.Point(36, 205);
             this.btnHoney.Name = "btnHoney";
-            this.btnHoney.Size = new System.Drawing.Size(159, 162);
+            this.btnHoney.Size = new System.Drawing.Size(139, 130);
             this.btnHoney.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnHoney.TabIndex = 26;
             this.btnHoney.TabStop = false;
@@ -160,10 +156,9 @@
             // btnTiramisu
             // 
             this.btnTiramisu.Image = ((System.Drawing.Image)(resources.GetObject("btnTiramisu.Image")));
-            this.btnTiramisu.Location = new System.Drawing.Point(243, 41);
-            this.btnTiramisu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTiramisu.Location = new System.Drawing.Point(213, 33);
             this.btnTiramisu.Name = "btnTiramisu";
-            this.btnTiramisu.Size = new System.Drawing.Size(159, 162);
+            this.btnTiramisu.Size = new System.Drawing.Size(139, 130);
             this.btnTiramisu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnTiramisu.TabIndex = 25;
             this.btnTiramisu.TabStop = false;
@@ -172,18 +167,17 @@
             // btnChoco
             // 
             this.btnChoco.Image = ((System.Drawing.Image)(resources.GetObject("btnChoco.Image")));
-            this.btnChoco.Location = new System.Drawing.Point(41, 41);
-            this.btnChoco.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnChoco.Location = new System.Drawing.Point(36, 33);
             this.btnChoco.Name = "btnChoco";
-            this.btnChoco.Size = new System.Drawing.Size(159, 162);
+            this.btnChoco.Size = new System.Drawing.Size(139, 130);
             this.btnChoco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnChoco.TabIndex = 24;
             this.btnChoco.TabStop = false;
-            this.btnChoco.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.btnChoco.Click += new System.EventHandler(this.btnChoco_Click);
             // 
             // UCDessert
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.Controls.Add(this.lblCroffle);
@@ -199,9 +193,8 @@
             this.Controls.Add(this.btnTiramisu);
             this.Controls.Add(this.btnChoco);
             this.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCDessert";
-            this.Size = new System.Drawing.Size(445, 719);
+            this.Size = new System.Drawing.Size(389, 575);
             ((System.ComponentModel.ISupportInitialize)(this.btnCroffle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnWaffle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMacaron)).EndInit();
