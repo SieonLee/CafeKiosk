@@ -59,13 +59,20 @@ namespace CafeKiosk
                 _orderLineOption.OptionID = number;
                 Dao.OrderLineOption.Insert(_orderLineOption);
             }
+
+
+
+            //Dao.OrderLineOption.Insert(_orderLineOption);
+
+
+
             //옵션 여러개 들어가도록
             //   foreach(int number in optionNum)
             //    {
             //     _orderLineOption.OptionID = number;
             //       Dao.OrderLineOption.Insert(_orderLineOption);
             //    }
-            
+
         }
 
 
