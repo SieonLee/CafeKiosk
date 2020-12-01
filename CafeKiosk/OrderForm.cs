@@ -16,7 +16,7 @@ namespace CafeKiosk
     public partial class OrderForm : Form
     {
         private Order _order;
-        //  private int orderLineId_ = 1;
+
         public OrderForm()
         {
             InitializeComponent();
@@ -80,11 +80,8 @@ namespace CafeKiosk
         private void btnCoffee_Click(object sender, EventArgs e)
         {
             start();
-           
-            //Dao.Order.Update(_order);
 
             movesidepanel(btnCoffee);
-
 
             //orderID 넘겨주기, orderLineID생성해서 넘겨주기
             UCCoffee uCCoffee = new UCCoffee((count + 1)); //orderId넘겨줌orderLineId_

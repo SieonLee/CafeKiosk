@@ -151,7 +151,7 @@ namespace CafeKiosk
             this.btnCheckOut.TabIndex = 12;
             this.btnCheckOut.Text = "결제";
             this.btnCheckOut.UseVisualStyleBackColor = true;
-       //     this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // UCCartt
             // 
@@ -168,7 +168,7 @@ namespace CafeKiosk
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UCCartt";
             this.Size = new System.Drawing.Size(445, 719);
-         //   this.Load += new System.EventHandler(this.UCCartt_Load);
+            this.Load += new System.EventHandler(this.UCCartt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsOrderLineOption)).EndInit();
             this.ResumeLayout(false);
