@@ -88,7 +88,7 @@
     <Compile Include="EFLibrary\QuadKeyDao.cs" />
     <Compile Include="EFLibrary\SingleKeyDao.cs" />
     <Compile Include="EFLibrary\TripleKeyDao.cs" />
-    <Compile Include="Entities\OrderLineOptionCart.cs" />
+    <Compile Include="Entities\OrderLineOption.cs" />
     <Compile Include="Menu.cs">
       <DependentUpon>CafeKiosk.tt</DependentUpon>
     </Compile>
